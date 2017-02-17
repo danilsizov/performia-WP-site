@@ -110,7 +110,7 @@ get_header(); // подключаем header.php ?>
 			</div>
 		</div>
 	</div>
-	<div class="container content">
+		<div class="container content">
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="block-tittle"><strong>Технология<br> найма</strong></div>

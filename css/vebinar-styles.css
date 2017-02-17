@@ -1,15 +1,15 @@
 .blue-background{
 	position: absolute;
 	height:560px;
-	width:60%;
+	width:55%;
 	background:#3b54a1; 
 }
 
 .gold-background{
 	position: absolute;
 	height:560px;
-	left:60%;
-	width:40%;
+	left:55%;
+	width:45%;
 	background:#ffc123; 
 }
 
@@ -18,4 +18,168 @@
 	font-size: 30px;
 	font-family:'Century Gothic';
 	color:white;
+}
+
+.vebinar-tittle{
+	margin-top:25px;
+	font-size: 48px;
+	font-family:'Yeseva One';
+	color:white;
+	line-height: 1.2;
+}
+
+.telephone-black{
+	font-size: 30px;
+	margin-top:75px;
+	font-family:'Century Gothic';
+	color:black;
+
+}
+
+.invite{
+	font-size: 20px;
+	margin-top:25px;
+	font-family:'Century Gothic';
+	color:black;
+}
+
+.input{
+	font-family:'Century Gothic';
+	margin-top:40px;
+	padding:5px 300px 15px 0;
+	background: none;
+	border-width: 0 0 1px 0;
+	border-style:solid;
+	border-color:#996633;
+	color:#996633;
+	transition: 0.1s;
+	font-size: 16px;
+}
+
+::-webkit-input-placeholder {color:#996633;}
+::-moz-placeholder          {color:#996633;}/* Firefox 19+ */
+:-moz-placeholder           {color:#996633;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#996633;}
+
+.input:focus{
+	border-width: 0 0 3px 0;
+	outline:none;
+}
+
+.mar-top-input{
+	margin-top:50px;
+}
+
+.invite-buton{
+	font-family:'Century Gothic';
+	padding:10px 10px 10px 10px;
+	border-width:2px;
+	border-color:white;
+	border-style: solid;
+	border-radius:20px;
+	color:black;
+	background:white;
+	margin-top:40px;
+	text-align: center;
+	transition: 0.2s;
+	cursor:pointer;
+}
+
+.invite-buton:hover{
+	margin-top:37px;
+	margin-left:-3px;
+	padding:13px 13px 13px 13px;
+	border-radius:10px;
+}
+
+.quote-text p{
+	margin-top:30px;
+}
+
+h3{
+	font-family:'Century Gothic';
+	font-size: 24px;
+	margin-top:40px;
+}
+
+.minus-left-mar{
+	margin-left: -21px;
+}
+
+.vebinar-view{
+	padding-left:20px !important;
+	font-size: 16px;
+	font-family:'Century Gothic';
+	margin-top:30px;
+}
+
+li{
+
+	color:#d7d7d7;
+}
+
+ol li{
+
+	color:black;
+}
+
+li p{
+	color:black;
+}
+
+.about-tittle{
+	margin-top: 20px;
+	font-size:48px;
+	font-family:'Yeseva One';
+	color:#373737;
+}
+
+.description{
+	font-size:16px;
+	font-family:'Yeseva One';
+	color:#373737;
+}
+
+.grey-line{
+	border-color:#ebebeb;
+	border-width: 0 0 1px 0;
+	border-style:solid; 
+}
+
+.mar-top{
+	padding-bottom: 10px;
+	margin-top: 50px;
+}
+
+.who{
+	font-family:'Century Gothic';
+	font-size: 16px;
+}
+
+
+.block-tittle-vebinar{
+	font-family:'Yeseva One';
+	color:#373737;
+	font-size:36px;
+	padding-bottom: 40px;
+	text-align: left;
+}
+
+.plus-mar-left{
+	margin-left:0px;
+}
+
+.gold-block{
+	background: #ffc123;
+	width: 100%;
+	margin-top:200px;
+	text-align:center;
+	padding-top:100px;
+	padding-bottom: 100px;
+}
+
+.gold-tittle{
+	font-family:'Yeseva One';
+	font-size: 36px;
+	color:black;
 }
