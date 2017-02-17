@@ -1,0 +1,21 @@
+.blue-background{
+	position: absolute;
+	height:560px;
+	width:60%;
+	background:#3b54a1; 
+}
+
+.gold-background{
+	position: absolute;
+	height:560px;
+	left:60%;
+	width:40%;
+	background:#ffc123; 
+}
+
+.vebinar-tittle-small{
+	margin-top:75px;
+	font-size: 30px;
+	font-family:'Century Gothic';
+	color:white;
+}

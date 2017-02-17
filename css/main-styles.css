@@ -1,0 +1,699 @@
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+
+a{
+	
+}
+
+body{
+	background: #fbfbfb;
+}
+
+button{
+	padding: 0;
+    background: none;
+    border: none;
+}
+
+
+
+@font-face {
+    font-family:'Century Gothic';
+    src: url('../fonts/GOTHIC.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family:'Yeseva One';
+    src: url('../fonts/YESEVAONE-REGULAR.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family:'Century Gothic Bold';
+    src: url('../fonts/GOTHICB.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.photo{
+	width:100%;
+}
+
+/*Navigatiom*/
+
+header{
+	margin-top: 30px;
+}
+
+.nav-buttons>span{
+	font-family:'Century Gothic';
+	float:left;
+	font-size:12px;
+	margin:1px;
+	cursor:pointer;
+}
+
+.nav-line{
+	position:relative;
+	width:0;
+	height:1px;
+	border-width: 0 0 1px 0;
+	border-style:solid;
+	border-color:#284ecd;
+	transition:0.5s;
+
+}
+.nav-buttons>span:hover .nav-line{
+	width:40%;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-buttons > span {
+        float: none;
+    }
+    .nav-buttons {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+/*Video Block*/
+@media all and (max-width: 1200px) {
+  	.white-back {
+	    /*background: rgba(255,255,255,0.7);*/
+	    background-color:rgba(255,255,255,0.3);
+	}
+}
+
+.white-back {
+    background: rgba(255,255,255,0);
+}
+
+.telephone>.nav-line{
+	position:relative;
+	width:10%;
+	height:1px;
+	border-width: 0 0 1px 0;
+	border-style:solid;
+	border-color:#284ecd;
+	transition:0.5s;
+	margin-top:30px;
+}
+
+.blue-back{
+	float:left;
+	position: absolute;
+	width:852.2px;
+	height:675px;
+	background: rgba(40,78,205,0.5);
+	transition: 0.5s;
+	cursor:pointer;
+}
+
+.play{
+	position: relative;
+	top:40%;
+	left:45%;
+}
+
+.main-video{
+	overflow:hidden; 
+	transition: 0.5s;
+	width:91%;
+}
+
+.main-video:hover .blue-back{
+	opacity: 1;
+	display: block;
+	z-index: 100;
+	background: rgba(40,78,205,0.5);
+}
+
+.near-video{
+	padding:0;
+}
+
+.near-video-tittle{
+	font-family:'Yeseva One';
+	font-size:48px;
+	padding:50px 0 0 0;
+}
+.telephone{
+	font-family:'Century Gothic';
+	font-size:30px;
+	color:black;
+	padding:50px 0 0 0;
+}
+
+.techno-trust{
+	font-family:'Century Gothic';
+	padding:100px 0 0 0;
+	font-size:16px;
+}
+
+.logo-partners{
+	margin-top:30px;
+}
+
+.logos{
+	margin-top:40px;
+}
+
+.performer{
+	position:absolute;
+	width:15px;
+	height:15px;
+	background-image:url('../img/performer.png');
+	top:200px;
+	left:408px; 
+}
+.doers{
+	position:absolute;
+	width:15px;
+	height:15px;
+	background-image:url('../img/doers.png');
+	top:175px;
+	left:305px; 
+}
+.pasagers{
+	position:absolute;
+	width:15px;
+	height:15px;
+	background-image:url('../img/pasagers.png');
+	top:140px;
+	left:190px; 
+}
+.problem-makers{
+	position:absolute;
+	width:15px;
+	height:15px;
+	background-image:url('../img/problem-makers.png');
+	top:215px;
+	left:35px; 
+}
+
+
+
+/*content-block*/
+
+.content{
+	margin-top:100px;
+}
+
+.quote>.nav-line{
+	position:relative;
+	width:30%;
+	height:5px;
+	border-width: 0 0 1px 0;
+	border-style:solid;
+	border-color:#284ecd;
+}
+
+#quote0{
+	transition: 0.5s;
+}
+
+.quote-text{
+	font-family:'Century Gothic';
+	margin-top:20px;
+	font-size:16px;
+	transition:0.5s;
+}
+
+.block-tittle{
+	font-family:'Yeseva One';
+	color:#373737;
+	font-size:36px;
+	text-align: right;
+}
+
+.full-height{
+	height:100%;
+}
+
+
+
+/*person-slider*/
+
+.person-slider{
+	margin-top:100px;
+}
+
+.person-name{
+	font-family:'Yeseva One';
+	font-size: 24px;
+}
+
+.person-position{
+	font-family:'Century Gothic';
+	color:#696969;
+	font-size:14px;
+}
+
+.person-slider-buttons{
+	margin-top:40px;
+}
+
+#person-photo{
+	padding-top:75px;
+	background-image: url("../img/Jobs.png");
+	background-repeat: no-repeat;
+	background-position: 85% 100%
+}
+
+.after-img{
+	font-family:'Century Gothic';
+	float:left;
+	margin-top:50px;
+	font-size:16px;
+}
+
+
+
+/* types of employee*/
+
+.truck{
+	font-family:'Century Gothic';
+	margin-top:50px;
+	font-size:16px;
+}
+
+.truck-photo{
+	float:left;
+}
+
+.truck-text{
+	font-family:'Century Gothic';
+	float:left;
+	margin-top:50px;
+	margin-left:40px;
+}
+
+.about{
+	font-family:'Century Gothic';
+	float:left;
+	margin-top:50px;
+	color:#284ecd;
+	font-size: 20px;
+}
+
+
+
+
+/* Seminars */
+
+.seminar{
+	float:left;
+}
+
+.seminar-mar{
+	margin-top:50px;
+}
+
+.seminar>.nav-line{
+	position:relative;
+	width:100%;
+	height:1px;
+	border-width: 0 0 1px 0;
+	border-style:solid;
+	border-color:#284ecd;
+	transition:0.5s;
+	margin-top:5px;
+}
+
+.seminar-tittle{
+	font-family:'Century Gothic';
+	margin-top:20px;
+	font-size:20px;
+	color:black;
+	transition:0.5s;
+	cursor:pointer;
+}
+
+.seminar-tittle:hover{
+	color:#284ecd;
+}
+
+.seminar-photo{
+	margin-top:20px;
+	float:left;
+}
+
+.seminar-person{
+	margin-top:20px;
+	margin-left:10px;
+	float:left;
+}
+
+.seminar-person-name{
+	font-family:'Century Gothic Bold';
+	font-size: 16px;
+}
+
+.seminar-person-position{
+	font-family:'Century Gothic';
+	font-size: 14px;
+	color:#696969;
+}
+
+
+.seminar-place{
+	float:left;
+	margin-left:100px;
+	margin-top:20px;
+}
+
+.seminar-geo{
+	font-family:'Century Gothic Bold';
+	font-size: 16px;
+}
+
+.seminar-time{
+	font-family:'Century Gothic';
+	font-size: 14px;
+	color:#696969;
+}
+
+.seminar-price{
+	font-family:'Century Gothic Bold';
+	font-size: 16px;
+	margin-top:20px;
+	margin-left:80px;
+	float:left;
+}
+
+
+
+
+/*Main programm*/
+
+.main-programm{
+	color:white !important;
+	background: #3b54a1;
+	width:100%;
+	padding:20px;
+}
+
+.content-main-programm{
+	border-style:solid;
+	border-width:10px;
+	border-color:white;
+	width:100%;
+	height:100%;
+	padding:40px;
+}
+
+.main-programm-tittle{
+	font-family:'Yeseva One';
+	color:white;
+	font-size:48px;
+}
+
+.main-programm-text{
+	font-family:'Century Gothic';
+	margin-top:50px;
+	color:white;
+	font-size:16px;
+}
+
+.main-programm-card{
+	margin-top:150px;
+	color:white !important;
+	height:50px;
+}
+
+.main-programm-about{
+	font-family:'Century Gothic';
+	margin-top:50px;
+	color:white;
+	font-size: 20px;
+}
+
+.main-programm-seminar-person-position{
+	font-family:'Century Gothic';
+	font-size: 14px;
+	color:white;
+}
+
+.main-programm-seminar-place{
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.main-programm-seminar-time{
+	font-family:'Century Gothic';
+	font-size: 14px;
+	color:white;
+}
+
+.main-programm-seminar-price{
+	font-family:'Century Gothic Bold';
+	font-size: 16px;
+	margin-top:20px;
+	margin-left:20px;
+	float:left;
+}
+
+.main-programm-line{
+	position:relative;
+	width:100%;
+	height:1px;
+	border-width: 0 0 1px 0;
+	border-style:solid;
+	border-color:white;
+	margin-top:5px;
+}
+
+
+
+/*reviews*/
+
+.reviews{
+	margin-top:100px;
+}
+
+.reviews-text{
+	font-family:'Century Gothic';
+	font-size:16px;
+	margin-top:50px;
+}
+
+.review-tittle{
+	font-family:'Century Gothic Bold' !important;
+}
+
+.reviews-slider{
+	margin-top:50px;
+}
+
+.cards-review{
+	margin-top: 20px;
+}
+
+.review-person-name{
+	font-family:'Yeseva One';
+	color:black;
+	font-size: 16px;
+}
+
+.review-person-position{
+	font-family:'Century Gothic';
+	color:#696969;
+	font-size: 14px;
+}
+
+.review-video{
+	margin-left:-20px;
+}
+
+.review-about{
+	font-family:'Century Gothic';
+	margin-top:50px;
+	color:#284ecd;
+	font-size: 20px;
+}
+
+
+
+
+/*Answer*/
+
+.answer-tittle{
+	font-family:'Yeseva One';
+	font-size: 24px;
+	margin-top:20px;
+}
+
+.answer-mar{
+	margin-top:50px;
+}
+
+
+
+
+/*Cards*/
+.big-card{
+	cursor:pointer;
+	width:100%;
+	height:350px;
+	background: white;
+	-webkit-box-shadow: -24px 21px 43px -23px rgba(0,0,0,0.29);
+	-moz-box-shadow: -24px 21px 43px -23px rgba(0,0,0,0.29);
+	box-shadow: -24px 21px 43px -23px rgba(0,0,0,0.29);
+	transition:0.5s;
+}
+.big-card:hover{
+	margin-left: 10px;
+	-webkit-box-shadow: -24px 21px 43px 3px rgba(0,0,0,0.29);
+	-moz-box-shadow: -24px 21px 43px 3px rgba(0,0,0,0.29);
+	box-shadow: -24px 21px 43px 3px rgba(0,0,0,0.29);
+}
+
+
+.small-card{
+	cursor:pointer;
+	width:45%;
+	height:350px;
+	float:left;
+	background: white;
+	-webkit-box-shadow: -24px 21px 43px -23px rgba(0,0,0,0.29);
+	-moz-box-shadow: -24px 21px 43px -23px rgba(0,0,0,0.29);
+	box-shadow: -24px 21px 43px -23px rgba(0,0,0,0.29);
+	transition: 0.5s;
+}
+
+.small-card:hover{
+	-webkit-box-shadow: -24px 21px 43px 3px rgba(0,0,0,0.29);
+	-moz-box-shadow: -24px 21px 43px 3px rgba(0,0,0,0.29);
+	box-shadow: -24px 21px 43px 3px rgba(0,0,0,0.29);
+}
+
+.small-card:hover .card-mar-top{
+	margin-top: 40px;
+}
+
+.small-card-mar{
+	margin-left: 10%;
+}
+
+.card-tag{
+	font-family:'Century Gothic';
+	color:#696969;
+	font-size:14px;
+	margin-top:10px;
+	margin-left:10px;
+}
+
+.card-tittle{
+	font-family:'Century Gothic Bold';
+	font-size:16px;
+	margin-top:10px;
+	margin-left:10px;	
+}
+
+.card-info{
+	font-family:'Century Gothic';
+	margin-left:10px;
+	border-style: solid;
+	border-color:#e5e6e5;
+	border-width: 1px 0 0 0;
+	padding:10px 0 10px 0;
+	margin-top: 30px;
+	width:100%;
+	height:60px;
+}
+
+.card-views{
+	color:#696969;
+	float:left;
+}
+
+.card-comment{
+	color:#696969;
+	float:left;
+}
+
+.card-likes{
+	color:#696969;
+	float:left;
+}
+
+.card-mar{
+	margin-left: 15px;
+}
+
+.max-photo-size{
+	width:100%;
+}
+
+.card-mar-top{
+	margin-top: 50px;
+}
+
+.card-about{
+	float:left;
+	margin-top:50px;
+	color:#284ecd;
+	font-size: 20px;
+}
+
+
+
+/*Footer*/
+footer{
+	padding-top:100px;
+	background: #1e1e23
+}
+
+footer p{
+	color:#999999;
+	font-size:14px;
+}
+
+.telephone-foot{
+	font-size:30px;
+	color:white;
+}
+
+.foot-padding{
+	padding: 0 30px 0 30px;
+}
+
+.foot-margin{
+	margin-top:120px;
+}
+
+.foot-input{
+	float:left;
+	padding:5px 0 15px 0;
+	background: none;
+	border-width: 0 0 1px 0;
+	border-style:solid;
+	border-color:#284ecd;
+	color:#999999;
+	transition: 0.5s;
+}
+
+.foot-input:focus{
+	border-width: 0 0 1px 0;
+	border-color:#284ecd;
+	outline:none;
+}
+
+.foot-buton{
+	padding:10px 20px 10px 20px;
+	border-radius:20px;
+	color:white;
+	background:#284ecd;
+	float:left;
+	margin-left:20px;
+}
