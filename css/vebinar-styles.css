@@ -102,6 +102,12 @@ h3{
 	margin-top:40px;
 }
 
+h2{
+	font-family:'Yeseva One';
+	font-size: 24px;
+	margin-top:10px;
+}
+
 .minus-left-mar{
 	margin-left: -21px;
 }
@@ -182,4 +188,45 @@ li p{
 	font-family:'Yeseva One';
 	font-size: 36px;
 	color:black;
+}
+
+.mar-top-find{
+	margin-top:100px;
+}
+
+.find{
+	margin-top: -40px;
+	text-align: right;
+}
+
+.find-input{
+	font-family:'Century Gothic';
+	margin-top:40px;
+	padding:20px 200px 10px 0;
+	background: none;
+	border-width: 0 0 1px 0;
+	border-style:solid;
+	border-color:black;
+	color:#696969;
+	transition: 0.1s;
+	font-size: 16px;
+	background-image: url('../img/find.png') no-repeat;
+	background-position: 4px; 
+}
+
+.find-input::-webkit-input-placeholder {color:#696969;};
+.find-input::-moz-placeholder          {color:#696969;};/* Firefox 19+ */
+.find-input:-moz-placeholder           {color:#696969;};/* Firefox 18- */
+.find-input:-ms-input-placeholder      {color:#696969;};
+
+
+.find-buton{
+	font-family:'Century Gothic';
+	border-radius:20px;
+	color:black;
+	background:#284ecd;
+	margin-top:40px;
+	text-align: center;
+	transition: 0.2s;
+	cursor:pointer;
 }
