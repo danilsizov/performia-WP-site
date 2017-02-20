@@ -5,7 +5,7 @@
  * @subpackage your-clean-template-3
  */
 ?>
-	<footer>
+	<footer class="mar-top">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3">

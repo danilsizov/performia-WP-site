@@ -16,6 +16,21 @@ get_header(); // подключаем header.php ?>
 		<div class="row">
 			<div class="col-lg-4">
 				<div class="block-tittle"><strong>Статьи и видео</strong></div>
+				<div class="catalog">
+					<ul class="catalog-sidebar">
+						<div id="passive"><li><p>Все</p></li></div>
+						<div id="passive"><li><p>Ошибки в найме</p></li></div>
+						<div id="passive"><li><p>Вовлеченность персонала</p></li></div>
+						<div id="passive"><li><p>Личные качества</p></li></div>
+						<div id="active"><li><p>Мотивация</p></li></div>
+						<div id="passive"><li><p>Объявление</p></li></div>
+						<div id="passive"><li><p>Ошибки в найме</p></li></div>
+						<div id="passive"><li><p>Вовлеченность персонала</p></li></div>
+						<div id="passive"><li><p>Личные качества</p></li></div>
+						<div id="passive"><li><p>Мотивация</p></li></div>
+						<div id="passive"><li><p>Объявление</p></li></div>
+					</ul>
+				</div>
 			</div>
 			<div class="col-lg-1"></div>
 			<div class="col-lg-7 quote">
@@ -26,7 +41,7 @@ get_header(); // подключаем header.php ?>
 							<input type="text" class="input find-input" placeholder="Введите E-mail">
 						</div>
 						<div class="col-lg-3">
-							<div class="find-buton">Подписаться</div>
+							<div class="find-buton">Искать</div>
 						</div>
 					</div>
 				</div>
@@ -129,6 +144,9 @@ get_header(); // подключаем header.php ?>
 						<div class="card-comment card-mar"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
 						<div class="card-likes card-mar"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
 					</div>
+				</div>
+				<div class="more">
+					<div class="more-button">Загрузить ещё</div>
 				</div>
 			</div>
 		</div>

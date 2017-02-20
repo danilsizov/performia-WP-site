@@ -15,13 +15,16 @@ get_header(); // подключаем header.php ?>
 <section>
 	<div class="container content">
 		<div class="row">
-			<div class="col-lg-1"></div>
-			<div class="col-lg-5">
+			<div class="col-lg-6">
 				<div class="answer-block-tittle">Ответы и вопросы</div>
 			</div>
-			<div class="col-lg-1"></div>
-			<div class="col-lg-5 quote">
-				
+			<div class="col-lg-6 quote">
+				<div class="col-lg-7">
+					<div class="not-answer">Не нашли ответ на свой вопрос? </div>
+				</div>
+				<div class="col-lg-5">
+					<div class="quetion-buton">Задать вопрос</div>
+				</div>
 			</div>
 			<div class="container content">
 			<div class="row">
