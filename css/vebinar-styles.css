@@ -470,3 +470,67 @@ li p{
 	color:#696969;
 	font-family:'Century Gothic';		
 }
+
+.nearest-event{
+	border:1px solid #c1c9e0;
+	width:100%;
+	padding:50px 100px 45px 40px;
+	margin-top:100px;
+}
+
+.nearest-micro-tittle{
+	color:#696969;
+	font-size: 16px;
+	font-family:'Century Gothic';
+}
+
+.nearest-tittle{
+	margin-top: 5px;
+	color:#373737;
+	font-size: 24px;
+	font-family:'Yeseva One';
+}
+
+.nearest-text{
+	margin-top: 20px;
+	color:#373737;
+	font-size: 16px;
+	font-family:'Century Gothic';
+}
+
+.link-to-FB{
+	margin-top: 15px;
+	color:#284ecd;
+	font-size: 20px;
+	font-family:'Century Gothic';
+	cursor:pointer;
+}
+
+.locate{
+	font-size: 16px;
+	font-family:'Century Gothic';
+	color:#2d2d2d;
+	margin-top:-10px !important;
+}
+
+.download-button{
+	position: absolute;
+	opacity:0;
+	top:50px;
+	left:110px;
+	transition: 0.5s;
+}
+
+.card-download{
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.card-download:hover .download-button{
+	opacity: 1;
+	top:90px;
+}
+
+.card-mar-top{
+	margin-top: 20px;
+}
