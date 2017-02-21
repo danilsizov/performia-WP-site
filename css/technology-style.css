@@ -1,0 +1,52 @@
+.star-text{
+	font-size: 20px;
+	color:#252525;
+	font-family:'Century Gothic';
+	margin-top: 40px;
+}
+
+.center-tittle{
+	font-size: 24px;
+	color:#373737;
+	font-family:'Century Gothic';
+	text-align: center;
+}
+
+.left-tittle{
+	font-size: 24px;
+	color:#373737;
+	font-family:'Century Gothic';
+	text-align: left;
+}
+
+.iceberg{
+	background: url('../img/iceberg.png');
+	width:100%;
+	height:1400px;
+}
+
+.iceberg-tittle{
+	color:#252525;
+	font-size: 24px;
+	font-family:'Yeseva One';
+	margin-top:40px;
+}
+
+.iceberg-text{
+	color:#252525;
+	font-size: 14px;
+	font-family:'Century Gothic';
+	margin-top:20px;
+}
+
+.mega-mar-top{
+	margin-top: 200px;
+}
+
+.bot{
+	color:white !important;
+}
+
+.ice-top{
+	margin-top: 50px !important;
+}
