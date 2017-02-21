@@ -160,7 +160,7 @@ get_header(); // подключаем header.php ?>
 					<div class="seminar">
 						<div class="nav-line"></div>
 						<div class="seminar-card">
-							<div class="seminar-tittle"><a href="http://localhost/test/wordpress/vebinar/">Вебинар. Фундамент вашей прибыли</div>
+							<div class="seminar-tittle"><a href="http://localhost/test/wordpress/vebinar/">Вебинар. Фундамент вашей прибыли</a></div>
 							<div class="seminar-photo"><img src="<?php echo get_template_directory_uri();?>/img/seminar-photo1.png"></div>
 							<div class="seminar-person">
 								<div class="seminar-person-name"><strong>Владимир Сидоренко</strong></div>
@@ -235,7 +235,16 @@ get_header(); // подключаем header.php ?>
 
 		<div class="fluid-container reviews">
 			<div class="row">
-				<div class="col-lg-6"><img src="<?php echo get_template_directory_uri();?>/img/video-big.png" class="photo"></div>
+				<div class="col-lg-6 col-md-12">
+					<div class="main-video">
+						<div class="blue-back">
+							<img src="<?php echo get_template_directory_uri();?>/img/play.png" class="play">
+						</div>
+						<video width="1200px" autoplay='autoplay' loop='loop' muted >
+						 	<source src="<?php echo get_template_directory_uri();?>/video/main-video.mp4" type='video/mp4'>
+						</video>
+					</div>
+				</div>
 				<div class="col-lg-6">
 					<div class="near-video">
 						<div class="telephone review-tittle">
@@ -356,8 +365,8 @@ get_header(); // подключаем header.php ?>
 						<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
 						<div class="card-info">
 							<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-							<div class="card-comment card-mar"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-							<div class="card-likes card-mar"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
+							<div class="card-comment card-mar-l"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
+							<div class="card-likes card-mar-l"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
 						</div>
 					</div>
 					<div class="small-card card-mar-top"> 
@@ -366,8 +375,8 @@ get_header(); // подключаем header.php ?>
 						<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
 						<div class="card-info">
 							<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-							<div class="card-comment card-mar"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-							<div class="card-likes card-mar"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
+							<div class="card-comment card-mar-l"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
+							<div class="card-likes card-mar-l"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
 						</div>
 					</div>
 					<div class="small-card small-card-mar card-mar-top">
@@ -376,8 +385,8 @@ get_header(); // подключаем header.php ?>
 						<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
 						<div class="card-info">
 							<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-							<div class="card-comment card-mar"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-							<div class="card-likes card-mar"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
+							<div class="card-comment card-mar-l"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
+							<div class="card-likes card-mar-l"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
 						</div>
 					</div>
 					<div class="small-card card-mar-top">
@@ -386,8 +395,8 @@ get_header(); // подключаем header.php ?>
 						<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
 						<div class="card-info">
 							<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-							<div class="card-comment card-mar"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-							<div class="card-likes card-mar"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
+							<div class="card-comment card-mar-l"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
+							<div class="card-likes card-mar-l"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
 						</div>
 					</div>
 					<div class="small-card small-card-mar card-mar-top">
@@ -396,8 +405,8 @@ get_header(); // подключаем header.php ?>
 						<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
 						<div class="card-info">
 							<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-							<div class="card-comment card-mar"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-							<div class="card-likes card-mar"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
+							<div class="card-comment card-mar-l"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
+							<div class="card-likes card-mar-l"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
 						</div>
 					</div>
 					<div class="card-about">

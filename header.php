@@ -46,18 +46,7 @@
 							<span>О КОМПАНИИ <div class="nav-line"></div></span>
 						</div>
 					</div>
-					<div class="collapse navbar-collapse" id="topnav">
-						<?php $args = array( // опции для вывода верхнего меню, чтобы они работали, меню должно быть создано в админке
-							'theme_location' => 'top', // идентификатор меню, определен в register_nav_menus() в functions.php
-							'container'=> false, // обертка списка, тут не нужна
-					  		'menu_id' => 'top-nav-ul', // id для ul
-					  		'items_wrap' => '<ul id="%1$s" class="nav navbar-nav %2$s">%3$s</ul>',
-							'menu_class' => 'top-menu', // класс для ul, первые 2 обязательны
-					  		'walker' => new bootstrap_menu(true) // верхнее меню выводится по разметке бутсрапа, см класс в functions.php, если по наведению субменю не раскрывать то передайте false		  		
-				  			);
-							wp_nav_menu($args); // выводим верхнее меню
-						?>
-					</div>
+					
 				</nav>
 			</div>
 		</div>
