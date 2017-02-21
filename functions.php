@@ -110,6 +110,8 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 		wp_enqueue_style( 'main', get_template_directory_uri().'/style.css' ); // основные стили шаблона
 		wp_enqueue_style( 'mstyle', get_template_directory_uri().'/css/main-styles.css' );
 		wp_enqueue_style( 'vstyle', get_template_directory_uri().'/css/vebinar-styles.css' );
+		wp_enqueue_style( 'textstyle', get_template_directory_uri().'/css/style-text.css' );
+		wp_enqueue_style( 'aboutstyle', get_template_directory_uri().'/css/about-style.css' );
 	}
 }
 

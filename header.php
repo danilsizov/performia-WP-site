@@ -36,13 +36,13 @@
 					<div class="col-lg-1">  </div>
 					<div class="col-lg-9">
 						<div class="nav-buttons">
-							<span>ГЛАВНАЯ 	<div class="nav-line"></div></span><span> &bull;</span>
-							<span>О ТЕХНОЛОГИИ <div class="nav-line"></div></span><span> &bull;</span>
-							<span>ОБУЧЕНИЕ НАЙМУ <div class="nav-line"></div></span><span> &bull;</span>
-							<span>ОТЗЫВЫ <div class="nav-line"></div></span><span> &bull;</span>
-							<span>СТАТЬИ И ВИДЕО <div class="nav-line"></div></span><span> &bull;</span>
-							<span>МЕРОПРИЯТИЯ <div class="nav-line"></div></span><span> &bull;</span>
-							<span>ИНСТРУМЕНТЫ И ПОМОЩЬ <div class="nav-line"></div></span><span> &bull;</span>
+							<span>ГЛАВНАЯ 	<div class="nav-line"></div></span><span><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span>О ТЕХНОЛОГИИ <div class="nav-line"></div></span><span><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span>ОБУЧЕНИЕ НАЙМУ <div class="nav-line"></div></span><span><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span>ОТЗЫВЫ <div class="nav-line"></div></span><span> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span>СТАТЬИ И ВИДЕО <div class="nav-line"></div></span><span> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span>МЕРОПРИЯТИЯ <div class="nav-line"></div></span><span><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span>ИНСТРУМЕНТЫ И ПОМОЩЬ <div class="nav-line"></div></span><span> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
 							<span>О КОМПАНИИ <div class="nav-line"></div></span>
 						</div>
 					</div>

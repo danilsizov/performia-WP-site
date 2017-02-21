@@ -96,18 +96,6 @@
 	margin-top:30px;
 }
 
-h3{
-	font-family:'Century Gothic';
-	font-size: 24px;
-	margin-top:40px;
-}
-
-h2{
-	font-family:'Yeseva One';
-	font-size: 24px;
-	margin-top:10px;
-}
-
 .minus-left-mar{
 	margin-left: -21px;
 }
@@ -131,19 +119,6 @@ ol li{
 
 li p{
 	color:black;
-}
-
-.about-tittle{
-	margin-top: 20px;
-	font-size:48px;
-	font-family:'Yeseva One';
-	color:#373737;
-}
-
-.description{
-	font-size:16px;
-	font-family:'Yeseva One';
-	color:#373737;
 }
 
 .grey-line{
@@ -308,20 +283,6 @@ li p{
 	border-radius: 5px;
 }
 
-.answer-block-tittle{
-	font-family:'Yeseva One';
-	color:#373737;
-	font-size:48px;
-	text-align: left;
-}
-
-.not-answer{
-	font-family:'Century Gothic';
-	color:#696969;
-	font-size:16px;
-	margin-top: 30px;
-}
-
 .quetion-buton{
 	padding:10px 0 10px 0;
 	font-family:'Century Gothic';
@@ -339,12 +300,6 @@ li p{
 	/*margin-top:51px !important;
 	padding:11px 0 11px 0;*/
 	border-radius: 5px;
-}
-
-.block-number{
-	color:#2d2d2d;
-	font-size:24px;
-	font-family:'Yeseva One';
 }
 
 .block-about{
@@ -406,22 +361,11 @@ li p{
 	margin-top:50px;
 }
 
-.price-card-tittle{
-	font-size: 24px;
-	color:#2d2d2d;
-	font-family:'Century Gothic';
-}
-
 .card-line{
 	background: #284ecd;
 	height:1px;
 	margin-top:10px;
 	width:35px;
-}
-
-.duration{
-	color:#696969;
-	font-size:18px;
 }
 
 .price-list{
@@ -431,44 +375,14 @@ li p{
 	font-family:'Century Gothic';
 }
 
-.clock{
-	color:#696969;
-	font-size:18px;
-	font-family:'Century Gothic';
-}
-
-.name-of-event{
-	color:#252525;
-	font-size:18px;
-	font-family:'Century Gothic';
-}
 
 .plan-mar{
 	margin-top:20px;
 }
 
-.micro-text p{
-	margin-top:10px;
-	font-size:12px;
-	font-family:'Century Gothic';
-	color:#252525;
-}
 
 .wi-fi{
 	margin-top: 10px;
-}
-
-.coment-person-name{
-	margin-top: 30px;
-	font-size: 24px;
-	color:#373737;
-	font-family:'Yeseva One';	
-}
-
-.coment-person-position{
-	font-size: 14px;
-	color:#696969;
-	font-family:'Century Gothic';		
 }
 
 .nearest-event{
@@ -480,20 +394,6 @@ li p{
 
 .nearest-micro-tittle{
 	color:#696969;
-	font-size: 16px;
-	font-family:'Century Gothic';
-}
-
-.nearest-tittle{
-	margin-top: 5px;
-	color:#373737;
-	font-size: 24px;
-	font-family:'Yeseva One';
-}
-
-.nearest-text{
-	margin-top: 20px;
-	color:#373737;
 	font-size: 16px;
 	font-family:'Century Gothic';
 }
