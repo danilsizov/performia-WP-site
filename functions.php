@@ -114,6 +114,7 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 		wp_enqueue_style( 'aboutstyle', get_template_directory_uri().'/css/about-style.css' );
 		wp_enqueue_style( 'tecstyle', get_template_directory_uri().'/css/technology-style.css' );
 		wp_enqueue_style( 'toolstyle', get_template_directory_uri().'/css/tools-style.css' );
+		wp_enqueue_style( 'resp', get_template_directory_uri().'/css/responce.css' );
 	}
 }
 

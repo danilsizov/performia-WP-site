@@ -1,0 +1,40 @@
+@media screen and (min-width:100px) and (max-width:1024px) {
+	.main-programm-card{
+		height:100px;
+	}
+	.seminar-price{
+		margin-left:330px;
+	}
+
+	.problem-makers{
+		top:295px;
+	}
+	.pasagers{
+		top:220px;
+	}
+	.doers{
+		top:255px;
+	}
+	.performer{
+		top:280px;
+	}
+
+	.white-back{
+		background: rgba(255, 255, 255, 0.8);
+		border-radius: 5px;
+		padding:5px 5px 0 0;
+	}
+
+	.blue-back{
+		display:none;
+	}
+
+	.blue-back:hover{
+		display:none;
+	}
+
+
+	.telephone{
+		display:none;
+	}
+}
