@@ -28,6 +28,7 @@
 	<?php wp_head(); // необходимо для работы плагинов и функционала ?>
 </head>
 <body <?php body_class(); // все классы для body ?>>
+<div class="overlow" id="black-back" onclick="openBurger(false)"></div>
 	<header>
 		<div class="container">
 			<div class="row">
@@ -36,17 +37,27 @@
 					<div class="col-lg-1">  </div>
 					<div class="col-lg-9">
 						<div class="nav-buttons">
-							<span>ГЛАВНАЯ 	<div class="nav-line"></div></span><span><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span>О ТЕХНОЛОГИИ <div class="nav-line"></div></span><span><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span>ОБУЧЕНИЕ НАЙМУ <div class="nav-line"></div></span><span><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span>ОТЗЫВЫ <div class="nav-line"></div></span><span> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span>СТАТЬИ И ВИДЕО <div class="nav-line"></div></span><span> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span>МЕРОПРИЯТИЯ <div class="nav-line"></div></span><span><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span>ИНСТРУМЕНТЫ И ПОМОЩЬ <div class="nav-line"></div></span><span> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span>О КОМПАНИИ <div class="nav-line"></div></span>
+							<span style="margin-left:-28px; margin-top:5px">ГЛАВНАЯ <div class="nav-line"></div></span><span style="margin-left:8px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px">О ТЕХНОЛОГИИ <div class="nav-line"></div></span><span style="margin-left:5px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:9px; margin-top:5px">ОБУЧЕНИЕ НАЙМУ <div class="nav-line"></div></span><span style="margin-left:6px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px">ОТЗЫВЫ <div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px">СТАТЬИ И ВИДЕО <div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px">МЕРОПРИЯТИЯ <div class="nav-line"></div></span><span style="margin-left:6px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px">ИНСТРУМЕНТЫ И ПОМОЩЬ <div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px">О КОМПАНИИ <div class="nav-line"></div></span>
+						</div>
+						<div class="burger-open" onclick="openBurger(true)"><img src="<?php echo get_template_directory_uri();?>./img/menu.png"></div>
+						<div class="burger" id="burger">
+							<div class="nav-text">Главная</div>
+							<div class="nav-text">О технологии</div>
+							<div class="nav-text">Обучение найму</div>
+							<div class="nav-text">Отзывы</div>
+							<div class="nav-text">Статья и видео</div>
+							<div class="nav-text">Мероприятия</div>
+							<div class="nav-text">Инструменты и помощь</div>
+							<div class="nav-text">О компании</div>
 						</div>
 					</div>
-					
 				</nav>
 			</div>
 		</div>

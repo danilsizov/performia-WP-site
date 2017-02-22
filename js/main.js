@@ -10,6 +10,7 @@ var photoArray = [
 
 
 var i = 0;
+var j = 3;
 
 var next = function(operation){
 	var quoteArray = [document.getElementById('quote0'),document.getElementById('quote1'),document.getElementById('quote2'),document.getElementById('quote3'),document.getElementById('quote4')];
@@ -49,5 +50,35 @@ var next = function(operation){
 		positionArray[i].style.opacity = '1';
 	}
 
+}
+
+var comentNext = function(operation){
+	var comentArray = [document.getElementById('com1'), document.getElementById('com2'), document.getElementById('com3'), document.getElementById('com4'), document.getElementById('com5')];
+	comentArray[0].style.transition="0.5s"
+	comentArray[0].style.position="absolute";
+	comentArray[0].style.left = "0";
+}
+
+var openBurger = function(oper){
+	var bur = document.getElementById('burger');
+	var back = document.getElementById('black-back');	
+	if(oper){
+		bur.style.display="block";
+		back.style.display = "block";
+		var burger1 = function(){
+			bur.style.left = "0px";
+			back.style.opacity = "0.7";
+		}
+		setTimeout(burger1, 500);
+		oper=false;
+	}else{
+		back.style.display = "none";
+		var burger2 = function(){
+			bur.style.left = "-300px";
+		}
+		setTimeout(burger2, 500);
+		bur.style.display="none";
+		oper=true;
+	}
 }
 

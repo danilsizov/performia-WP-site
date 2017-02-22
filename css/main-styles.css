@@ -130,13 +130,6 @@ header{
 	width:91%;
 }
 
-.main-video:hover .blue-back{
-	opacity: 1;
-	display: block;
-	z-index: 100;
-	background: rgba(40,78,205,0.5);
-}
-
 .near-video{
 	padding:0;
 }
@@ -486,10 +479,6 @@ header{
 	font-family:'Century Gothic';
 	font-size:16px;
 	margin-top:50px;
-}
-
-.review-tittle{
-	font-family:'Century Gothic Bold' !important;
 }
 
 .reviews-slider{

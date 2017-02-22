@@ -47,3 +47,18 @@
 	font-family:'Century Gothic';
 	cursor:pointer;
 }
+
+.burger{
+	float:right;
+	display: none;
+}
+
+.burger-open{
+	float:right;
+	display: none;
+	margin-top:-20px;
+}
+
+.mar-left{
+	margin-left: -20px;
+}
