@@ -50,3 +50,28 @@
 .ice-top{
 	margin-top: 50px !important;
 }
+
+.post-exaples-tittle{
+	font-size: 16px;
+	color:#252525;
+	font-family:'Century Gothic';
+	float:left;
+	margin-top: 20px;
+}
+
+.post-exaples{
+	font-size: 16px;
+	color:#284ecd;
+	font-family:'Century Gothic';
+	float:right;
+	margin-right:15px;
+	margin-top: 20px;
+	padding-bottom:20px;
+}
+
+.active-example{
+	font-size: 16px;
+	color:#252525;
+	font-family:'Century Gothic';
+	margin-top: 20px;
+}

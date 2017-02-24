@@ -18,8 +18,7 @@ get_header(); // подключаем header.php ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8">
-				<div class="vebinar-tittle-small">Вебинар</div>
-				<div class="vebinar-tittle">
+				<div class="vebinar-tittle" style="margin-top:60px">
 					Перформия<br>
 					обучает найму<br> 
 					более 32 лет
@@ -28,21 +27,21 @@ get_header(); // подключаем header.php ?>
 			<div class="col-lg-3">
 				<div class="telephone-black">099 547-89-45</div>
 				<div class="invite">Заявка на участие</div>
-				<input type="text" class="input mar-top-input" placeholder="Введите E-mail">
-				<input type="text" class="input" placeholder="Введите E-mail">
-				<input type="text" class="input" placeholder="Введите E-mail">
-				<div class="invite-buton">Подписаться</div>
+				<input type="text" class="input mar-top-input" placeholder="Введите Имя">
+				<input type="text" class="input" placeholder="Телефон">
+				<input type="text" class="input" placeholder="E-mail">
+				<div class="invite-buton">Жду звонка</div>
 			</div>
 		</div>
 	</div>
 	<div class="container content">
 		<div class="row">
 			<div class="col-lg-4">
-				<div class="block-tittle">Партнёры</div>
+				<div class="block-tittle" style="margin-top:40px">Наща цель</div>
 			</div>
 			<div class="col-lg-1"></div>
 			<div class="col-lg-7 quote">
-				<div class="nav-line"></div>
+				<div class="nav-line" style="margin-top:50px"></div>
 				<div class="quote-text">
 					<p>Возрождать здоровую экономику, обучая и помогая каждой компании нанимать тех, кто действительно принесет пользу, что неизбежно приводит к расширению и созданию новых рабочих  мест.</p>
 
@@ -63,7 +62,8 @@ get_header(); // подключаем header.php ?>
 				<div class="col-lg-7 quote">
 					<div class="partners">
 						<div class="main-partners">
-							<div class="row">
+						<div class="row "><div class="col-lg-12"><div class="block-number-line small-mar-top"></div></div></div>
+							<div class="row small-mar-top">
 								<div class="col-lg-2"><div class="logo-partner"><img src="<?php echo get_template_directory_uri();?>/img/logo1.png"></div></div>
 								<div class="col-lg-8">
 									<div class="partners-info">
@@ -108,7 +108,8 @@ get_header(); // подключаем header.php ?>
 					<div class="col-lg-1"></div>
 					<div class="col-lg-7 quote">
 						<div class="row card-mar">
-							<div class="col-lg-6">
+						<div class="nav-line" style="width:100px; margin-top:-30px; margin-left:14px"></div>
+							<div class="col-lg-6" style="margin-top:50px">
 								<div class="vacancies-card">
 									<div class="vacancies-card-tittle">
 										Cпециалист<br>
@@ -125,7 +126,7 @@ get_header(); // подключаем header.php ?>
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-6" style="margin-top:50px">
 								<div class="vacancies-card">
 									<div class="vacancies-card-tittle">
 										Cпециалист<br>
@@ -200,13 +201,26 @@ get_header(); // подключаем header.php ?>
 						</div>		
 					</div>
 				</div>
-
 			</div>
 
 			<div class="row">
 				<div class="col-lg-5"></div>
 				<div class="col-lg-7">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.4369804316957!2d30.510167516109636!3d50.47020817947809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce137b4035cf%3A0x25f21b5051ce9827!2z0LLRg9C70LjRhtGPINCp0LXQutCw0LLQuNGG0YzQutCwLCDQmtC40ZfQsg!5e0!3m2!1sru!2sua!4v1487600294546" width="1200px" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<div class="map-tittle" style="margin-top:70px;">
+						<div class="row">
+							<div class="col-lg-2" style="margin-top:-3px">На карте </div>
+							<div onclick="openMap(1)" class="map-active map-tittle-city col-lg-1">КИЕВ <div class="nav-line-map"></div></div>
+							<div onclick="openMap(2)" class="map-tittle-city col-lg-1" >ОДЕСА <div class="nav-line"></div></div>
+						</div>
+					</div>
+
+					<div id="first-map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.4369804316957!2d30.510167516109636!3d50.47020817947809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce137b4035cf%3A0x25f21b5051ce9827!2z0LLRg9C70LjRhtGPINCp0LXQutCw0LLQuNGG0YzQutCwLCDQmtC40ZfQsg!5e0!3m2!1sru!2sua!4v1487600294546" width="1200px" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					<div id="sec-map">
+
+					</div>
+					<div class="last-tittle">Люди - это главное</div>
 				</div>
 			</div>
 		</div>

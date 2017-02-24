@@ -80,9 +80,11 @@ get_header(); // подключаем header.php ?>
 					<div class="card-tag">Вовлеченность персонала</div>
 					<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
 					<div class="card-info">
-						<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-						<div class="card-comment card-mar"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-						<div class="card-likes card-mar"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
+						<div class="row">
+							<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
+							<div class="card-comment card-mar"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
+							<div class="card-likes card-mar"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
+						</div>
 					</div>
 				</div>
 				<div class="small-card small-card-mar card-mar-top">

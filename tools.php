@@ -28,24 +28,27 @@ get_header(); // подключаем header.php ?>
 			<div class="col-lg-3">
 				<div class="telephone-black">099 547-89-45</div>
 				<div class="invite">Заявка на участие</div>
-				<input type="text" class="input mar-top-input" placeholder="Введите E-mail">
-				<input type="text" class="input" placeholder="Введите E-mail">
-				<input type="text" class="input" placeholder="Введите E-mail">
+				<input type="text" class="input mar-top-input" placeholder="Введите имя">
+				<input type="text" class="input" placeholder="Телефон">
+				<input type="text" class="input" placeholder="E-mail">
 				<div class="invite-buton">Подписаться</div>
 			</div>
 		</div>
 		<div class="container content">
 			<div class="row">
 				<div class="col-lg-4">
-					<div class="block-tittle">Интерспидия</div>
+					<div class="block-tittle" style="margin-top:40px">Интерспидия</div>
 				</div>
 				<div class="col-lg-1"></div>
 				<div class="col-lg-7 quote">
-					<div class="nav-line"></div>
+					<div class="nav-line" style="margin-top:50px"></div>
 					<div class="quote-text">
-						<p>"Пришлите свое резюме на email...", - обычно именно так заканчиваются объявления о работе на корпоративных сайтах большинства компаний. Этот способ, с одной стороны, очень прост и удобен для кандидатов, с другой стороны, он трудоемкий для службы персонала.</p>
-						<p><img src="<?php echo get_template_directory_uri();?>/img/mac.png" class="mega-minus-left-mar"></p>
-						<p>С появлением на рынке удобной интернет-системы "(Interspeedia)" службы персонала большинства компаний обрели возможность существенно избавить себя от лишней, искусственной, работы. При этом "ИНТЕРСПИДИЯ" добавила новые возможности, о которых менеджеры по найму из малого и среднего бизнеса до сегодняшнего дня могли только мечтать. Судите сами.</p>
+						<p  style="margin-top: 60px; margin-left: -15px; line-height:1.69;">"Пришлите свое резюме на email...", - обычно именно так заканчиваются объявления о работе на корпоративных сайтах большинства компаний. Этот способ, с одной стороны, очень прост и удобен для кандидатов, с другой стороны, он трудоемкий для службы персонала.</p>
+						<p><img src="<?php echo get_template_directory_uri();?>/img/mac.png" class="mega-minus-left-mar"  style="margin-left: -105px; line-height:1.69;"></p>
+						<p  style="margin-top: 60px; margin-left: -15px; line-height:1.69;">С появлением на рынке удобной интернет-системы "(Interspeedia)" службы персонала большинства компаний обрели возможность существенно избавить себя от лишней, искусственной, работы. При этом "ИНТЕРСПИДИЯ" добавила новые возможности, о которых менеджеры по найму из малого и среднего бизнеса до сегодняшнего дня могли только мечтать. Судите сами.</p>
+					</div>
+					<div class="about" style="margin-top: 60px; margin-left: -15px; line-height:1.69;">
+						Подробнее о технологии >
 					</div>
 				</div>
 			</div>

@@ -21,7 +21,7 @@ var next = function(operation){
 	quoteArray[i].style.transition = '0.4s';
 	nameArray[i].style.transition = '0.4s';
 	positionArray[i].style.transition = '0.4s';
-	personPhoto.style.backgroundPosition = '150% 100%';
+	personPhoto.style.backgroundPosition = '250% 100%';
 	quoteArray[i].style.opacity = '0';
 	nameArray[i].style.opacity = '0';
 	positionArray[i].style.opacity = '0';
@@ -41,7 +41,13 @@ var next = function(operation){
 		personPhoto.style.transition = '0s';
 		personPhoto.style.backgroundImage = 'url(' + photoArray[i] + ')';	
 		personPhoto.style.transition = '0.4s';
-		personPhoto.style.backgroundPosition = '85% 100%';
+		if(window.innerWidth>1860){
+			personPhoto.style.backgroundPosition = '85% 100%';
+		}else if(window.innerWidth<1860 && window.innerWidth>1500){
+			personPhoto.style.backgroundPosition = '100% 100%';
+		}else if(window.innerWidth<1500 && window.innerWidth>1024){
+			personPhoto.style.backgroundPosition = '120% 100%';
+		}
 		quoteArray[i].style.display = 'block';
 		nameArray[i].style.display = 'block';
 		positionArray[i].style.display = 'block';
@@ -82,3 +88,9 @@ var openBurger = function(oper){
 	}
 }
 
+var openVideoWindow = function(){
+	var videoWindow = document.getElementById('video-window');
+	var back = document.getElementById('black-back');	
+	videoWindow.style.display = "block"
+	back.style.display = "block"
+}

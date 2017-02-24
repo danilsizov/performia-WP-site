@@ -37,11 +37,11 @@ get_header(); // подключаем header.php ?>
 		<div class="container content">
 			<div class="row">
 				<div class="col-lg-4">
-					<div class="block-tittle">О программе</div>
+					<div class="block-tittle" style="margin-top:40px">О программе</div>
 				</div>
 				<div class="col-lg-1"></div>
 				<div class="col-lg-7 quote">
-					<div class="nav-line"></div>
+					<div class="nav-line" style="margin-top:50px"></div>
 					<div class="quote-text">
 						<p>Наем персонала является ключевой областью в деятельности любой организации, однако зачастую важность ее недооценивается.</p>
 
@@ -167,19 +167,19 @@ get_header(); // подключаем header.php ?>
 			<div class="row">
 			<div class="col-lg-4"></div>
 				<div class="col-lg-2">
-					<input type="text" class="input mar-top-input" placeholder="Введите E-mail">
+					<input type="text" class="input mar-top-input" placeholder="Введите имя">
 				</div>
 			</div>
 			<div class="row">
 			<div class="col-lg-4"></div>
 				<div class="col-lg-2">
-					<input type="text" class="input" placeholder="Введите E-mail">
+					<input type="text" class="input" placeholder="Телефон">
 				</div>
 			</div>
 			<div class="row">
 			<div class="col-lg-4"></div>
 				<div class="col-lg-2">
-					<input type="text" class="input" placeholder="Введите E-mail">
+					<input type="text" class="input" placeholder="E-mail">
 				</div>
 			</div>
 			<div class="row">

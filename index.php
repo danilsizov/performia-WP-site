@@ -5,12 +5,14 @@
  * @subpackage your-clean-template-3
  */
 get_header(); // подключаем header.php ?> 
+<div id="video-window"></div>
+<div id="video-overlow"></div>
 <section>
-	<div class="fluid-container">
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
 				<div class="main-video">
-					<div class="blue-back" style="height:631px">
+					<div class="blue-back" style="margin-left:0;margin-top: 0px;height: 634px; width: 858px;" onclick="openVideoWindow()">
 						<img src="<?php echo get_template_directory_uri();?>/img/play.png" class="play">
 					</div>
 					<video width="1200px" autoplay='autoplay' loop='loop' muted >
@@ -29,8 +31,9 @@ get_header(); // подключаем header.php ?>
 						Нашей технологии доверяют:<br>
 						<div class="logos row">
 							<div class="col-lg-2 col-xs-12"><img src="<?php echo get_template_directory_uri();?>/img/Ikea.png" class="logo-partners" style="margin-top:-15px; margin-left:2px"></div>
-							<div class="col-lg-2 col-xs-12"><img src="<?php echo get_template_directory_uri();?>/img/IBM.png" class="logo-partners" style="margin-top:-14px; margin-left:-5px"></div>
-							<div class="col-lg-2 col-xs-12"><img src="<?php echo get_template_directory_uri();?>/img/Toyota.png" class="logo-partners" style="margin-top:-11px; margin-left:-36px"></div>
+							<div class="col-lg-2 col-xs-12"><img src="<?php echo get_template_directory_uri();?>/img/IBM.png" class="logo-partners" style="margin-top:-14px; margin-left:57px"></div>
+							<div class="col-lg-2 col-xs-12"><img src="<?php echo get_template_directory_uri();?>/img/Toyota.png" class="logo-partners" style="margin-top:-14px; margin-left:90px"></div>
+							<div class="col-lg-2 col-xs-12"><img src="<?php echo get_template_directory_uri();?>/img/3dots.png" class="logo-partners" style="margin-top:-5px; margin-left:225px"></div>
 						</div>
 					</div>
 				</div>
@@ -126,10 +129,30 @@ get_header(); // подключаем header.php ?>
 					</div>
 					<div class="truck" style="margin-top: 80px; margin-left: -25px;">
 						<div class="truck-photo">
-							<div class="performer" style="margin-top: 34px; margin-left: -26px;"></div>
-							<div class="doers" style="margin-top: 43px; margin-left: -23px;"></div>
-							<div class="pasagers" style="margin-top: 39px; margin-left: -21px;"></div>
-							<div class="problem-makers" style="margin-top: 35px; margin-left: -29px;"></div>
+							<div class="performer" style="margin-top: 34px; margin-left: -26px;">
+								<div class="perf-win">
+									<h5>Перформеры</h5>
+									<p>Сотрудники, которые всегда смотрят на конечный результат и производят его. </p>
+								</div>
+							</div>
+							<div class="doers" style="margin-top: 43px; margin-left: -23px;">
+								<div class="doers-win">
+									<h5>Делатели</h5>
+									<p>Это люди, которые желают делать (выполнять работу или поручения). Ключевой фактор — степень желания и готовности. Делателю нужно указывать, что делать. </p>
+								</div>
+							</div>
+							<div class="pasagers" style="margin-top: 39px; margin-left: -21px;">
+								<div class="pas-win">
+									<h5>Пассажири</h5>
+									<p>«Пассажиры» не проявляют большого желания делать работу. Однако они нередко требуют, чтобы их «мотивировали», «носили на руках», всеми путями стремятся уклониться от работы или перевалить ее на других. </p>
+								</div>
+							</div>
+							<div class="problem-makers" style="margin-top: 35px; margin-left: -29px;">
+								<div class="pas-win">
+									<h5>Создатели проблем</h5>
+									<p>Это те сотрудники, которые создают такое количество проблем, что не под силу справиться ни одному руководителю. Отличительные черты: производительность нестабильна, постоянные ошибки, часто критикуют своих коллег</p>
+								</div>
+							</div>
 							<img src="<?php echo get_template_directory_uri();?>/img/truck.png">
 						</div>
 						<div class="truck-text" style="margin-top: 44px; margin-left: 32px; line-height:1.69;">
@@ -150,7 +173,7 @@ get_header(); // подключаем header.php ?>
 				</div>
 			</div>
 		</div>
-		<div class="container content">
+		<div class="container content" id="vebinar">
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="block-tittle" style="margin-top: -2px; margin-right: -22px; line-height: 1.25;">Семинары<br> и вебинары</div>
@@ -262,12 +285,12 @@ get_header(); // подключаем header.php ?>
 								Основатель компании «Кровля-центр»
 							</div>
 							<div class="person-slider-buttons">
-								<button class="pre" onclick="comentNext(1)"><img src="<?php echo get_template_directory_uri();?>/img/pre.png"></button>
-								<button class="next" onclick="comentNext(-1)"><img src="<?php echo get_template_directory_uri();?>/img/next.png"></button>
+								<button class="pre"><img src="<?php echo get_template_directory_uri();?>/img/pre.png"></button>
+								<button class="next" ><img src="<?php echo get_template_directory_uri();?>/img/next.png"></button>
 							</div>
 							<div class="cards-review row">
 								<div id="com1">
-									<div class="col-lg-4" id='com1'>
+									<div class="col-lg-4" id='com1' style="margin-top: 40px;">
 										<div class="card-review" style="margin-top: 12px; margin-left: -1px; ">
 											<div class="review-video"><img src="<?php echo get_template_directory_uri();?>/img/video1.png"></div>
 											<div class="review-person-name">Леонид Балкашинов</div>
@@ -279,7 +302,7 @@ get_header(); // подключаем header.php ?>
 									</div>
 								</div>
 								<div id="com2">
-									<div class="col-lg-4" id='com1'>
+									<div class="col-lg-4" id='com1' style="margin-top: 40px;">
 										<div class="card-review" style="margin-top: 12px; margin-left: 80px; ">
 											<div class="review-video"><img src="<?php echo get_template_directory_uri();?>/img/video1.png"></div>
 											<div class="review-person-name">Леонид Балкашинов</div>
@@ -291,7 +314,7 @@ get_header(); // подключаем header.php ?>
 									</div>
 								</div>
 								<div id="com3">
-									<div class="col-lg-4" id='com1'>
+									<div class="col-lg-4" id='com1' style="margin-top: 40px;">
 										<div class="card-review" style="margin-top: 12px; margin-left: 162px; ">
 											<div class="review-video"><img src="<?php echo get_template_directory_uri();?>/img/video1.png"></div>
 											<div class="review-person-name">Леонид Балкашинов</div>

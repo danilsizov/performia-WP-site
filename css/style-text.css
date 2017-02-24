@@ -121,3 +121,59 @@ h2{
 .review-tittle{
 	font-family:'Yeseva One';
 }
+
+.map-tittle{
+	margin-bottom:20px;
+	font-size: 16px;
+	font-family:'Century Gothic';
+	margin-bottom:20px;
+}
+
+.map-tittle-city{
+	cursor:pointer;
+	font-size: 12px !important;
+	color:#284ecd;
+	font-family:'Century Gothic' !important;
+	margin-left:20px;
+}
+
+.map-active{
+	color:#373737 !important;
+}
+
+.nav-line-map{
+	position:relative;
+	width:20px;
+	height:1px;
+	border-width: 0 0 1px 0;
+	border-style:solid;
+	border-color:#284ecd;
+	transition:0.5s;
+}
+
+.last-tittle{
+	font-size: 24px;
+	font-family:'Century Gothic';
+	color:#373737;
+	margin-top:70px;
+	padding-bottom: 70px;
+}
+
+.economy{
+	color:#41c3ac;
+	font-size: 18px;
+	font-family:'Century Gothic';
+	margin-top:20px;
+	margin-left: -20px;
+}
+
+a{
+	color:#545454;
+	border-width:0;
+	text-decoration:none;
+}
+
+a:focus, a:hover {
+    color: #545454 !important;
+    text-decoration: none !important;
+}

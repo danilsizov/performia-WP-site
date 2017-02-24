@@ -86,12 +86,6 @@ header{
 
 
 /*Video Block*/
-@media all and (max-width: 1200px) {
-  	.white-back {
-	    /*background: rgba(255,255,255,0.7);*/
-	    background-color:rgba(255,255,255,0.3);
-	}
-}
 
 .white-back {
     background: rgba(255,255,255,0);
@@ -120,14 +114,16 @@ header{
 
 .play{
 	position: relative;
-	top:40%;
-	left:45%;
+	top:41%;
+	left:66%;
 }
 
 .main-video{
+	margin-left: -382px;
 	overflow:hidden; 
 	transition: 0.5s;
-	width:91%;
+	width:857px;
+	height: 633px;
 }
 
 .near-video{
@@ -298,6 +294,107 @@ header{
 	font-size: 20px;
 }
 
+.perf-win{
+	color:#373737;
+	position:absolute;
+	width:150px;
+	left:-65px;
+	top:-150px;
+	display:none;
+	text-align: center;
+	background: white;
+	transition:0.5s;
+	padding:5px;
+	display:none;
+	-webkit-box-shadow: 0px 0px 27px 0px rgba(55, 50, 50, 0.61);
+-moz-box-shadow:    0px 0px 27px 0px rgba(55, 50, 50, 0.61);
+box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
+}
+
+.doers-win{
+	color:#373737;
+	position:absolute;
+	width:150px;
+	left:-65px;
+	top:-200px;
+	display:none;
+	text-align: center;
+	background: white;
+	transition:0.5s;
+	padding:5px;
+	display:none;
+	-webkit-box-shadow: 0px 0px 27px 0px rgba(55, 50, 50, 0.61);
+	-moz-box-shadow:    0px 0px 27px 0px rgba(55, 50, 50, 0.61);
+	box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
+	transition: 0.5s;
+}
+
+.pas-win{
+	color:#373737;
+	position:absolute;
+	width:200px;
+	left:-95px;
+	top:-220px;
+	display:none;
+	text-align: center;
+	background: white;
+	transition:0.5s;
+	padding:5px;
+	display:none;
+	-webkit-box-shadow: 0px 0px 27px 0px rgba(55, 50, 50, 0.61);
+	-moz-box-shadow:    0px 0px 27px 0px rgba(55, 50, 50, 0.61);
+	box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
+	transition: 0.5s;
+}
+
+.performer:hover .perf-win{
+	display:block;
+}
+
+.doers:hover .doers-win{
+	display:block;
+}
+
+.pasagers:hover .pas-win{
+	display:block;
+}
+
+.problem-makers:hover .pas-win{
+	display:block;
+}
+
+.pas-win h6{
+	font-size:16px;
+	font-family:'Century Gothic Bold';
+}
+
+.pas-win p{
+	font-size:12px;
+	font-family:'Century Gothic';
+}
+
+
+.doers-win h6{
+	font-size:16px;
+	font-family:'Century Gothic Bold';
+}
+
+.doers-win p{
+	font-size:12px;
+	font-family:'Century Gothic';
+}
+
+
+
+.perf-win h6{
+	font-size:16px;
+	font-family:'Century Gothic Bold';
+}
+
+.perf-win p{
+	font-size:12px;
+	font-family:'Century Gothic';
+}
 
 
 
@@ -493,12 +590,14 @@ header{
 	font-family:'Yeseva One';
 	color:black;
 	font-size: 16px;
+	width: 200px;
 }
 
 .review-person-position{
 	font-family:'Century Gothic';
 	color:#696969;
 	font-size: 14px;
+	width: 200px;
 }
 
 .review-video{

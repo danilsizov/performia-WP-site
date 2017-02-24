@@ -29,10 +29,10 @@ get_header(); // подключаем header.php ?>
 			<div class="col-lg-3">
 				<div class="telephone-black">099 547-89-45</div>
 				<div class="invite">Заявка на участие</div>
-				<input type="text" class="input mar-top-input" placeholder="Введите E-mail">
-				<input type="text" class="input" placeholder="Введите E-mail">
-				<input type="text" class="input" placeholder="Введите E-mail">
-				<div class="invite-buton">Подписаться</div>
+				<input type="text" class="input mar-top-input" placeholder="Введите имя">
+				<input type="text" class="input" placeholder="Телефон">
+				<input type="text" class="input" placeholder="E-mail">
+				<div class="invite-buton">Жду звонка</div>
 			</div>
 		</div>
 		<div class="container content">
@@ -245,6 +245,7 @@ get_header(); // подключаем header.php ?>
 							<li><p><strong>88 000 грн</strong></p></li>
 							<li><p>80 000 грн <img src="<?php echo get_template_directory_uri();?>/img/hint.png"></p></li>
 							<li><p class="duration">8-9 дней</p></li>
+							<p class="economy">Экономия 8 000 грн</p>
 						</ul>
 					</div>
 				</div>
@@ -256,6 +257,7 @@ get_header(); // подключаем header.php ?>
 							<li><p><strong>108 000 грн</strong></p></li>
 							<li><p>98 000 грн <img src="<?php echo get_template_directory_uri();?>/img/hint.png"></p></li>
 							<li><p class="duration">11-12 дней</p></li>
+							<p class="economy">Экономия 12 000 грн</p>
 						</ul>
 					</div>
 				</div>

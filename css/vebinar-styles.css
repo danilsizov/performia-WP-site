@@ -1,3 +1,8 @@
+ a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+   } 
+
+
 .blue-background{
 	position: absolute;
 	height:560px;
@@ -46,7 +51,7 @@
 .input{
 	font-family:'Century Gothic';
 	margin-top:40px;
-	padding:5px 300px 15px 0;
+	padding:5px 200px 15px 0;
 	background: none;
 	border-width: 0 0 1px 0;
 	border-style:solid;
@@ -86,10 +91,7 @@
 }
 
 .invite-buton:hover{
-	margin-top:37px;
-	margin-left:-3px;
-	padding:13px 13px 13px 13px;
-	border-radius:10px;
+	border-radius:5px;
 }
 
 .quote-text p{
@@ -358,7 +360,7 @@ li p{
 }
 
 .card-mar{
-	margin-top:50px;
+	margin-left:10px;
 }
 
 .card-line{
@@ -433,4 +435,14 @@ li p{
 
 .card-mar-top{
 	margin-top: 20px;
+}
+
+.video-window{
+	position:fixed;
+	top:40%;
+	margin-left:auto;
+	margin-right:auto;
+	display: none;
+	width:600px;
+	height:400px;
 }

@@ -37,14 +37,14 @@
 					<div class="col-lg-1">  </div>
 					<div class="col-lg-9">
 						<div class="nav-buttons">
-							<span style="margin-left:-28px; margin-top:5px">ГЛАВНАЯ <div class="nav-line"></div></span><span style="margin-left:8px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px">О ТЕХНОЛОГИИ <div class="nav-line"></div></span><span style="margin-left:5px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:9px; margin-top:5px">ОБУЧЕНИЕ НАЙМУ <div class="nav-line"></div></span><span style="margin-left:6px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px">ОТЗЫВЫ <div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px">СТАТЬИ И ВИДЕО <div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px">МЕРОПРИЯТИЯ <div class="nav-line"></div></span><span style="margin-left:6px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px">ИНСТРУМЕНТЫ И ПОМОЩЬ <div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px">О КОМПАНИИ <div class="nav-line"></div></span>
+							<span style="margin-left:-28px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/">ГЛАВНАЯ </a><div class="nav-line"></div></span><span style="margin-left:8px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/technology">О ТЕХНОЛОГИИ </a><div class="nav-line"></div></span><span style="margin-left:5px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:9px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/#vebinar">ОБУЧЕНИЕ НАЙМУ </a><div class="nav-line"></div></span><span style="margin-left:6px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/">ОТЗЫВЫ </a><div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/videoAndPosts">СТАТЬИ И ВИДЕО </a><div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/events">МЕРОПРИЯТИЯ </a><div class="nav-line"></div></span><span style="margin-left:6px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/tools">ИНСТРУМЕНТЫ И ПОМОЩЬ </a><div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span></a>
+							<span style="margin-left:15px; margin-top:-17px"><a href="http://denialsizov.hol.es/performia/about-us">О КОМПАНИИ </a><div class="nav-line"></div></span>
 						</div>
 						<div class="burger-open" onclick="openBurger(true)"><img src="<?php echo get_template_directory_uri();?>./img/menu.png"></div>
 						<div class="burger" id="burger">
