@@ -43,12 +43,18 @@ get_header(); // подключаем header.php ?>
 				<div class="col-lg-7 quote">
 					<div class="nav-line" style="margin-top:50px"></div>
 					<div class="quote-text">
-						<p>Наем персонала является ключевой областью в деятельности любой организации, однако зачастую важность ее недооценивается.</p>
-
-						<p>Руководители и владельцы бизнеса, как правило, берут под свой непосредственный контроль только те сферы, которые, по их мнению, относятся к наиболее значимым – финансовое планирование, производство, продажи, реклама, связи с общественностью и т.д. А ведь от того, кто будет выполнять перечисленные функции, зависит успех и существование компании.</p>
-
-						<p>Причина такого невнимания, кроется в том, что большинство руководителей считают область найма сложной и весьма запутанной, а потому не пытаются ее контролировать. А ведь любой из них видит разницу между хорошим и плохим работником, знает, что из результатов работы отдельных сотрудников складывается общий результат работы фирмы.</p>
-						<p><img src="<?php echo get_template_directory_uri();?>/img/vebinar.png" class="minus-left-mar"></p>
+						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					        <div class="post-page" id="post-<?php the_ID(); ?>">
+					        <h2 class="page_title"><?php the_title(); ?></h2>
+					            <div class="entry entry_page">
+					                <?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
+					 
+					                <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+					 
+					                <?php edit_post_link('Отредактируйте этот текст - Администратору.', '<br /><p>', '</p>'); ?>
+					            </div>
+					        </div>
+					    <?php endwhile; endif; ?>
 					</div>
 					<h3>На семинаре мы рассмотрим</h3>
 					<ul class="vebinar-view">

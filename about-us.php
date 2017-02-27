@@ -209,8 +209,8 @@ get_header(); // подключаем header.php ?>
 					<div class="map-tittle" style="margin-top:70px;">
 						<div class="row">
 							<div class="col-lg-2" style="margin-top:-3px">На карте </div>
-							<div onclick="openMap(0)" class="map-active map-tittle-city col-lg-1" id="tit1">КИЕВ <div class="nav-line-map" id="lin1"></div></div>
-							<div onclick="openMap(1)" class="map-tittle-city col-lg-1" id="tit2">ОДЕСА <div class="nav-line-map" id="lin2" style="display:none"></div></div>
+							<div onclick="openMap(0)" class="map-active map-tittle-city col-lg-1" id="tit1">КИЕВ <div class="nav-line-map" id="linin1"></div></div>
+							<div onclick="openMap(1)" class="map-tittle-city col-lg-1" id="tit2">ОДЕССА <div class="nav-line-map" id="lin2" style="display:none"></div></div>
 						</div>
 					</div>
 

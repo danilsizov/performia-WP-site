@@ -8,15 +8,23 @@ var photoArray = [
 "http://woxed.hol.es/wp-content/uploads/2017/02/Yacocca.png",
 ];
 
+var quoteArray = [document.getElementById('quote0'),document.getElementById('quote1'),document.getElementById('quote2'),document.getElementById('quote3'),document.getElementById('quote4')];
+var nameArray =  [document.getElementById('name0'),document.getElementById('name1'),document.getElementById('name2'),document.getElementById('name3'),document.getElementById('name4')];
+var positionArray =  [document.getElementById('position0'),document.getElementById('position1'),document.getElementById('position2'),document.getElementById('position3'),document.getElementById('position4')];
+var personPhoto = document.getElementById('person-photo');
+
+
+var operatSlider;
+
 
 var i = 0;
 var j = 3;
 
+var autoSlider = function(){
+	setTimeout('next(1)', 8000);
+}
+
 var next = function(operation){
-	var quoteArray = [document.getElementById('quote0'),document.getElementById('quote1'),document.getElementById('quote2'),document.getElementById('quote3'),document.getElementById('quote4')];
-	var nameArray =  [document.getElementById('name0'),document.getElementById('name1'),document.getElementById('name2'),document.getElementById('name3'),document.getElementById('name4')];
-	var positionArray =  [document.getElementById('position0'),document.getElementById('position1'),document.getElementById('position2'),document.getElementById('position3'),document.getElementById('position4')];
-	var personPhoto = document.getElementById('person-photo');
 	personPhoto.style.transition = '0.4s';
 	quoteArray[i].style.transition = '0.4s';
 	nameArray[i].style.transition = '0.4s';
@@ -25,18 +33,20 @@ var next = function(operation){
 	quoteArray[i].style.opacity = '0';
 	nameArray[i].style.opacity = '0';
 	positionArray[i].style.opacity = '0';
-	setTimeout(noneFunc, 500);
-	
-	function noneFunc(){
+	operatSlider=operation;
+	setTimeout('noneFunc()', 500);
+}
+
+var noneFunc = function(){
 		quoteArray[i].style.display = 'none';
 		nameArray[i].style.display = 'none';
 		positionArray[i].style.display = 'none';
-		if(i+operation>4){
+		if(i+operatSlider>4){
 			i=0;
-		}else if(i+operation<0){
+		}else if(i+operatSlider<0){
 			i=4;
 		} else {
-			i=i+operation;
+			i=i+operatSlider;
 		}
 		personPhoto.style.transition = '0s';
 		personPhoto.style.backgroundImage = 'url(' + photoArray[i] + ')';	
@@ -54,9 +64,9 @@ var next = function(operation){
 		quoteArray[i].style.opacity = '1';
 		nameArray[i].style.opacity = '1';
 		positionArray[i].style.opacity = '1';
-	}
+		autoSlider()
 
-}
+	}
 
 var comentNext = function(operation){
 	var comentArray = [document.getElementById('com1'), document.getElementById('com2'), document.getElementById('com3'), document.getElementById('com4'), document.getElementById('com5')];

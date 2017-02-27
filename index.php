@@ -437,6 +437,9 @@ get_header(); // подключаем header.php ?>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		autoSlider();
+	</script>
 </section>
 </section>
 <?php get_footer(); // подключаем footer.php ?>
