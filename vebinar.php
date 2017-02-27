@@ -28,9 +28,9 @@ get_header(); // подключаем header.php ?>
 			<div class="col-lg-3">
 				<div class="telephone-black">099 547-89-45</div>
 				<div class="invite">Заявка на участие</div>
-				<input type="text" class="input mar-top-input" placeholder="Введите E-mail">
-				<input type="text" class="input" placeholder="Введите E-mail">
-				<input type="text" class="input" placeholder="Введите E-mail">
+				<input type="text" class="input mar-top-input" placeholder="Введите Имя">
+				<input type="text" class="input" placeholder="Телефон">
+				<input type="text" class="input" placeholder="E-mail">
 				<div class="invite-buton">Подписаться</div>
 			</div>
 		</div>

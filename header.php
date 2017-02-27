@@ -33,18 +33,18 @@
 		<div class="container">
 			<div class="row">
 				<nav class="navbar">
-					<div class="col-lg-2"><img src="<?php echo get_template_directory_uri();?>./img/logo.png" ></div>
+					<div class="col-lg-2"><img src="http://woxed.hol.es/wp-content/uploads/2017/02/logo.png" ></div>
 					<div class="col-lg-1">  </div>
 					<div class="col-lg-9">
 						<div class="nav-buttons">
-							<span style="margin-left:-28px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/">ГЛАВНАЯ </a><div class="nav-line"></div></span><span style="margin-left:8px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/technology">О ТЕХНОЛОГИИ </a><div class="nav-line"></div></span><span style="margin-left:5px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:9px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/#vebinar">ОБУЧЕНИЕ НАЙМУ </a><div class="nav-line"></div></span><span style="margin-left:6px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/">ОТЗЫВЫ </a><div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/videoAndPosts">СТАТЬИ И ВИДЕО </a><div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/events">МЕРОПРИЯТИЯ </a><div class="nav-line"></div></span><span style="margin-left:6px; margin-top:5px"><img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px"><a href="http://denialsizov.hol.es/performia/tools">ИНСТРУМЕНТЫ И ПОМОЩЬ </a><div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="<?php echo get_template_directory_uri();?>./img/dot.png" ></span></a>
-							<span style="margin-left:15px; margin-top:-17px"><a href="http://denialsizov.hol.es/performia/about-us">О КОМПАНИИ </a><div class="nav-line"></div></span>
+							<span style="margin-left:-28px; margin-top:5px"><a href="http://woxed.hol.es/">ГЛАВНАЯ </a><div class="nav-line"></div></span><span style="margin-left:8px; margin-top:5px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px"><a href="http://woxed.hol.es/technology">О ТЕХНОЛОГИИ </a><div class="nav-line"></div></span><span style="margin-left:5px; margin-top:5px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+							<span style="margin-left:9px; margin-top:5px"><a href="http://woxed.hol.es/#vebinar">ОБУЧЕНИЕ НАЙМУ </a><div class="nav-line"></div></span><span style="margin-left:6px; margin-top:5px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px"><a href="http://woxed.hol.es/">ОТЗЫВЫ </a><div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px"><a href="http://woxed.hol.es/videoAndPosts">СТАТЬИ И ВИДЕО </a><div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px"><a href="http://woxed.hol.es/events">МЕРОПРИЯТИЯ </a><div class="nav-line"></div></span><span style="margin-left:6px; margin-top:5px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+							<span style="margin-left:7px; margin-top:5px"><a href="http://woxed.hol.es/tools">ИНСТРУМЕНТЫ И ПОМОЩЬ </a><div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span></a>
+							<span style="margin-left:15px; margin-top:-17px"><a href="http://woxed.hol.es/about-us">О КОМПАНИИ </a><div class="nav-line"></div></span>
 						</div>
 						<div class="burger-open" onclick="openBurger(true)"><img src="<?php echo get_template_directory_uri();?>./img/menu.png"></div>
 						<div class="burger" id="burger">

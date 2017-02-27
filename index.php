@@ -11,12 +11,13 @@ get_header(); // подключаем header.php ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
-				<div class="main-video">
-					<div class="blue-back" style="margin-left:0;margin-top: 0px;height: 634px; width: 858px;" onclick="openVideoWindow()">
+				<div class="main-video" style="margin-left: -487px; width: 956px;">
+					<div class="blue-back" style="margin-left:0;margin-top: 0px;height: 634px; width: 958px;" onclick="openVideoWindow()">
 						<img src="<?php echo get_template_directory_uri();?>/img/play.png" class="play">
 					</div>
 					<video width="1200px" autoplay='autoplay' loop='loop' muted >
-					 	<source src="<?php echo get_template_directory_uri();?>/video/main-video.mp4" type='video/mp4'>
+					 	<source src="<?php echo get_template_directory_uri();?>/video/main.mp4" type='video/mp4'>
+					 	<source src="<?php echo get_template_directory_uri();?>/video/main.webm" type='video/webm'>
 					</video>
 				</div>
 			</div>
@@ -31,7 +32,7 @@ get_header(); // подключаем header.php ?>
 						Нашей технологии доверяют:<br>
 						<div class="logos row">
 							<div class="col-lg-2 col-xs-12"><img src="<?php echo get_template_directory_uri();?>/img/Ikea.png" class="logo-partners" style="margin-top:-15px; margin-left:2px"></div>
-							<div class="col-lg-2 col-xs-12"><img src="<?php echo get_template_directory_uri();?>/img/IBM.png" class="logo-partners" style="margin-top:-14px; margin-left:57px"></div>
+							<div class="col-lg-2 col-xs-12"><img src="http://woxed.hol.es/wp-content/uploads/2017/02/ibm.png" class="logo-partners" style="margin-top:-14px; margin-left:57px"></div>
 							<div class="col-lg-2 col-xs-12"><img src="<?php echo get_template_directory_uri();?>/img/Toyota.png" class="logo-partners" style="margin-top:-14px; margin-left:90px"></div>
 							<div class="col-lg-2 col-xs-12"><img src="<?php echo get_template_directory_uri();?>/img/3dots.png" class="logo-partners" style="margin-top:-5px; margin-left:225px"></div>
 						</div>
@@ -183,7 +184,7 @@ get_header(); // подключаем header.php ?>
 					<div class="seminar" style="margin-top: 10px; margin-left: -15px;">
 						<div class="nav-line"></div>
 						<div class="seminar-card">
-							<div class="seminar-tittle"><a href="http://localhost/test/wordpress/vebinar/">Вебинар. Фундамент вашей прибыли</a></div>
+							<div class="seminar-tittle"><a href="http://woxed.hol.es/vebinar/">Вебинар. Фундамент вашей прибыли</a></div>
 							<div class="seminar-photo" style="margin-top: 30px; margin-left: 0px;"><img src="<?php echo get_template_directory_uri();?>/img/seminar-photo1.png"></div>
 							<div class="seminar-person">
 								<div class="seminar-person-name" style="margin-top: 5px; margin-left: 10px;"><strong>Владимир Сидоренко</strong></div>
@@ -199,7 +200,7 @@ get_header(); // подключаем header.php ?>
 					<div class="seminar seminar-mar" style="margin-top: 28px; margin-left: -15px;">
 						<div class="nav-line"></div>
 						<div class="seminar-card">
-							<div class="seminar-tittle"><a href="http://localhost/test/wordpress/vebinar/">Вебинар. Фундамент вашей прибыли</a></div>
+							<div class="seminar-tittle"><a href="http://woxed.hol.es/vebinar/">Вебинар. Фундамент вашей прибыли</a></div>
 							<div class="seminar-photo" style="margin-top: 30px; margin-left: 0px;"><img src="<?php echo get_template_directory_uri();?>/img/seminar-photo1.png"></div>
 							<div class="seminar-person">
 								<div class="seminar-person-name" style="margin-top: 5px; margin-left: 10px;"><strong>Владимир Сидоренко</strong></div>
@@ -233,9 +234,9 @@ get_header(); // подключаем header.php ?>
 								процесс с помощью инструментов Перформии, поможем<br>
 								внедрить технологию в бизнес
 							</div>
-							<div class="main-programm-about">
+							<a href="http://woxed.hol.es/main-programm/"><div class="main-programm-about">
 								Подробнее о технологии >
-							</div>
+							</div></a>
 							<div class="main-programm-card">
 								<div class="main-programm-line"></div>
 								<div class="seminar-photo"><img src="<?php echo get_template_directory_uri();?>/img/seminar-photo1.png"></div>
@@ -258,12 +259,13 @@ get_header(); // подключаем header.php ?>
 		<div class="fluid-container reviews">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<div class="main-video" style="margin-left: -475px; margin-top: -19px; height:625px">
-						<div class="blue-back">
+					<div class="main-video" style="margin-left: -488px; margin-top: -19px; height:675px;width: 858px;">
+						<div class="blue-back" style="width: 857.2px;">
 							<img src="<?php echo get_template_directory_uri();?>/img/play.png" class="play">
 						</div>
-						<video width="1200px" autoplay='autoplay' loop='loop' muted >
-						 	<source src="<?php echo get_template_directory_uri();?>/video/main-video.mp4" type='video/mp4'>
+						<video height="675px" autoplay='autoplay' loop='loop' muted >
+						 	<source src="<?php echo get_template_directory_uri();?>/video/coment.mp4" type='video/mp4'>
+					 		<source src="<?php echo get_template_directory_uri();?>/video/coment.webm" type='video/webm'>
 						</video>
 					</div>
 				</div>

@@ -105,7 +105,7 @@ get_header(); // подключаем header.php ?>
 					Продуктивность кандидата<br> 
 					в будущем определяется по оценкам прошлого
 				</div>
-				<img src="<?php echo get_template_directory_uri();?>/img/graf.png" style="margin-top:60px;">
+				<img src="http://woxed.hol.es/wp-content/uploads/2017/02/Graf.png" style="margin-top:60px;">
 			</div>
 		</div>
 	</div>

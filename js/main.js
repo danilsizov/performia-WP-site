@@ -1,11 +1,11 @@
 // custom scripts
 
 var photoArray = [
-"http://localhost/test/wordpress/wp-content/uploads/2017/02/Jobs.png",
-"http://localhost/test/wordpress/wp-content/uploads/2017/02/Morita.png", 
-"http://localhost/test/wordpress/wp-content/uploads/2017/02/Marriot.png", 
-"http://localhost/test/wordpress/wp-content/uploads/2017/02/Prichard.png",
-"http://localhost/test/wordpress/wp-content/uploads/2017/02/Yaccoca.png",
+"http://woxed.hol.es/wp-content/uploads/2017/02/Jobs.png",
+"http://woxed.hol.es/wp-content/uploads/2017/02/Morita.png", 
+"http://woxed.hol.es/wp-content/uploads/2017/02/Mariot.png", 
+"http://woxed.hol.es/wp-content/uploads/2017/02/Devid.png",
+"http://woxed.hol.es/wp-content/uploads/2017/02/Yacocca.png",
 ];
 
 
@@ -93,4 +93,25 @@ var openVideoWindow = function(){
 	var back = document.getElementById('black-back');	
 	videoWindow.style.display = "block"
 	back.style.display = "block"
+}
+
+var openMap = function(numberMap){
+	var maps = [document.getElementById('first-map'), document.getElementById('sec-map')];
+	var tittles = [document.getElementById('tit1'), document.getElementById('tit2')];
+	var lines = [document.getElementById('lin1'), document.getElementById('lin2')]
+	if(numberMap==0){
+		maps[1].style.display="none";
+		maps[0].style.display="block";
+		tittles[1].style.color="#284ecd";
+		tittles[0].style.color="#373737";
+		lines[1].style.display="none";
+		lines[0].style.display="block";
+	}else{
+		maps[0].style.display="none"
+		maps[1].style.display="block"
+		tittles[0].style.color="#284ecd";
+		tittles[1].style.color="#373737";
+		lines[0].style.display="none";
+		lines[1].style.display="block";
+	}
 }

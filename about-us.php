@@ -18,7 +18,7 @@ get_header(); // подключаем header.php ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8">
-				<div class="vebinar-tittle" style="margin-top:60px">
+				<div class="vebinar-tittle" style="margin-top:140px">
 					Перформия<br>
 					обучает найму<br> 
 					более 32 лет
@@ -209,16 +209,16 @@ get_header(); // подключаем header.php ?>
 					<div class="map-tittle" style="margin-top:70px;">
 						<div class="row">
 							<div class="col-lg-2" style="margin-top:-3px">На карте </div>
-							<div onclick="openMap(1)" class="map-active map-tittle-city col-lg-1">КИЕВ <div class="nav-line-map"></div></div>
-							<div onclick="openMap(2)" class="map-tittle-city col-lg-1" >ОДЕСА <div class="nav-line"></div></div>
+							<div onclick="openMap(0)" class="map-active map-tittle-city col-lg-1" id="tit1">КИЕВ <div class="nav-line-map" id="lin1"></div></div>
+							<div onclick="openMap(1)" class="map-tittle-city col-lg-1" id="tit2">ОДЕСА <div class="nav-line-map" id="lin2" style="display:none"></div></div>
 						</div>
 					</div>
 
 					<div id="first-map">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.4369804316957!2d30.510167516109636!3d50.47020817947809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce137b4035cf%3A0x25f21b5051ce9827!2z0LLRg9C70LjRhtGPINCp0LXQutCw0LLQuNGG0YzQutCwLCDQmtC40ZfQsg!5e0!3m2!1sru!2sua!4v1487600294546" width="1200px" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
-					<div id="sec-map">
-
+					<div id="sec-map" style="display:none">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.510418625281!2d30.73962841033506!3d46.45839691822566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633d74b46b109%3A0x96124dcfeabb38e7!2z0LLRg9C70LjRhtGPINCh0LXRgNC10LTQvdGM0L7RhNC-0L3RgtCw0L3RgdGM0LrQsCwgMTnQkiwg0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1488181725895" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 					<div class="last-tittle">Люди - это главное</div>
 				</div>
