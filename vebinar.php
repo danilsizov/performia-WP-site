@@ -43,18 +43,16 @@ get_header(); // подключаем header.php ?>
 				<div class="col-lg-7 quote">
 					<div class="nav-line" style="margin-top:50px"></div>
 					<div class="quote-text">
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					        <div class="post-page" id="post-<?php the_ID(); ?>">
-					        <h2 class="page_title"><?php the_title(); ?></h2>
-					            <div class="entry entry_page">
-					                <?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
-					 
-					                <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-					 
-					                <?php edit_post_link('Отредактируйте этот текст - Администратору.', '<br /><p>', '</p>'); ?>
-					            </div>
-					        </div>
-					    <?php endwhile; endif; ?>
+						<?php
+						    $mypost = array( 'post_type' => 'vebinar', );
+						    $loop = new WP_Query( $mypost );
+						    ?>
+						    <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+						        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						        
+						           <?php the_content(); ?>
+						        </article>
+						    <?php endwhile; ?>
 					</div>
 					<h3>На семинаре мы рассмотрим</h3>
 					<ul class="vebinar-view">

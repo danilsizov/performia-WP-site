@@ -109,11 +109,6 @@
 	margin-top:30px;
 }
 
-li{
-
-	color:#d7d7d7;
-}
-
 ol li{
 
 	color:black;
@@ -226,11 +221,6 @@ li p{
 		line-height: 1.2;
 }
 
-li{
-
-	color:#d7d7d7;
-}
-
 #active li{
 	color:#284ecd;
 	font-family:'Century Gothic Bold';
@@ -325,9 +315,25 @@ li p{
 	font-size:16px;
 }
 
-li{
 
-	color:#d7d7d7;
+ul li {
+    list-style-type: none; /* Прячем исходные маркеры */
+   }
+ul li:before {
+color: #d7d7d7; /* Цвет маркера */
+content: "•"; /* Сам маркер */
+padding-right: 20px; /* Расстояние от маркера до текста */
+list-style-position:outside;
+margin-top:10px;
+}
+
+ul{
+	margin-left: 0px;
+	padding-left: 0px !important;
+    font-size: 16px;
+    font-family: 'Century Gothic';
+    margin-top: 30px;
+    list-style-position:outside;
 }
 
 ol li{
