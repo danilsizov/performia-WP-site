@@ -14,14 +14,16 @@ var positionArray =  [document.getElementById('position0'),document.getElementBy
 var personPhoto = document.getElementById('person-photo');
 
 
-var operatSlider;
+var operatSlider,
+	timeoutId = 0;
 
 
 var i = 0;
 var j = 3;
 
 var autoSlider = function(){
-	setTimeout('next(1)', 8000);
+	clearTimeout(timeoutId);
+	timeoutId = setTimeout('next(1)', 8000);
 }
 
 var next = function(operation){
