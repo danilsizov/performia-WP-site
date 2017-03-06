@@ -788,3 +788,20 @@ footer p{
 	float:left;
 	margin-left:20px;
 }
+
+
+.card-review {
+	margin-top: 12px;
+}
+
+.video-slider-item:nth-child(1) .card-review {
+	margin-left: -1px;
+}
+
+.video-slider-item:nth-child(2) .card-review {
+	margin-left: 80px;
+}
+
+.video-slider-item:nth-child(3) .card-review {
+	margin-left: 162px;
+}

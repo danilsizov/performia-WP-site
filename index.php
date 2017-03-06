@@ -290,10 +290,10 @@ get_header(); // подключаем header.php ?>
 								<button class="pre"><img src="<?php echo get_template_directory_uri();?>/img/pre.png"></button>
 								<button class="next" ><img src="<?php echo get_template_directory_uri();?>/img/next.png"></button>
 							</div>
-							<div class="cards-review row">
-								<div id="com1">
-									<div class="col-lg-4" id='com1' style="margin-top: 40px;">
-										<div class="card-review" style="margin-top: 12px; margin-left: -1px; ">
+							<div class="cards-review row" id="video-slider-container">
+								<div id="com1" class="video-slider-item">
+									<div class="col-lg-4" style="margin-top: 40px;">
+										<div class="card-review">
 											<div class="review-video"><img src="<?php echo get_template_directory_uri();?>/img/video1.png"></div>
 											<div class="review-person-name">Леонид Балкашинов</div>
 											<div class="review-person-position">
@@ -303,9 +303,9 @@ get_header(); // подключаем header.php ?>
 										</div>
 									</div>
 								</div>
-								<div id="com2">
-									<div class="col-lg-4" id='com1' style="margin-top: 40px;">
-										<div class="card-review" style="margin-top: 12px; margin-left: 80px; ">
+								<div id="com2" class="video-slider-item">
+									<div class="col-lg-4" style="margin-top: 40px;">
+										<div class="card-review">
 											<div class="review-video"><img src="<?php echo get_template_directory_uri();?>/img/video1.png"></div>
 											<div class="review-person-name">Леонид Балкашинов</div>
 											<div class="review-person-position">
@@ -315,9 +315,9 @@ get_header(); // подключаем header.php ?>
 										</div>
 									</div>
 								</div>
-								<div id="com3">
-									<div class="col-lg-4" id='com1' style="margin-top: 40px;">
-										<div class="card-review" style="margin-top: 12px; margin-left: 162px; ">
+								<div id="com3" class="video-slider-item">
+									<div class="col-lg-4" style="margin-top: 40px;">
+										<div class="card-review">
 											<div class="review-video"><img src="<?php echo get_template_directory_uri();?>/img/video1.png"></div>
 											<div class="review-person-name">Леонид Балкашинов</div>
 											<div class="review-person-position">

@@ -8,7 +8,13 @@ var photoArray = [
 "http://woxed.hol.es/wp-content/uploads/2017/02/Yacocca.png",
 ];
 
-var quoteArray = [document.getElementById('quote0'),document.getElementById('quote1'),document.getElementById('quote2'),document.getElementById('quote3'),document.getElementById('quote4')];
+var quoteArray = [
+	document.getElementById('quote0'),
+	document.getElementById('quote1'),
+	document.getElementById('quote2'),
+	document.getElementById('quote3'),
+	document.getElementById('quote4')
+]; // please format arrays like this
 var nameArray =  [document.getElementById('name0'),document.getElementById('name1'),document.getElementById('name2'),document.getElementById('name3'),document.getElementById('name4')];
 var positionArray =  [document.getElementById('position0'),document.getElementById('position1'),document.getElementById('position2'),document.getElementById('position3'),document.getElementById('position4')];
 var personPhoto = document.getElementById('person-photo');
@@ -126,4 +132,64 @@ var openMap = function(numberMap){
 		lines[0].style.display="none";
 		lines[1].style.display="block";
 	}
+}
+
+
+
+var VideoSlider = function(){
+
+	var sliderContainer;
+
+	var init = function () {
+		sliderContainer = document.getElementById('video-slider-container');
+
+	}
+
+	this.next = function(){
+
+		list(function(container){
+			var elements = container.find('.video-slider-item');
+			var first = $(elements[0]).clone();
+			$(elements[0]).remove();
+			container.append(first);
+		});
+	}
+
+	this.prev = function(){
+		list(function(container){
+			var elements = container.find('.video-slider-item');
+			var last = $(elements.last()).clone();
+			$(elements.last()).remove();
+			container.prepend(last);
+		});
+	}
+
+	var list = function(lister){
+		var container = $(sliderContainer);
+		container.animate({
+			opacity: 0
+		}, {
+			done: function(){
+				lister(container);
+				container.animate({
+					opacity: 1
+				});
+			}
+		});
+	}
+
+	init();
+}
+
+
+window.onload = function(){
+	var slider = new VideoSlider();
+	
+	$('.person-slider-buttons').find('.next').click(function(e){
+		slider.next();
+	});
+	$('.person-slider-buttons').find('.pre').click(function(e){
+		slider.prev();
+	});
+
 }
