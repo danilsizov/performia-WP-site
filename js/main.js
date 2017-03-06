@@ -138,11 +138,11 @@ var openMap = function(numberMap){
 
 var VideoSlider = function(){
 
-	var sliderContainer;
+	var sliderContainer, video;
 
 	var init = function () {
 		sliderContainer = document.getElementById('video-slider-container');
-
+		video = document.getElementById('slider-video');
 	}
 
 	this.next = function(){
@@ -152,6 +152,7 @@ var VideoSlider = function(){
 			var first = $(elements[0]).clone();
 			$(elements[0]).remove();
 			container.append(first);
+			return first;
 		});
 	}
 
@@ -161,6 +162,7 @@ var VideoSlider = function(){
 			var last = $(elements.last()).clone();
 			$(elements.last()).remove();
 			container.prepend(last);
+			return last;
 		});
 	}
 
@@ -170,12 +172,27 @@ var VideoSlider = function(){
 			opacity: 0
 		}, {
 			done: function(){
-				lister(container);
+				var elem = lister(container);
 				container.animate({
 					opacity: 1
 				});
+				changeVideo([elem.data('video')]);
 			}
 		});
+	}
+
+	var changeVideo = function(sources){
+		video.pause();
+		while (video.firstChild) {
+		    video.removeChild(video.firstChild);
+		}
+		for (var i = 0; i < sources.length; i++) {
+			var source = document.createElement('source');
+			source.setAttribute('src', sources[i]);
+			video.appendChild(source);
+		};
+		video.load();
+    	video.play();
 	}
 
 	init();

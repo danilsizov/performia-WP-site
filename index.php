@@ -263,7 +263,7 @@ get_header(); // подключаем header.php ?>
 						<div class="blue-back" style="width: 857.2px;">
 							<img src="<?php echo get_template_directory_uri();?>/img/play.png" class="play">
 						</div>
-						<video height="675px" autoplay='autoplay' loop='loop' muted >
+						<video height="675px" autoplay='autoplay' loop='loop' muted id='slider-video'>
 						 	<source src="<?php echo get_template_directory_uri();?>/video/coment.mp4" type='video/mp4'>
 					 		<source src="<?php echo get_template_directory_uri();?>/video/coment.webm" type='video/webm'>
 						</video>
@@ -291,7 +291,7 @@ get_header(); // подключаем header.php ?>
 								<button class="next" ><img src="<?php echo get_template_directory_uri();?>/img/next.png"></button>
 							</div>
 							<div class="cards-review row" id="video-slider-container">
-								<div id="com1" class="video-slider-item">
+								<div id="com1" class="video-slider-item" data-video='http://video.webmfiles.org/elephants-dream.webm'>
 									<div class="col-lg-4" style="margin-top: 40px;">
 										<div class="card-review">
 											<div class="review-video"><img src="<?php echo get_template_directory_uri();?>/img/video1.png"></div>
@@ -303,7 +303,7 @@ get_header(); // подключаем header.php ?>
 										</div>
 									</div>
 								</div>
-								<div id="com2" class="video-slider-item">
+								<div id="com2" class="video-slider-item" data-video='http://video.webmfiles.org/big-buck-bunny_trailer.webm'>
 									<div class="col-lg-4" style="margin-top: 40px;">
 										<div class="card-review">
 											<div class="review-video"><img src="<?php echo get_template_directory_uri();?>/img/video1.png"></div>
