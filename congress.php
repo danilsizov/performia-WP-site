@@ -25,7 +25,7 @@ get_header(); // подключаем header.php ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="row">
 			<div class="col-lg-8">
-				<div class="vebinar-tittle-small">Семинар</div>
+				<div class="vebinar-tittle-small">Конгресс</div>
 				<div class="vebinar-tittle">
 					<div class="col-lg-8">
 						<?php the_title(); ?>
@@ -34,11 +34,11 @@ get_header(); // подключаем header.php ?>
 			</div>
 			<div class="col-lg-3">
 				<div class="telephone-black">099 547-89-45</div>
-				<div class="invite">Заявка на участие</div>
+				<div class="invite">Проконсультируйтесь об участии</div>
 				<input type="text" class="input mar-top-input" placeholder="Введите имя">
 				<input type="text" class="input" placeholder="Телефон">
 				<input type="text" class="input" placeholder="E-mail">
-				<div class="invite-buton">Подписаться</div>
+				<div class="invite-buton">Жду звонка</div>
 			</div>
 		</div>
 		<div class="container content">
@@ -123,30 +123,30 @@ get_header(); // подключаем header.php ?>
 	<div class="gold-block">
 		<div class="container">
 			<div class="row">
-				<div class="gold-tittle">Заявка на участие</div>
+				<div class="gold-tittle">Проконсультируйтесь об участии</div>
 			</div>
 			<div class="row">
 			<div class="col-lg-4"></div>
 				<div class="col-lg-2">
-					<input type="text" class="input mar-top-input" placeholder="Введите E-mail">
+					<input type="text" class="input mar-top-input" placeholder="Введите имя">
 				</div>
 			</div>
 			<div class="row">
 			<div class="col-lg-4"></div>
 				<div class="col-lg-2">
-					<input type="text" class="input" placeholder="Введите E-mail">
+					<input type="text" class="input" placeholder="Телефон">
 				</div>
 			</div>
 			<div class="row">
 			<div class="col-lg-4"></div>
 				<div class="col-lg-2">
-					<input type="text" class="input" placeholder="Введите E-mail">
+					<input type="text" class="input" placeholder="E-mail">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-4"></div>
 				<div class="col-lg-2">
-					<div class="invite-buton">Подписаться</div>
+					<div class="invite-buton">Жду звонка</div>
 				</div>
 			</div>
 		</div>

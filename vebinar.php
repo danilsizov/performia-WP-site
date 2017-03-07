@@ -14,11 +14,7 @@ Template Name: vebinar
 get_header(); // подключаем header.php ?>
 <section>
 <div class="circle-back">
-<?php
-    $mypost = array( 'post_type' => 'vebinar', );
-    $loop = new WP_Query( $mypost );
-    ?>
-    <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+<?php echo the_ID(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="blue-background"></div>
 	<div class="gold-background"></div>
@@ -150,7 +146,6 @@ get_header(); // подключаем header.php ?>
 		</div>
 	</div>
 	</article>
-	<?php endwhile; ?>
 	</div>
 </section>
 <?php get_footer(); // подключаем footer.php ?>

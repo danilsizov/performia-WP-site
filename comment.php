@@ -1,7 +1,7 @@
 
 <?php
 /*
-Template Name: answer
+Template Name: comment
 */
 ?>
 
@@ -16,14 +16,15 @@ get_header(); // подключаем header.php ?>
 	<div class="container content">
 		<div class="row">
 			<div class="col-lg-6">
-				<div class="answer-block-tittle">Ответы и вопросы</div>
+				<div class="answer-block-tittle">Отзывы о программе</div>
 			</div>
 			<div class="col-lg-6 quote">
-				<div class="col-lg-7">
-					<div class="not-answer">Не нашли ответ на свой вопрос? </div>
+				<div class="col-lg-2"></div>
+				<div class="col-lg-6">
+					<div class="not-answer">Обучились в Перформии ? </div>
 				</div>
-				<div class="col-lg-5">
-					<div class="quetion-buton">Задать вопрос</div>
+				<div class="col-lg-4">
+					<div class="quetion-buton">Напишите отзыв</div>
 				</div>
 			</div>
 			<div class="container content">

@@ -23,10 +23,12 @@ get_header(); // подключаем header.php ?>
 					обучает найму<br> 
 					более 32 лет
 				</div>
+				<div class="small-bot-text">Просмотреть документальный <br>
+фильм о работе в Перформии</div>
 			</div>
 			<div class="col-lg-3">
 				<div class="telephone-black">099 547-89-45</div>
-				<div class="invite">Заявка на участие</div>
+				<div class="invite">По любым вопросам</div>
 				<input type="text" class="input mar-top-input" placeholder="Введите Имя">
 				<input type="text" class="input" placeholder="Телефон">
 				<input type="text" class="input" placeholder="E-mail">
@@ -63,7 +65,7 @@ get_header(); // подключаем header.php ?>
 					<div class="partners">
 						<div class="main-partners">
 						<div class="row "><div class="col-lg-12"><div class="block-number-line small-mar-top"></div></div></div>
-							<div class="row small-mar-top">
+							<div class="row mar-top" style="margin-top:60px;">
 								<div class="col-lg-2"><div class="logo-partner"><img src="<?php echo get_template_directory_uri();?>/img/logo1.png"></div></div>
 								<div class="col-lg-8">
 									<div class="partners-info">
@@ -74,9 +76,9 @@ get_header(); // подключаем header.php ?>
 										</div>
 									</div>
 								</div>
-								<div class="row"><div class="col-lg-12"><div class="block-number-line small-mar-top"></div></div></div>
+								<div class="row"><div class="col-lg-12"><div class="block-number-line small-mar-top" style="margin-top:60px;"></div></div></div>
 							</div>
-							<div class="row small-mar-top">
+							<div class="row small-mar-top" style="margin-top:60px;">
 								<div class="col-lg-2"><div class="logo-partner"><img src="<?php echo get_template_directory_uri();?>/img/logo2.png"></div></div>
 								<div class="col-lg-8">
 									<div class="partners-info">
@@ -86,7 +88,7 @@ get_header(); // подключаем header.php ?>
 										</div>
 									</div>
 								</div>
-								<div class="row"><div class="col-lg-12"><div class="block-number-line small-mar-top"></div></div></div>
+								<div class="row"><div class="col-lg-12"><div class="block-number-line small-mar-top" style="margin-top:70px;"></div></div></div>
 							</div>
 							<div class="row small-mar-top">
 								<div class="col-lg-3"><div class="logo-partner"><img src="<?php echo get_template_directory_uri();?>/img/logo3.png"></div></div>
@@ -99,28 +101,28 @@ get_header(); // подключаем header.php ?>
 				</div>
 			</div>
 		</div>
-		<div class="vacancies">
-			<div class="container content">
+		<div class="vacancies" style="padding: 10px 0 20px">
+			<div class="container content" style="margin-top:25px">
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="block-tittle">Вакансии</div>
 					</div>
 					<div class="col-lg-1"></div>
 					<div class="col-lg-7 quote">
-						<div class="row card-mar">
-						<div class="nav-line" style="width:100px; margin-top:-30px; margin-left:14px"></div>
+						<div class="row">
+						<div class="nav-line" style="width:150px; margin-left:14px; margin-top:22px"></div>
 							<div class="col-lg-6" style="margin-top:50px">
 								<div class="vacancies-card">
 									<div class="vacancies-card-tittle">
 										Cпециалист<br>
 										по продажам
 									</div>
-									<div class="row mar-top">
-										<div class="col-lg-2 mar-top">
+									<div class="row mar-top" style="border-style:solid; border-width:1px 0 0; border-color:#ededed; margin-top:100px; padding-right:5px; width:99%">
+										<div class="col-lg-2" style="margin-top:10px">
 											<div class="place">Киев</div>
 										</div>
 										<div class="col-lg-4"></div>
-										<div class="col-lg-6 mar-top">
+										<div class="col-lg-6" style="margin-top:10px">
 											<div class="more">Подробнее ></div>
 										</div>
 									</div>
@@ -133,12 +135,12 @@ get_header(); // подключаем header.php ?>
 										по продажам
 									</div>
 
-									<div class="row mar-top">
-										<div class="col-lg-2 mar-top">
+									<div class="row mar-top" style="border-style:solid; border-width:1px 0 0; border-color:#ededed; margin-top:100px; padding-right:5px; width:99%">
+										<div class="col-lg-2" style="margin-top:10px">
 											<div class="place">Одесса</div>
 										</div>
 										<div class="col-lg-4"></div>
-										<div class="col-lg-6 mar-top">
+										<div class="col-lg-6" style="margin-top:10px">
 											<div class="more">Подробнее ></div>
 										</div>
 									</div>
@@ -209,7 +211,7 @@ get_header(); // подключаем header.php ?>
 					<div class="map-tittle" style="margin-top:70px;">
 						<div class="row">
 							<div class="col-lg-2" style="margin-top:-3px">На карте </div>
-							<div onclick="openMap(0)" class="map-active map-tittle-city col-lg-1" id="tit1">КИЕВ <div class="nav-line-map" id="linin1"></div></div>
+							<div onclick="openMap(0)" class="map-active map-tittle-city col-lg-1" id="tit1">КИЕВ <div class="nav-line-map" id="lin1"></div></div>
 							<div onclick="openMap(1)" class="map-tittle-city col-lg-1" id="tit2">ОДЕССА <div class="nav-line-map" id="lin2" style="display:none"></div></div>
 						</div>
 					</div>

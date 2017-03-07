@@ -67,7 +67,7 @@ header{
 	border-style:solid;
 	border-color:#284ecd;
 	transition:0.5s;
-
+	margin-top: 15px;
 }
 .nav-buttons>span:hover .nav-line{
 	width:40%;
@@ -204,6 +204,7 @@ header{
 	border-width: 0 0 1px 0;
 	border-style:solid;
 	border-color:#284ecd;
+	margin-top: 15px;
 }
 
 #quote0{
@@ -228,7 +229,26 @@ header{
 	height:100%;
 }
 
+.small-bot-text{
+	margin-top:35px;
+	margin-left:-15px;
+	font-size: 20px;
+	color:white;
+	font-family:'Century Gothic';
+	line-height: 1.7;
+}
 
+.more-button{
+	margin-top:35px;
+	font-size:14px;
+	font-family:'Century Gothic';
+	padding: 5px 10px 5px 10px;
+	border-width: 1px;
+	border-style:solid;
+	border-color:#284ecd;
+	border-radius:20px;
+	float:left;
+}
 
 /*person-slider*/
 
