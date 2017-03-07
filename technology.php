@@ -75,7 +75,7 @@ get_header(); // подключаем header.php ?>
 					<p>По резюме тяжело предварительно оценить уровень кандидата. 
 					Из-за этого на интервью приглашают слабых или неподходящих кандидатов. 
 					В результате руководители и менеджеры по персоналу тратят время зря и упускают продуктивных профессионалов.</p>
-					<div class="star-text"><img src="<?php echo get_template_directory_uri();?>/img/star.png">Дипломы и сертификаты, сами по себе – не достижение</div>
+					<div class="star-text"><img src="<?php echo get_template_directory_uri();?>/img/star.png">&nbsp;&nbsp;&nbsp;Дипломы и сертификаты, сами по себе – не достижение</div>
 				</div>
 			</div>
 		</div>
@@ -196,7 +196,7 @@ get_header(); // подключаем header.php ?>
 					<p>Профессиональные знания и навыки – это то, что легче всего наработать, 
 					если человек продуктивен. Разберитесь без каких ранее приобретенных профессиональных навыков кандидат не сможет выдавать результат, а какие он сможет наработать в процессе. Влюбленный в своё дело кандидат 
 					с небольшими, но частыми достижениями принесет в перспективе больше пользы, чем умелый, но  приостановившийся в развитии профессионал.</p>
-					<div class="star-text"><img src="<?php echo get_template_directory_uri();?>/img/star.png">Дипломы и сертификаты, сами по себе – не достижение</div>
+					<div class="star-text"><img src="<?php echo get_template_directory_uri();?>/img/star.png">&nbsp;&nbsp;&nbsp;Дипломы и сертификаты, сами по себе – не достижение</div>
 				</div>
 			</div>
 		</div>
@@ -215,21 +215,20 @@ get_header(); // подключаем header.php ?>
 				<div class="nav-line"></div>
 				<div class="quote-text">
 					<p>Ориентация на результат клишированное и избитое понятие. На самом деле мало кто отличает промежуточный результат от конечного. Главный критерий — завершенный продукт приносящий пользуй и соотвествующий заданному качеству и сроку. Кандидат с лучшим пониманием конечного продукта не будет стопориться на трудностях и ждать указаний. Он сам найдет, предложит и воплотит решение. </p>
-					<div class="row">
+					<div class="row two-trees">
 						<div class="col-lg-6">
-							<div class="good-tree">
-							</div>
+							<img src="<?php echo get_template_directory_uri();?>/img/tree1.png">
+							<span style='top: 87px;left: 184px;'>То, как должен был <br/>выглядеть конечный<br/>результат</span>
 						</div>
 						<div class="col-lg-6">
-							<div class="bad-tree">
-
-							</div>
+							<img src="<?php echo get_template_directory_uri();?>/img/tree2.png">
+							<span style='top: 76px;left: 227px;'>То, как увидел<br/>конечный результат<br/>специалист</span>
 						</div>
 					</div>
 					<p>
 						Чтобы проверить понимание результата попросите кандидата сформулировать конечный результат работы своей и смежных профессий. Чем лучше человек ответит, тем меньше в процессе работы он будет нуждаться в помощи и управлении. 
 					</p>
-					<div class="star-text"><img src="<?php echo get_template_directory_uri();?>/img/star.png">Результат повара - накормленные люди</div>
+					<div class="star-text"><img src="<?php echo get_template_directory_uri();?>/img/star.png">&nbsp;&nbsp;&nbsp;Результат повара - накормленные люди</div>
 				</div>
 			</div>
 		</div>
@@ -238,7 +237,7 @@ get_header(); // подключаем header.php ?>
 		<div class="row">
 			<div class="col-lg-4">
 				<div class="block-tittle">
-					Наведите
+					Наведите <br>
 					справки о
 					кандидате
 				</div>
@@ -251,7 +250,7 @@ get_header(); // подключаем header.php ?>
 					<p>Работодатели могут дать вполне адекватную оценку своим бывшим
 					сотрудникам. Если сотрудник каким-либо образом отличился (в лучшую или 
 					в худшую сторону), у работодателя останется масса впечатлений, и он не применёт ими с вами поделиться.</p>
-					<div class="star-text"><img src="<?php echo get_template_directory_uri();?>/img/star.png">
+					<div class="star-text"><img src="<?php echo get_template_directory_uri();?>/img/star.png">&nbsp;&nbsp;&nbsp;
 						Нейтральный отзыв бывшего руководителя<br>
 						— повод задуматься.
 					</div>
