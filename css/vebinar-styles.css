@@ -335,6 +335,7 @@ content: " • "; /* Сам маркер */
 padding-right: 20px; /* Расстояние от маркера до текста */
 list-style-position:outside;
 margin-top:10px;
+    float: left;
 }
 
 ul{
