@@ -16,14 +16,19 @@ get_header(); // подключаем header.php ?>
 	<div class="blue-background"></div>
 	<div class="gold-background"></div>
 	<div class="container">
+	<?php
+    $mypost = array( 'post_type' => 'main_programm', );
+    $loop = new WP_Query( $mypost );
+    ?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="row">
 			<div class="col-lg-8">
 				<div class="vebinar-tittle-small">Главная программа</div>
 				<div class="vebinar-tittle">
-					Обучение полной<br>
-					технологии найма<br> 
-					продуктивных<br>
-					сотрудников
+					<div class="col-lg-8">
+						<?php the_title(); ?>
+					</div>
 				</div>
 			</div>
 			<div class="col-lg-3">
@@ -44,15 +49,7 @@ get_header(); // подключаем header.php ?>
 				<div class="col-lg-7 quote">
 					<div class="nav-line"></div>
 					<div class="quote-text">
-						<p>Продуктивный человек в организации — это человек, который приносит для группы существенно больше пользы, чем неприятностей или проблем. Именно такие люди и становятся незаменимой основой компании.</p>
-						<p><img src="<?php echo get_template_directory_uri();?>/img/multfilm.png" class="minus-left-mar"></p>
-						<p>Продуктивные люди могут быть разговорчивыми и молчаливыми, спокойными 
-						и нервозными, душевными и неподступными. Главное — не упустить такой «бриллиант» и по ошибке не нанять непродуктивного, но более разговорчивого.
-						Однако вы не увидите человека на собеседовании, который говорит вас прямо — «я не хочу работать» или «я не могу работать». 
-						Именно поэтому отбор кандидатов представляет собой «игра в рулетку» для большинства компаний.</p>
-
-						<p>Когда речь идёт о найме сотрудников, все силы должны быть направлены исключительно на отбор продуктивных людей. Этот курс вооружит вас настоящей Технологией выявления продуктивных людей как среди кандидатов
-						с рынка труда, так и среди существующих сотрудников при аттестации или перестановках.</p>
+						<?php the_content(); ?>
 					</div>
 				</div>
 			</div>
@@ -60,29 +57,25 @@ get_header(); // подключаем header.php ?>
 		<div class="container content">
 		<div class="row">
 			<div class="col-lg-4">
-				<img src="<?php echo get_template_directory_uri();?>/img/congress-person.png" class="minus-left-mar" style="float:right;">
+				<?php echo get_the_post_thumbnail($id, array(300,300)) ?>
 			</div>
 			<div class="col-lg-1"></div>
 			<div class="col-lg-7 quote">
 				<div class="block-tittle-vebinar">Ведущий</div>
 				<div class="nav-line"></div>
 				<div class="row plus-mar-left">
-					<h3><strong>Владимир Сидоренко</strong></h3>
+					<h3><strong><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_author_name', true ) ); ?></strong></h3>
 					<div class="person-position">
-						Президент «Преформии»
+						<?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_author_position', true ) ); ?>
 					</div>
 					<div class="quote-text">
 						<p>
-						С 1989 года успешный опыт открытия, становления и управления<br> 
-						собственными компаниями в различных областях бизнеса; один из основателей<br>
-						и Председатель Совета директоров международной консалтинговой компании<br>
-						«ПЕРФОРМИЯ», которая с 2001 года специализируется на эффективных<br>
-						решениях проблем с персоналом и на технологии поиска продуктивных<br>
-						сотрудников.</p>
+						<?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_author_about', true ) ); ?></p>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 	<div class="container content">
 			<div class="row">
@@ -132,17 +125,18 @@ get_header(); // подключаем header.php ?>
 						<div class="row">
 							<div class="col-lg-6">
 								<ul class="about-list">
-									<li><p>Что такое продуктивность.</p></li>
-									<li><p>Почему это самый важный фактор в оценке кандидатов и сотрудников</p></li>
-									<li><p>Что такое продуктивность.</p></li>
-									<li><p>Почему это самый важный фактор в оценке кандидатов и сотрудников</p></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_1', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_2', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_3', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_4', true ) ); ?></li>
 								</ul>
 							</div>
 							<div class="col-lg-6">
 								<ul class="about-list">
-									<li><p>Что такое продуктивность.</p></li>
-									<li><p>Почему это самый важный фактор в оценке кандидатов и сотрудников</p></li>
-									<li><p>Почему это самый важный фактор в оценке кандидатов и сотрудников</p></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_5', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_6', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_7', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_8', true ) ); ?></li>
 								</ul>
 							</div>
 						</div>
@@ -161,15 +155,18 @@ get_header(); // подключаем header.php ?>
 						<div class="row">
 							<div class="col-lg-6">
 								<ul class="about-list">
-									<li><p>Что такое продуктивность.</p></li>
-									<li><p>Почему это самый важный фактор в оценке кандидатов и сотрудников</p></li>
-									<li><p>Что такое продуктивность.</p></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_1', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_2', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_3', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_4', true ) ); ?></li>
 								</ul>
 							</div>
 							<div class="col-lg-6">
 								<ul class="about-list">
-									<li><p>Что такое продуктивность.</p></li>
-									<li><p>Почему это самый важный фактор в оценке кандидатов и сотрудников</p></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_5', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_6', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_7', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_8', true ) ); ?></li>
 								</ul>
 							</div>
 						</div>
@@ -188,13 +185,18 @@ get_header(); // подключаем header.php ?>
 						<div class="row">
 							<div class="col-lg-6">
 								<ul class="about-list">
-									<li><p>Что такое продуктивность.</p></li>
-									<li><p>Почему это самый важный фактор в оценке кандидатов и сотрудников</p></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_1', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_2', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_3', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_4', true ) ); ?></li>
 								</ul>
 							</div>
 							<div class="col-lg-6">
 								<ul class="about-list">
-									<li><p>Что такое продуктивность.</p></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_5', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_6', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_7', true ) ); ?></li>
+									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_8', true ) ); ?></li>
 								</ul>
 							</div>
 						</div>
@@ -220,9 +222,9 @@ get_header(); // подключаем header.php ?>
 						<div class="price-card-tittle">Блок 1</div>
 						<div class="card-line"></div>
 						<ul class="price-list">
-							<li><p><strong>38 000 грн</strong></p></li>
-							<li><p>35 200 грн <img src="<?php echo get_template_directory_uri();?>/img/hint.png"></p></li>
-							<li><p class="duration">3-3,5 дня</p></li>
+							<li><strong><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_price_block_1', true ) ); ?> грн</strong></li>
+							<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_price_block_1_quetion', true ) ); ?> грн <img src="<?php echo get_template_directory_uri();?>/img/hint.png"></li>
+							<li class="duration"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_time_block_1', true ) ); ?> дня</li>
 						</ul>
 					</div>
 				</div>
@@ -231,9 +233,9 @@ get_header(); // подключаем header.php ?>
 						<div class="price-card-tittle">Блок 2</div>
 						<div class="card-line"></div>
 						<ul class="price-list">
-							<li><p><strong>58 000 грн</strong></p></li>
-							<li><p>52 000 грн <img src="<?php echo get_template_directory_uri();?>/img/hint.png"></p></li>
-							<li><p class="duration">5-6 дней</p></li>
+							<li><strong><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_price_block_2', true ) ); ?> грн</strong></li>
+							<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_price_block_2_quetion', true ) ); ?> грн <img src="<?php echo get_template_directory_uri();?>/img/hint.png"></li>
+							<li class="duration"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_time_block_2', true ) ); ?> дня</li>
 						</ul>
 					</div>
 				</div>
@@ -242,10 +244,10 @@ get_header(); // подключаем header.php ?>
 						<div class="price-card-tittle">Блок 1 и 2</div>
 						<div class="card-line"></div>
 						<ul class="price-list">
-							<li><p><strong>88 000 грн</strong></p></li>
-							<li><p>80 000 грн <img src="<?php echo get_template_directory_uri();?>/img/hint.png"></p></li>
-							<li><p class="duration">8-9 дней</p></li>
-							<p class="economy">Экономия 8 000 грн</p>
+							<li><strong><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_price_block_1_2', true ) ); ?> грн</strong></li>
+							<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_price_block_1_2_quetion', true ) ); ?> грн <img src="<?php echo get_template_directory_uri();?>/img/hint.png"></li>
+							<li class="duration"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_time_block_1_2', true ) ); ?> дня</li>
+							<p class="economy">Экономия <?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_economy_block_1_2', true ) ); ?> грн</p>
 						</ul>
 					</div>
 				</div>
@@ -254,10 +256,10 @@ get_header(); // подключаем header.php ?>
 						<div class="price-card-tittle">Блок 1,2,3</div>
 						<div class="card-line"></div>
 						<ul class="price-list">
-							<li><p><strong>108 000 грн</strong></p></li>
-							<li><p>98 000 грн <img src="<?php echo get_template_directory_uri();?>/img/hint.png"></p></li>
-							<li><p class="duration">11-12 дней</p></li>
-							<p class="economy">Экономия 12 000 грн</p>
+							<li><strong><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_price_block_1_2_3', true ) ); ?> грн</strong></li>
+							<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_price_block_1_2_3_quetion', true ) ); ?> грн <img src="<?php echo get_template_directory_uri();?>/img/hint.png"></li>
+							<li class="duration"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_time_block_1_2_3', true ) ); ?> дня</li>
+							<p class="economy">Экономия <?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_economy_block_1_2_3', true ) ); ?> грн</p>
 						</ul>
 					</div>
 				</div>
@@ -289,13 +291,13 @@ get_header(); // подключаем header.php ?>
 				</div>
 				<h3>Перймущества обучения в формате видеотренинга</h3>
 				<ul class="vebinar-view">
-					<li><p>Возможность индивидуального подхода</p></li>
-					<li><p>Индивидуальное расписание</p></li>
-					<li><p>Возможность приступить к изучению сразу, не откладывая «в долгий ящик» (при условии наличия свободных мест в классе)</p></li>
-					<li><p>Возможность обучения в выходные и праздничные дни (по предварительному согласованию расписания)</p></li>
-					<li><p>Вы обучаетесь со скоростью, оптимальной лично для вас. Никто вас не задерживает, и не торопит.</p></li>
-					<li><p>Вы можете задать столько вопросов, сколько потребуется чтобы прояснить материал.</p></li>
-					<li><p>Возможность остановить видео, вернуться назад и просмотреть столько раз, сколько потребуется для  того чтобы все «уложилось по полочкам»</p></li>
+					<li>Возможность индивидуального подхода</li>
+					<li>Индивидуальное расписание</li>
+					<li>Возможность приступить к изучению сразу, не откладывая «в долгий ящик» (при условии наличия свободных мест в классе)</li>
+					<li>Возможность обучения в выходные и праздничные дни (по предварительному согласованию расписания)</li>
+					<li>Вы обучаетесь со скоростью, оптимальной лично для вас. Никто вас не задерживает, и не торопит.</li>
+					<li>Вы можете задать столько вопросов, сколько потребуется чтобы прояснить материал.</li>
+					<li>Возможность остановить видео, вернуться назад и просмотреть столько раз, сколько потребуется для  того чтобы все «уложилось по полочкам»</li>
 				</ul>
 				<div class="quote-text">
 					<p>Наша цель — обучить вас до результата. Мы закончим обучение тогда, когда 
@@ -425,6 +427,8 @@ get_header(); // подключаем header.php ?>
 				</div>
 			</div>
 		</div>
+		</article>
+	<?php endwhile; ?>
 	</div>	
 </section>
 <?php get_footer(); // подключаем footer.php ?>

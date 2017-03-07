@@ -31,7 +31,7 @@ function create_seminar() {
             ),
             'public' => true,
             'menu_position' => 15,
-            'supports' => array( 'title', 'editor'),
+            'supports' => array( 'title', 'editor', 'thumbnail'),
             'taxonomies' => array( '' ),
             'menu_icon' => plugins_url( 'images/image.png', __FILE__ ),
             'has_archive' => true
@@ -66,19 +66,19 @@ function display_seminar_meta_box( $seminar ) {
     <table>
         <tr>
             <td style="width: 100%">Цена вебинара (Прим* 250)</td>
-            <td><input type="text" size="180" name="movie_review_director_name" value="<?php echo $seminar_price; ?>" /></td>
+            <td><input type="text" size="180" name="seminar_price_d" value="<?php echo $seminar_price; ?>" /></td>
         </tr>
         <tr>
             <td style="width: 100%">Дата проведения (Прим* 28 окт)</td>
-            <td><input type="text" size="180" name="movie_review_director_name" value="<?php echo $seminar_data; ?>" /></td>
+            <td><input type="text" size="180" name="seminar_data_d" value="<?php echo $seminar_data; ?>" /></td>
         </tr>
         <tr>
             <td style="width: 100%">Время проведения (Прим* с 19 до 21)</td>
-            <td><input type="text" size="180" name="movie_review_director_name" value="<?php echo $seminar_time; ?>" /></td>
+            <td><input type="text" size="180" name="seminar_time_d" value="<?php echo $seminar_time; ?>" /></td>
         </tr>
         <tr>
             <td style="width: 100%">Город (Прим* Одесса)</td>
-            <td><input type="text" size="180" name="movie_review_director_name" value="<?php echo $seminar_place; ?>" /></td>
+            <td><input type="text" size="180" name="seminar_place_d" value="<?php echo $seminar_place; ?>" /></td>
         </tr>
     </table>
     Прим* - Пример
@@ -93,21 +93,17 @@ function display_seminar_author_meta_box( $seminar ) {
     $seminar_author_photo = esc_html( get_post_meta( $seminar->ID, 'seminar_author_photo', true ) );
     ?>
     <table>
-    	<tr>
-            <td style="width: 100%">Фото ведущего</td>
-            <td><input type="file" size="180" name="movie_review_director_name" value="<?php echo $seminar_author_photo; ?>" /></td>
-        </tr>
         <tr>
             <td style="width: 100%">Имя ведущего</td>
-            <td><input type="text" size="180" name="movie_review_director_name" value="<?php echo $seminar_author_name; ?>" /></td>
+            <td><input type="text" size="180" name="seminar_author_name_d" value="<?php echo $seminar_author_name; ?>" /></td>
         </tr>
         <tr>
             <td style="width: 100%">Должность</td>
-            <td><input type="text" size="180" name="movie_review_director_name" value="<?php echo $seminar_author_position; ?>" /></td>
+            <td><input type="text" size="180" name="seminar_author_position_d" value="<?php echo $seminar_author_position; ?>" /></td>
         </tr>
         <tr>
             <td style="width: 100%">Информация про ведущего</td>
-            <td><textarea type="text" cols="181" rows="5" name="movie_review_director_name" value="<?php echo $seminar_author_about; ?>"></textarea></td>
+            <td><textarea type="text" cols="181" rows="5" name="seminar_author_about_d"><?php echo $seminar_author_about; ?></textarea></td>
         </tr>
     </table>
     <?php
@@ -120,26 +116,29 @@ function add_seminar_fields( $seminar_id, $seminar ) {
     // Check post type for movie reviews
     if ( $seminar->post_type == 'seminar' ) {
         // Store data in post meta table if present in post data
-        if ( isset( $_POST['seminar_price_name'] ) && $_POST['seminar_price_name'] != '' ) {
-            update_post_meta( $semainar_id, 'seminar_price', $_POST['seminar_price_name'] );
+        if ( isset( $_POST['seminar_price_d'] ) && $_POST['seminar_price_d'] != '' ) {
+            update_post_meta( $seminar_id, 'seminar_price', $_POST['seminar_price_d'] );
         }
-        if ( isset( $_POST['seminar_data_name'] ) && $_POST['seminar_data_name'] != '' ) {
-            update_post_meta( $semainar_id, 'seminar_data', $_POST['seminar_data_name'] );
+        if ( isset( $_POST['seminar_data_d'] ) && $_POST['seminar_data_d'] != '' ) {
+            update_post_meta( $seminar_id, 'seminar_data', $_POST['seminar_data_d'] );
         }
-        if ( isset( $_POST['seminar_time_name'] ) && $_POST['seminar_time_name'] != '' ) {
-            update_post_meta( $semainar_id, 'seminar_time', $_POST['seminar_time_name'] );
+        if ( isset( $_POST['seminar_place_d'] ) && $_POST['seminar_place_d'] != '' ) {
+            update_post_meta( $seminar_id, 'seminar_place', $_POST['seminar_place_d'] );
         }
-        if ( isset( $_POST['seminar_author_name'] ) && $_POST['seminar_author_name'] != '' ) {
-            update_post_meta( $semainar_id, 'author_name', $_POST['seminar_author_name'] );
+        if ( isset( $_POST['seminar_time_d'] ) && $_POST['seminar_time_d'] != '' ) {
+            update_post_meta( $seminar_id, 'seminar_time', $_POST['seminar_time_d'] );
         }
-        if ( isset( $_POST['seminar_author_position'] ) && $_POST['seminar_author_position'] != '' ) {
-            update_post_meta( $semainar_id, 'author_position', $_POST['seminar_author_position'] );
+        if ( isset( $_POST['seminar_author_name_d'] ) && $_POST['seminar_author_name_d'] != '' ) {
+            update_post_meta( $seminar_id, 'seminar_author_name', $_POST['seminar_author_name_d'] );
         }
-        if ( isset( $_POST['seminar_author_about'] ) && $_POST['seminar_author_about'] != '' ) {
-            update_post_meta( $semainar_id, 'author_about', $_POST['seminar_author_about'] );
+        if ( isset( $_POST['seminar_author_position_d'] ) && $_POST['seminar_author_position_d'] != '' ) {
+            update_post_meta( $seminar_id, 'seminar_author_position', $_POST['seminar_author_position_d'] );
         }
-        if ( isset( $_POST['seminar_author_photo'] ) && $_POST['seminar_author_photo'] != '' ) {
-            update_post_meta( $semainar_id, 'author_photo', $_POST['seminar_author_photo'] );
+        if ( isset( $_POST['seminar_author_about_d'] ) && $_POST['seminar_author_about_d'] != '' ) {
+            update_post_meta( $seminar_id, 'seminar_author_about', $_POST['seminar_author_about_d'] );
+        }
+        if ( isset( $_POST['seminar_author_photo_d'] ) && $_POST['seminar_author_photo_d'] != '' ) {
+            update_post_meta( $seminar_id, 'author_photo', $_POST['seminar_author_photo_d'] );
         }
 
     }
