@@ -263,7 +263,7 @@ get_header(); // подключаем header.php ?>
 						<div class="blue-back" style="width: 857.2px;">
 							<img src="<?php echo get_template_directory_uri();?>/img/play.png" class="play">
 						</div>
-						<video height="675px" autoplay='autoplay' loop='loop' muted id='slider-video'>
+						<video height="637px" autoplay='autoplay' loop='loop' muted id='slider-video'>
 						 	<source src="<?php echo get_template_directory_uri();?>/video/coment.mp4" type='video/mp4'>
 					 		<source src="<?php echo get_template_directory_uri();?>/video/coment.webm" type='video/webm'>
 						</video>
