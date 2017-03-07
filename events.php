@@ -16,6 +16,12 @@ get_header(); // подключаем header.php ?>
 	<div class="blue-background"></div>
 	<div class="gold-background"></div>
 	<div class="container">
+	<?php
+    $mypost = array( 'post_type' => 'events', );
+    $loop = new WP_Query( $mypost );
+    ?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="row">
 			<div class="col-lg-8">
 				<div class="vebinar-tittle-small">Мероприятие</div>
@@ -25,10 +31,10 @@ get_header(); // подключаем header.php ?>
 			</div>
 			<div class="col-lg-3">
 				<div class="telephone-black">099 547-89-45</div>
-				<div class="invite">Заявка на участие</div>
-				<input type="text" class="input mar-top-input" placeholder="Введите E-mail">
-				<input type="text" class="input" placeholder="Введите E-mail">
-				<input type="text" class="input" placeholder="Введите E-mail">
+				<div class="invite">По любым вопросам</div>
+				<input type="text" class="input mar-top-input" placeholder="Введите имя">
+				<input type="text" class="input" placeholder="Телефон">
+				<input type="text" class="input" placeholder="E-mail">
 				<div class="invite-buton">Подписаться</div>
 			</div>
 		</div>
@@ -53,21 +59,20 @@ get_header(); // подключаем header.php ?>
 					<p>Мы создали систему вознаграждения. Если другие компании начинают сотрудничать с нами по Вашим рекомендациям, мы начисляем Вам баллы. Накопив определённое количество баллов, Вы можете посетить любой из наших семинаров бесплатно.</p>
 					<div class="nearest-event">
 						<div class="nearest-micro-tittle">Ближайшая встреча</div>
-						<div class="nearest-tittle">Проблемы найма</div>
-						<div class="nearest-text">Обсудим проблемы внедрения и поделимся опытом решения. 
-						После сыграем в Мафию.</div>
+						<div class="nearest-tittle"><?php echo esc_html( get_post_meta( get_the_ID(), 'events_tittle', true ) ); ?></div>
+						<div class="nearest-text"><?php echo esc_html( get_post_meta( get_the_ID(), 'events_about', true ) ); ?></div>
 						<div class="link-to-FB">Подробнее в фейсбуке ></div>
 						<div class="row">
 						<div class="col-lg-6">
-							<div class="about-tittle">300</div>
+							<div class="about-tittle"><?php echo esc_html( get_post_meta( get_the_ID(), 'events_price', true ) ); ?></div>
 							<div class="description">Гривен стоит</div>
 						</div>
 						<div class="col-lg-6">
-							<div class="about-tittle">18 сен</div>
-							<div class="description">С 10 до 14</div>
+							<div class="about-tittle"><?php echo esc_html( get_post_meta( get_the_ID(), 'events_data', true ) ); ?></div>
+							<div class="description"><?php echo esc_html( get_post_meta( get_the_ID(), 'events_time', true ) ); ?></div>
 						</div>
 						<div class="col-lg-12">
-							<div class="about-tittle">Ивано-Франковск</div>
+							<div class="about-tittle"><?php echo esc_html( get_post_meta( get_the_ID(), 'events_city', true ) ); ?></div>
 							<div class="description">Город</div>
 						</div>
 						<div class="gray-line"></div>
@@ -198,6 +203,8 @@ get_header(); // подключаем header.php ?>
 				</div>
 			</div>
 		</div>
+		</article>
+	<?php endwhile; ?>
 	</div>
 	
 </section>

@@ -75,3 +75,8 @@
 	font-family:'Century Gothic';
 	margin-top: 20px;
 }
+
+.circle-back{
+	width:100%;
+	background: url(../img/circle.png) repeat-y;
+}
