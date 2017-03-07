@@ -218,7 +218,7 @@ get_header(); // подключаем header.php ?>
 		<div class="container content">
 			<div class="row">
 				<div class="col-lg-4">
-					<div class="block-tittle" style="margin-top: -18px; margin-right: -8px; line-height: 1.25;">Главная<br>программа</div>
+					<div class="block-tittle" style="margin-top: -15px; margin-right: -8px; line-height: 1.25;">Главная<br>программа</div>
 				</div>
 				<div class="col-lg-1"></div>
 				<div class="col-lg-7">
@@ -259,7 +259,7 @@ get_header(); // подключаем header.php ?>
 		<div class="fluid-container reviews">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<div class="main-video" style="margin-left: -488px; margin-top: -19px; height:675px;width: 858px;">
+					<div class="main-video" style="margin-left: -482px; margin-top: 17px; height:675px;width: 858px;">
 						<div class="blue-back" style="width: 857.2px;">
 							<img src="<?php echo get_template_directory_uri();?>/img/play.png" class="play">
 						</div>
@@ -271,17 +271,17 @@ get_header(); // подключаем header.php ?>
 				</div>
 				<div class="col-lg-6">
 					<div class="near-video">
-						<div class="telephone review-tittle" style="margin-top: -35px; margin-left: -111px; font-size:36px">
+						<div class="telephone review-tittle" style="margin-top: 2px; margin-left: -111px; font-size:36px">
 							Отзывы
 							<div class="nav-line"></div>
 						</div>
-						<div class="reviews-text" style="margin-top: 40px; margin-left: -111px; line-height:1.8">
+						<div class="reviews-text" style="margin-top: 18px; margin-left: -111px; line-height:1.8">
 							До Перформии я боялся увольнять существующих<br>
 							сотрудников, потому что не знал, кто вместо них придет.<br>
 							Сотрудники это чувствовали и начинали диктовать свои<br>
 							условия.
 						</div>
-						<div class="reviews-slider" style="margin-top: 12px; margin-left: -111px; ">
+						<div class="reviews-slider" style="margin-top: 17px; margin-left: -112px; ">
 							<div class="person-name">Роман Петров</div>
 							<div class="person-position" style="margin-top: 7px;">
 								Основатель компании «Кровля-центр»
@@ -292,9 +292,12 @@ get_header(); // подключаем header.php ?>
 							</div>
 							<div class="cards-review row" id="video-slider-container">
 								<div id="com1" class="video-slider-item" data-video='http://video.webmfiles.org/elephants-dream.webm'>
-									<div class="col-lg-4" style="margin-top: 40px;">
+									<div class="col-lg-4">
 										<div class="card-review">
-											<div class="review-video"><img src="<?php echo get_template_directory_uri();?>/img/video1.png"></div>
+											<div class="review-video">
+												<img src="<?php echo get_template_directory_uri();?>/img/video1.png">
+												<img src="<?php echo get_template_directory_uri();?>/img/play-sm.png" class='play'>
+											</div>
 											<div class="review-person-name">Леонид Балкашинов</div>
 											<div class="review-person-position">
 												Основатель компании <br>
@@ -304,9 +307,12 @@ get_header(); // подключаем header.php ?>
 									</div>
 								</div>
 								<div id="com2" class="video-slider-item" data-video='http://video.webmfiles.org/big-buck-bunny_trailer.webm'>
-									<div class="col-lg-4" style="margin-top: 40px;">
+									<div class="col-lg-4">
 										<div class="card-review">
-											<div class="review-video"><img src="<?php echo get_template_directory_uri();?>/img/video1.png"></div>
+											<div class="review-video">
+												<img src="<?php echo get_template_directory_uri();?>/img/video1.png">
+												<img src="<?php echo get_template_directory_uri();?>/img/play-sm.png" class='play'>
+											</div>
 											<div class="review-person-name">Леонид Балкашинов</div>
 											<div class="review-person-position">
 												Основатель компании <br>
@@ -316,9 +322,12 @@ get_header(); // подключаем header.php ?>
 									</div>
 								</div>
 								<div id="com3" class="video-slider-item">
-									<div class="col-lg-4" style="margin-top: 40px;">
+									<div class="col-lg-4">
 										<div class="card-review">
-											<div class="review-video"><img src="<?php echo get_template_directory_uri();?>/img/video1.png"></div>
+											<div class="review-video">
+												<img src="<?php echo get_template_directory_uri();?>/img/video1.png">
+												<img src="<?php echo get_template_directory_uri();?>/img/play-sm.png" class='play'>
+											</div>
 											<div class="review-person-name">Леонид Балкашинов</div>
 											<div class="review-person-position">
 												Основатель компании <br>
@@ -336,7 +345,7 @@ get_header(); // подключаем header.php ?>
 				</div>
 			</div>
 		</div>
-		<div class="container content">
+		<div class="container content faq">
 			<div class="row">
 				<div class="col-lg-4"> 
 					<div class="block-tittle" style="margin-top: -80px; margin-right: -7px; line-height:1.2">Ответы на<br>вопросы</div>
@@ -438,7 +447,7 @@ get_header(); // подключаем header.php ?>
 		</div>
 	</div>
 	<script type="text/javascript">
-		autoSlider();
+		// autoSlider();
 	</script>
 </section>
 </section>

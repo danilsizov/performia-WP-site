@@ -93,20 +93,20 @@ header{
 
 .telephone>.nav-line{
 	position:relative;
-	width:10%;
+	width:22%;
 	height:1px;
 	border-width: 0 0 1px 0;
 	border-style:solid;
 	border-color:#284ecd;
 	transition:0.5s;
-	margin-top:30px;
+	margin-top:49px;
 }
 
 .blue-back{
 	float:left;
 	position: absolute;
 	width:852.2px;
-	height:675px;
+	height:637px;
 	background: rgba(40,78,205,0.5);
 	transition: 0.5s;
 	cursor:pointer;
@@ -114,8 +114,8 @@ header{
 
 .play{
 	position: relative;
-	top:41%;
-	left:66%;
+	top:42.5%;
+	left:72.5%;
 }
 
 .main-video{
@@ -248,7 +248,8 @@ header{
 }
 
 .person-slider-buttons{
-	margin-top:40px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 #person-photo{
@@ -500,30 +501,33 @@ box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
 	width:100%;
 	height:100%;
 	padding:40px;
+	padding-top: 33px;
 }
 
 .main-programm-tittle{
 	font-family:'Yeseva One';
 	color:white;
 	font-size:48px;
+	line-height: 1.27em;
 }
 
 .main-programm-text{
 	font-family:'Century Gothic';
-	margin-top:50px;
+	margin-top:19px;
 	color:white;
 	font-size:16px;
+	line-height: 28px;
 }
 
 .main-programm-card{
-	margin-top:150px;
+	margin-top:158px;
 	color:white !important;
 	height:50px;
 }
 
 .main-programm-about{
 	font-family:'Century Gothic';
-	margin-top:50px;
+	margin-top:65px;
 	color:white;
 	font-size: 20px;
 }
@@ -587,26 +591,34 @@ box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
 }
 
 .review-person-name{
-	font-family:'Yeseva One';
+	font-family:'Century Gothic';
+	font-weight: bold;
 	color:black;
 	font-size: 16px;
 	width: 200px;
+	margin-top: -13px;
 }
-
+.review-video .play{
+	position: absolute;
+    top: 71px;
+    left: 143px;
+}
 .review-person-position{
 	font-family:'Century Gothic';
 	color:#696969;
 	font-size: 14px;
 	width: 200px;
+	margin-top: 5px;
 }
 
 .review-video{
 	margin-left:-20px;
+	position: relative;
 }
 
 .review-about{
 	font-family:'Century Gothic';
-	margin-top:50px;
+	margin-top:57px;
 	color:#284ecd;
 	font-size: 20px;
 }
@@ -615,6 +627,10 @@ box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
 
 
 /*Answer*/
+
+.faq{
+	margin-top: 165px;
+}
 
 .answer-tittle{
 	font-family:'Yeseva One';
@@ -734,14 +750,19 @@ box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
 	margin-top:50px;
 	color:#284ecd;
 	font-size: 20px;
+	font-family: 'Century Gothic';
+	margin-bottom: 137px;
 }
 
 
 
 /*Footer*/
 footer{
-	padding-top:100px;
-	background: #1e1e23
+	padding-top:160px;
+	background: #1e1e23;
+	height: 506px;
+	font-family: 'Century Gothic';
+	
 }
 
 footer p{
@@ -804,4 +825,7 @@ footer p{
 
 .video-slider-item:nth-child(3) .card-review {
 	margin-left: 162px;
+}
+.video-slider-item > div {
+    margin-top: 15px;
 }
