@@ -8,6 +8,7 @@ get_header(); // подключаем header.php ?>
 <div id="video-window"></div>
 <div id="video-overlow"></div>
 <section>
+<div class="circle-back">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-12">
@@ -181,38 +182,54 @@ get_header(); // подключаем header.php ?>
 				</div>
 				<div class="col-lg-1"></div>
 				<div class="col-lg-7">
-					<div class="seminar" style="margin-top: 10px; margin-left: -15px;">
-						<div class="nav-line"></div>
-						<div class="seminar-card">
-							<div class="seminar-tittle"><a href="http://woxed.hol.es/vebinar/">Вебинар. Фундамент вашей прибыли</a></div>
-							<div class="seminar-photo" style="margin-top: 30px; margin-left: 0px;"><img src="<?php echo get_template_directory_uri();?>/img/seminar-photo1.png"></div>
-							<div class="seminar-person">
-								<div class="seminar-person-name" style="margin-top: 5px; margin-left: 10px;"><strong>Владимир Сидоренко</strong></div>
-								<div class="seminar-person-position" style="margin-top: 5px; margin-left: 10px;">Президент «Перформии»</div>
+				<?php
+				    $mypost = array( 'post_type' => 'vebinar', );
+				    $loop = new WP_Query( $mypost );
+				    ?>
+				    <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+				        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<div class="seminar" style="margin-top: 10px; margin-left: -15px;">
+								<div class="nav-line"></div>
+								<div class="seminar-card">
+									<div class="seminar-tittle"><a href="<?php echo get_permalink(); ?>">Вебинар. <?php the_title(); ?></a></div>
+									<div class="seminar-photo" style="margin-top: 30px; margin-left: 0px;"><?php echo get_the_post_thumbnail($id, array(40,40)) ?></div>
+									<div class="seminar-person">
+										<div class="seminar-person-name" style="margin-top: 5px; margin-left: 10px;"><strong><?php echo esc_html( get_post_meta( get_the_ID(), 'author_name', true ) ); ?></strong></div>
+										<div class="seminar-person-position" style="margin-top: 5px; margin-left: 10px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'author_position', true ) ); ?></div>
+									</div>
+									<div class="seminar-place">
+										<div class="seminar-geo" style="margin-top: 5px; margin-left: -45px;"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong>-</strong></div>
+										<div class="seminar-time" style="margin-top: 5px; margin-left: -35px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'vebinar_time', true ) ); ?></div>
+									</div>
+									<div class="seminar-price"  style="margin-top: 25px; margin-left: 45px;"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong> <?php echo esc_html( get_post_meta( get_the_ID(), 'vebinar_price', true ) ); ?> грн.</strong></div>
+								</div>
 							</div>
-							<div class="seminar-place">
-								<div class="seminar-geo" style="margin-top: 5px; margin-left: -45px;"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong> Киев и Одесса</strong></div>
-								<div class="seminar-time" style="margin-top: 5px; margin-left: -35px;">с 17.08 до 19.08</div>
+						</article>
+					<?php endwhile; ?>
+					<?php
+				    $mypost = array( 'post_type' => 'seminar', );
+				    $loop = new WP_Query( $mypost );
+				    ?>
+				    <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+				        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<div class="seminar seminar-mar" style="margin-top: 28px; margin-left: -15px;">
+								<div class="nav-line"></div>
+								<div class="seminar-card">
+									<div class="seminar-tittle"><a href="<?php echo get_permalink(); ?>">Семинар. <?php the_title(); ?></a></div>
+									<div class="seminar-photo" style="margin-top: 30px; margin-left: 0px;"><?php echo get_the_post_thumbnail($id, array(40,40)) ?></div>
+									<div class="seminar-person">
+										<div class="seminar-person-name" style="margin-top: 5px; margin-left: 10px;"><strong><?php echo esc_html( get_post_meta( get_the_ID(), 'seminar_author_name', true ) ); ?></strong></div>
+										<div class="seminar-person-position" style="margin-top: 5px; margin-left: 10px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'seminar_author_position', true ) ); ?></div>
+									</div>
+									<div class="seminar-place">
+										<div class="seminar-geo" style="margin-top: 5px; margin-left: -45px;"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong> <?php echo esc_html( get_post_meta( get_the_ID(), 'seminar_place', true ) ); ?></strong></div>
+										<div class="seminar-time" style="margin-top: 5px; margin-left: -35px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'seminar_data', true ) ); ?></div>
+									</div>
+									<div class="seminar-price"  style="margin-top: 25px; margin-left: 45px;"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong> <?php echo esc_html( get_post_meta( get_the_ID(), 'seminar_price', true ) ); ?> грн. </strong></div>
+								</div>
 							</div>
-							<div class="seminar-price"  style="margin-top: 25px; margin-left: 45px;"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong> 12 250 грн. </strong></div>
-						</div>
-					</div>
-					<div class="seminar seminar-mar" style="margin-top: 28px; margin-left: -15px;">
-						<div class="nav-line"></div>
-						<div class="seminar-card">
-							<div class="seminar-tittle"><a href="http://woxed.hol.es/vebinar/">Вебинар. Фундамент вашей прибыли</a></div>
-							<div class="seminar-photo" style="margin-top: 30px; margin-left: 0px;"><img src="<?php echo get_template_directory_uri();?>/img/seminar-photo1.png"></div>
-							<div class="seminar-person">
-								<div class="seminar-person-name" style="margin-top: 5px; margin-left: 10px;"><strong>Владимир Сидоренко</strong></div>
-								<div class="seminar-person-position" style="margin-top: 5px; margin-left: 10px;">Президент «Перформии»</div>
-							</div>
-							<div class="seminar-place">
-								<div class="seminar-geo" style="margin-top: 5px; margin-left: -45px;"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong> Киев и Одесса</strong></div>
-								<div class="seminar-time" style="margin-top: 5px; margin-left: -35px;">с 17.08 до 19.08</div>
-							</div>
-							<div class="seminar-price"  style="margin-top: 25px; margin-left: 45px;"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong> 12 250 грн. </strong></div>
-						</div>
-				</div>
+						</article>
+					<?php endwhile; ?>
 			</div>
 		</div>
 		<div class="container content">
@@ -246,7 +263,7 @@ get_header(); // подключаем header.php ?>
 								</div>
 								<div class="main-programm-seminar-place">
 									<div class="seminar-geo"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong> Киев и Одесса</strong></div>
-									<div class="main-programm-seminar-time">с 17.08 до 19.08</div>
+									<div class="main-programm-seminar-time" style="margin-left:10px">с 17.08 до 19.08</div>
 								</div>
 								<div class="main-programm-seminar-price"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong> 12 250 грн. </strong></div>
 							</div>
@@ -449,6 +466,6 @@ get_header(); // подключаем header.php ?>
 	<script type="text/javascript">
 		// autoSlider();
 	</script>
-</section>
+</div>
 </section>
 <?php get_footer(); // подключаем footer.php ?>
