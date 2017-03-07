@@ -1,0 +1,42 @@
+.feedbacks{
+    margin-top: 138px;
+}
+.feedbacks .left-side{
+	text-align: right;
+	padding-right: 0;
+	padding-left: 0;
+}
+.feedbacks .left-side h3{
+	font-family: 'Yeseva One';
+	font-size: 36px;
+	margin-bottom: 8px;
+	margin-top: 0px;
+	line-height: 1.2;
+}
+.feedbacks .left-side img{
+	width: 40px;
+	height: 40px;
+	margin-left: 15px;
+}
+.feedbacks .left-side p{
+	font-family: 'Century Gothic';
+	font-size: 14px;
+	margin-bottom: 24px;	
+    line-height: 1.7;
+}
+.feedbacks .right-side {
+	padding-left: 0;
+}
+.feedbacks .right-side p{
+	margin-top: 26px;
+	font-family: 'Century Gothic';
+	font-size: 16px;
+	line-height: 1.75;
+}
+.feedbacks .right-side .nav-line{
+	width: 150px;
+    margin-top: 13px;
+}
+.comment{
+    margin-bottom: 66px;
+}
