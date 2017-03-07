@@ -11,7 +11,7 @@ Template Name: technology
  * @subpackage your-clean-template-3
  */
 get_header(); // подключаем header.php ?>
-<section>
+<section id='technology'>
 	<div class="blue-background"></div>
 	<div class="gold-background"></div>
 	<div class="container">
@@ -22,8 +22,11 @@ get_header(); // подключаем header.php ?>
 					поможет нанимать<br>
 					лучших сотрудников?
 				</div>
+				<div class='subtitle'>
+					Делимся знаниями, чтобы <br/>помочь найти лучших сотрудников <br/>и оптимизировать процесс
+				</div>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 header-form">
 				<div class="telephone-black">099 547-89-45</div>
 				<div class="invite">Заявка на участие</div>
 				<input type="text" class="input mar-top-input" placeholder="Введите Имя">
@@ -33,7 +36,7 @@ get_header(); // подключаем header.php ?>
 			</div>
 		</div>
 	</div>
-	<div class="container content">
+	<div class="container content ad-section">
 		<div class="row">
 			<div class="col-lg-4">
 				<div class="block-tittle">
@@ -46,8 +49,11 @@ get_header(); // подключаем header.php ?>
 				<div class="nav-line"></div>
 				<div class="quote-text">
 					<p>Любители ловят рыбу на одну и ту же приманку. Профессиональный рыбак знает, какую конкретно рыбу он хочет поймать, и берет соответствующие снасти.</p>
-					<div class="post-exaples-tittle">Примеры обьявления</div><div class="post-exaples">Хорошее</div><div class="post-exaples">Плохое</div><div class="post-exaples active-example">Плохое</div>
-					<p><img src="<?php echo get_template_directory_uri();?>/img/monitor.png"></p>
+					<div class="post-exaples-tittle">Примеры обьявления</div>
+					<div class="post-exaples" data-order='0'>Хорошее</div>
+					<div class="post-exaples" data-order='1'>Плохое</div>
+					<div class="post-exaples active-example" data-order='2'>Плохое</div>
+					<p><img src="<?php echo get_template_directory_uri();?>/img/monitor.png" id='monitor'></p>
 
 					<p>Большинство компаний проигрывают игру в найм еще до того, как начинают играть, потому что используют в объявлениях одну и ту же приманку. Как следствие среди привлеченных людей нет тех, кто им нужен. Поэтому как бы вы дальше не тестировали и не интервьюировали кандидатов - толку будет мало.</p>
 				</div>
@@ -311,4 +317,33 @@ get_header(); // подключаем header.php ?>
 		</div>
 	</div>
 </section>
+<script type="text/javascript">
+addLoadEvent(function(){
+	monitorImages = [
+		"<?php echo get_template_directory_uri();?>/img/monitor.png",
+		"<?php echo get_template_directory_uri();?>/img/monitor2.png",
+		"<?php echo get_template_directory_uri();?>/img/monitor3.png"
+	];
+	var monitor = $("#monitor");
+	var btns = $(".post-exaples");
+	btns.click(function(e){
+		var target = $(e.target);
+		if(!target.hasClass('active-example')){
+			monitor.animate({
+				opacity: 0
+			},{
+				done: function(){
+					var index = parseInt(target.data('order'));
+					monitor.attr('src', monitorImages[index]);
+					btns.removeClass('active-example');
+					target.addClass('active-example');
+					monitor.animate({
+						opacity: 1
+					});
+				}
+			});
+		}
+	});
+});
+</script>
 <?php get_footer(); // подключаем footer.php ?>

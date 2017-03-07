@@ -1,3 +1,26 @@
+#technology .vebinar-tittle{
+	margin-top: 64px;
+	margin-left: -23px;
+}
+
+#technology .subtitle{
+	font-family:'Century Gothic';
+	font-size: 20px;
+	color: white;
+	margin-left: -23px;
+	margin-top: 35px;
+    line-height: 1.78;
+}
+#technology .header-form{
+    margin-top: -12px;
+    margin-left: -41px;	
+}
+#technology .ad-section{
+	margin-top: 148px;
+}
+#technology .ad-section .block-tittle{
+	line-height: 1.3;
+}
 .star-text{
 	font-size: 20px;
 	color:#252525;
@@ -67,6 +90,7 @@
 	margin-right:15px;
 	margin-top: 20px;
 	padding-bottom:20px;
+	cursor: pointer;
 }
 
 .active-example{

@@ -1,5 +1,17 @@
 // custom scripts
-
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
 var photoArray = [
 "http://woxed.hol.es/wp-content/uploads/2017/02/Jobs.png",
 "http://woxed.hol.es/wp-content/uploads/2017/02/Morita.png", 
@@ -199,7 +211,7 @@ var VideoSlider = function(){
 }
 
 
-window.onload = function(){
+addLoadEvent(function(){
 	var slider = new VideoSlider();
 	
 	$('.person-slider-buttons').find('.next').click(function(e){
@@ -209,4 +221,4 @@ window.onload = function(){
 		slider.prev();
 	});
 
-}
+});
