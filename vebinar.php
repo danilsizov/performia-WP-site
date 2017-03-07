@@ -14,11 +14,15 @@ Template Name: vebinar
 get_header(); // подключаем header.php ?>
 <section>
 <div class="circle-back">
-<?php echo the_ID(); ?>
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="blue-background"></div>
 	<div class="gold-background"></div>
 	<div class="container">
+	<?php
+    $mypost = array( 'post_type' => 'vebinar', );
+    $loop = new WP_Query( $mypost );
+    ?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="row">
 			<div class="col-lg-8">
 				<div class="vebinar-tittle-small">Вебинар</div>
@@ -146,6 +150,7 @@ get_header(); // подключаем header.php ?>
 		</div>
 	</div>
 	</article>
+	<?php endwhile; ?>
 	</div>
 </section>
 <?php get_footer(); // подключаем footer.php ?>

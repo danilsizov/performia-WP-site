@@ -13,10 +13,11 @@ Template Name: main-programm
  */
 get_header(); // подключаем header.php ?>
 <section>
+<div class="circle-back">
 	<div class="blue-background"></div>
 	<div class="gold-background"></div>
 	<div class="circle-back">
-	<div class="container">
+	<div class="container"> 
 	<?php
     $mypost = array( 'post_type' => 'main_programm', );
     $loop = new WP_Query( $mypost );
