@@ -13,6 +13,7 @@ Template Name: comment
  */
 get_header(); // подключаем header.php ?>
 <section>
+<div class="circle-back">
 	<div class="container content">
 		<div class="row">
 			<div class="col-lg-6">
@@ -72,5 +73,6 @@ wp_reset_query();
 			</div>
 		</div>
 	</div>	
+	</div>
 </section>
 <?php get_footer(); // подключаем footer.php ?>

@@ -48,7 +48,7 @@
 					</div>
 					<div class="col-lg-1"></div>
 					<div class="col-lg-4">
-						<input type="text" class="foot-input" value="Введите E-mail"><div class="foot-buton">Подписаться</div>
+						<input type="text" class="foot-input" placeholder="Введите E-mail"><div class="foot-buton">Подписаться</div>
 					</div>
 					<div class="col-lg-1"></div>
 				</div>

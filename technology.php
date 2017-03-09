@@ -14,6 +14,7 @@ get_header(); // подключаем header.php ?>
 <section id='technology'>
 	<div class="blue-background"></div>
 	<div class="gold-background"></div>
+	<div class="circle-back">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8">
@@ -111,7 +112,7 @@ get_header(); // подключаем header.php ?>
 					Продуктивность кандидата<br> 
 					в будущем определяется по оценкам прошлого
 				</div>
-				<img src="http://woxed.hol.es/wp-content/uploads/2017/02/Graf.png" style="margin-top:60px;">
+				<img src="http://993684.krovcent.web.hosting-test.net/wp-content/uploads/2017/03/Graf.png" style="margin-top:60px;">
 			</div>
 		</div>
 	</div>
@@ -314,6 +315,7 @@ get_header(); // подключаем header.php ?>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 </section>
 <script type="text/javascript">

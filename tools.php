@@ -31,11 +31,11 @@ get_header(); // подключаем header.php ?>
 			</div>
 			<div class="col-lg-3">
 				<div class="telephone-black">099 547-89-45</div>
-				<div class="invite">Заявка на участие</div>
+				<div class="invite">По любым вопросам</div>
 				<input type="text" class="input mar-top-input" placeholder="Введите имя">
 				<input type="text" class="input" placeholder="Телефон">
 				<input type="text" class="input" placeholder="E-mail">
-				<div class="invite-buton">Подписаться</div>
+				<div class="invite-buton">Жду звонка</div>
 			</div>
 		</div>
 		<div class="container content">
@@ -52,7 +52,7 @@ get_header(); // подключаем header.php ?>
 						<p  style="margin-top: 60px; margin-left: -15px; line-height:1.69;">С появлением на рынке удобной интернет-системы "(Interspeedia)" службы персонала большинства компаний обрели возможность существенно избавить себя от лишней, искусственной, работы. При этом "ИНТЕРСПИДИЯ" добавила новые возможности, о которых менеджеры по найму из малого и среднего бизнеса до сегодняшнего дня могли только мечтать. Судите сами.</p>
 					</div>
 					<div class="about" style="margin-top: 60px; margin-left: -15px; line-height:1.69;">
-						Подробнее о технологии >
+						<a href="http://993684.krovcent.web.hosting-test.net/techology">Подробнее о технологии ></a>
 					</div>
 				</div>
 			</div>
@@ -190,9 +190,9 @@ get_header(); // подключаем header.php ?>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-3"><input type="text" class="input new" placeholder="Введите имя" style="width:100%; padding:5px 0 15px; border-color:black; color:black"></div>
-						<div class="col-lg-3"><input type="text" class="input new" placeholder="Введите E-mail" style="width:100%; padding:5px 0 15px; border-color:black; color:black"></div>
-						<div class="col-lg-3"><div class="invite-buton" style="color:white; background:#284ecd;">Подписаться</div></div>
+						<div class="col-lg-4"><input type="text" class="input new" placeholder="Введите имя" style="width:100%; padding:5px 0 15px; border-color:black; color:black"></div>
+						<div class="col-lg-4"><input type="text" class="input new" placeholder="Введите E-mail" style="width:100%; padding:5px 0 15px; border-color:black; color:black"></div>
+						<div class="col-lg-3"><div class="invite-buton" style="color:white; background:#284ecd;">Получить</div></div>
 					</div>
 				</div>
 			</div>
@@ -200,4 +200,5 @@ get_header(); // подключаем header.php ?>
 	</div>
 	</div>
 </section>
+<div style="margin-top:150px"></div>
 <?php get_footer(); // подключаем footer.php ?>

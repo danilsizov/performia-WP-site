@@ -39,35 +39,32 @@
 </div>
 <div class="overlow" id="black-back" onclick="openBurger(false)"></div>
 	<header>
-		<div class="container">
 			<div class="row">
 				<nav class="navbar">
-					<div class="col-lg-2"><img src="http://woxed.hol.es/wp-content/uploads/2017/02/logo.png" ></div>
-					<div class="col-lg-1">  </div>
-					<div class="col-lg-9">
-						<div class="nav-buttons">
-							<span style="margin-left:-28px; margin-top:5px"><a href="http://woxed.hol.es/">ГЛАВНАЯ </a><div class="nav-line"></div></span><span style="margin-left:8px; margin-top:5px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px"><a href="http://woxed.hol.es/technology">О ТЕХНОЛОГИИ </a><div class="nav-line"></div></span><span style="margin-left:5px; margin-top:5px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
-							<span style="margin-left:9px; margin-top:5px"><a href="http://woxed.hol.es/#vebinar">ОБУЧЕНИЕ НАЙМУ </a><div class="nav-line"></div></span><span style="margin-left:6px; margin-top:5px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px"><a href="http://woxed.hol.es/">ОТЗЫВЫ </a><div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px"><a href="http://woxed.hol.es/videoAndPosts">СТАТЬИ И ВИДЕО </a><div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px"><a href="http://woxed.hol.es/events">МЕРОПРИЯТИЯ </a><div class="nav-line"></div></span><span style="margin-left:6px; margin-top:5px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
-							<span style="margin-left:7px; margin-top:5px"><a href="http://woxed.hol.es/tools">ИНСТРУМЕНТЫ И ПОМОЩЬ </a><div class="nav-line"></div></span><span style="margin-left:7px; margin-top:5px"> <img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span></a>
-							<span style="margin-left:15px; margin-top:-17px"><a href="http://woxed.hol.es/about-us">О КОМПАНИИ </a><div class="nav-line"></div></span>
-						</div>
+					<div class="nav-1"><a href="http://993684.krovcent.web.hosting-test.net"><img src="http://woxed.hol.es/wp-content/uploads/2017/02/logo.png"></a></div>
+					<div class="nav-2">
+					<div class="nav-buttons">
+						<span><a href="http://993684.krovcent.web.hosting-test.net">ГЛАВНАЯ </a><div class="nav-line"></div></span><span style="margin-left:3px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/technology">О ТЕХНОЛОГИИ </a><div class="nav-line"></div></span><span style="margin-left:3px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/main-programm">ОБУЧЕНИЕ НАЙМУ </a><div class="nav-line"></div></span><span style="margin-left:3px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/comment">ОТЗЫВЫ </a><div class="nav-line"></div></span><span style="margin-left:3px"> <img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/videoAndPosts">СТАТЬИ И ВИДЕО </a><div class="nav-line"></div></span><span style="margin-left:3px"> <img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/events">МЕРОПРИЯТИЯ </a><div class="nav-line"></div></span><span style="margin-left:3px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/tools">ИНСТРУМЕНТЫ И ПОМОЩЬ </a><div class="nav-line"></div></span><span style="margin-left:3px"> <img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span></a>
+						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/about-us">О КОМПАНИИ </a><div class="nav-line"></div></span>
+					</div></div>
 						<div class="burger-open" onclick="openBurger(true)"><img src="<?php echo get_template_directory_uri();?>./img/menu.png"></div>
 						<div class="burger" id="burger">
-							<div class="nav-text">Главная</div>
-							<div class="nav-text">О технологии</div>
-							<div class="nav-text">Обучение найму</div>
-							<div class="nav-text">Отзывы</div>
-							<div class="nav-text">Статья и видео</div>
-							<div class="nav-text">Мероприятия</div>
-							<div class="nav-text">Инструменты и помощь</div>
-							<div class="nav-text">О компании</div>
+							<a href="http://993684.krovcent.web.hosting-test.net/"><div class="nav-text">Главная</div></a>
+							<a href="http://993684.krovcent.web.hosting-test.net/technology"><div class="nav-text">О технологии</div></a>
+							<a href="http://993684.krovcent.web.hosting-test.net/#vebinar"><div class="nav-text">Обучение найму</div></a>
+							<a href="http://993684.krovcent.web.hosting-test.net/comment"><div class="nav-text">Отзывы</div></a>
+							<a href="http://993684.krovcent.web.hosting-test.net/videoAndPosts"><div class="nav-text">Статья и видео</div></a>
+							<a href="http://993684.krovcent.web.hosting-test.net/events"><div class="nav-text">Мероприятия</div></a>
+							<a href="http://993684.krovcent.web.hosting-test.net/tools"><div class="nav-text">Инструменты и помощь</div></a>
+							<a href="http://993684.krovcent.web.hosting-test.net/about-us"><div class="nav-text">О компании</div></a>
 						</div>
 					</div>
 				</nav>
-			</div>
 		</div>
 	</header>
