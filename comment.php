@@ -72,6 +72,9 @@ wp_reset_query();
 ?>
 			</div>
 		</div>
+		<div class="more">
+					<div class="more-button" style="float:none; margin-left:auto; margin-right:auto">Загрузить ещё</div>
+				</div>
 	</div>	
 	</div>
 </section>
