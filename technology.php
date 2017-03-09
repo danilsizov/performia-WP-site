@@ -54,7 +54,10 @@ get_header(); // подключаем header.php ?>
 					<div class="post-exaples" data-order='0'>Хорошее</div>
 					<div class="post-exaples" data-order='1'>Плохое</div>
 					<div class="post-exaples active-example" data-order='2'>Плохое</div>
-					<p><img src="<?php echo get_template_directory_uri();?>/img/monitor.png" id='monitor'></p>
+					<p class='monitor-container'>
+						<img src="<?php echo get_template_directory_uri();?>/img/monitor-empty.png" class='monitor'>
+						<img src="<?php echo get_template_directory_uri();?>/img/monitor.png" id='monitor' class='monitor'>
+					</p>
 
 					<p>Большинство компаний проигрывают игру в найм еще до того, как начинают играть, потому что используют в объявлениях одну и ту же приманку. Как следствие среди привлеченных людей нет тех, кто им нужен. Поэтому как бы вы дальше не тестировали и не интервьюировали кандидатов - толку будет мало.</p>
 				</div>

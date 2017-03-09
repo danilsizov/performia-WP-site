@@ -31,6 +31,15 @@
     margin-left: -4px;
     line-height: 1.7;
 }
+p.monitor-container {
+	position: relative;
+	margin-top: 50px;
+}
+.monitor-container #monitor{
+	position: absolute;
+	top: 31px;
+}
+
 .two-trees{
 	position: relative;
 }
