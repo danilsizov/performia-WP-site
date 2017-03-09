@@ -364,7 +364,7 @@ get_header(); // подключаем header.php ?>
 			<div class="col-lg-7 quote">
 				<div class="nav-line"></div>
 				<div class="coment-card">
-					<div class="coment-person-name">Роман Петров <img src="<?php echo get_template_directory_uri();?>/img/FBB.png" > <img src="<?php echo get_template_directory_uri();?>/img/VKB.png" ></div>
+					<div class="coment-person-name">Роман Петров <a href="http://facebook.com"><img src="<?php echo get_template_directory_uri();?>/img/FBB.png" ></a> <a href="http://vk.com"><img src="<?php echo get_template_directory_uri();?>/img/VKB.png" ></a></div>
 					<div class="coment-person-position">Основатель компании «Кровля-центр»</div>
 					<div class="quote-text">
 					<p>До Перформии я боялся увольнять существующих сотрудников, потому что не знал, кто вместо них придет. Сотрудники это чувствовали и начинали диктовать свои условия.До Перформии я боялся увольнять существующих сотрудников, потому что не знал, кто вместо них придет. Сотрудники это чувствовали и начинали диктовать свои условия.</p> </div>
@@ -372,7 +372,7 @@ get_header(); // подключаем header.php ?>
 				</div>
 				<div class="nav-line mar-top"></div>
 				<div class="coment-card">
-					<div class="coment-person-name">Роман Петров <img src="<?php echo get_template_directory_uri();?>/img/FBB.png" > <img src="<?php echo get_template_directory_uri();?>/img/VKB.png" ></div>
+					<div class="coment-person-name">Роман Петров <a href="http://facebook.com"><img src="<?php echo get_template_directory_uri();?>/img/FBB.png" ></a> <a href="http://vk.com"><img src="<?php echo get_template_directory_uri();?>/img/VKB.png" ></a></div>
 					<div class="coment-person-position">Основатель компании «Кровля-центр»</div>
 					<div class="quote-text">
 					<p>До Перформии я боялся увольнять существующих сотрудников, потому что не знал, кто вместо них придет. Сотрудники это чувствовали и начинали диктовать свои условия.До Перформии я боялся увольнять существующих сотрудников, потому что не знал, кто вместо них придет. Сотрудники это чувствовали и начинали диктовать свои условия.</p> </div>
@@ -380,7 +380,7 @@ get_header(); // подключаем header.php ?>
 				</div>
 				<div class="nav-line mar-top"></div>
 				<div class="coment-card">
-					<div class="coment-person-name">Роман Петров <img src="<?php echo get_template_directory_uri();?>/img/FBB.png" > <img src="<?php echo get_template_directory_uri();?>/img/VKB.png" ></div>
+					<div class="coment-person-name">Роман Петров <a href="http://facebook.com"><img src="<?php echo get_template_directory_uri();?>/img/FBB.png" ></a> <a href="http://vk.com"><img src="<?php echo get_template_directory_uri();?>/img/VKB.png" ></a></div>
 					<div class="coment-person-position">Основатель компании «Кровля-центр»</div>
 					<div class="quote-text">
 					<p>До Перформии я боялся увольнять существующих сотрудников, потому что не знал, кто вместо них придет. Сотрудники это чувствовали и начинали диктовать свои условия.До Перформии я боялся увольнять существующих сотрудников, потому что не знал, кто вместо них придет. Сотрудники это чувствовали и начинали диктовать свои условия.</p> </div>
@@ -388,7 +388,7 @@ get_header(); // подключаем header.php ?>
 				</div>
 				<div class="nav-line mar-top"></div>
 				<div class="coment-card">
-					<div class="coment-person-name">Роман Петров <img src="<?php echo get_template_directory_uri();?>/img/FBB.png" > <img src="<?php echo get_template_directory_uri();?>/img/VKB.png" ></div>
+					<div class="coment-person-name">Роман Петров <a href="http://facebook.com"><img src="<?php echo get_template_directory_uri();?>/img/FBB.png" ></a> <a href="http://vk.com"><img src="<?php echo get_template_directory_uri();?>/img/VKB.png" ></a></div>
 					<div class="coment-person-position">Основатель компании «Кровля-центр»</div>
 					<div class="quote-text">
 					<p>До Перформии я боялся увольнять существующих сотрудников, потому что не знал, кто вместо них придет. Сотрудники это чувствовали и начинали диктовать свои условия.До Перформии я боялся увольнять существующих сотрудников, потому что не знал, кто вместо них придет. Сотрудники это чувствовали и начинали диктовать свои условия.</p> </div>

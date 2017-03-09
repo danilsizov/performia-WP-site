@@ -59,7 +59,7 @@ get_header(); // подключаем header.php ?>
 		<div class="container content">
 			<div class="row">
 				<div class="col-lg-4">
-					<div class="block-tittle">Наша цель</div>
+					<div class="block-tittle">Партнёры</div>
 				</div>
 				<div class="col-lg-1"></div>
 				<div class="col-lg-7 quote">

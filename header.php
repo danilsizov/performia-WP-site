@@ -32,12 +32,12 @@
 	<header>
 			<div class="row">
 				<nav class="navbar">
-					<div class="nav-1"><img src="http://woxed.hol.es/wp-content/uploads/2017/02/logo.png"></div>
+					<div class="nav-1"><a href="http://993684.krovcent.web.hosting-test.net"><img src="http://woxed.hol.es/wp-content/uploads/2017/02/logo.png"></a></div>
 					<div class="nav-2">
 					<div class="nav-buttons">
 						<span><a href="http://993684.krovcent.web.hosting-test.net">ГЛАВНАЯ </a><div class="nav-line"></div></span><span style="margin-left:3px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
 						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/technology">О ТЕХНОЛОГИИ </a><div class="nav-line"></div></span><span style="margin-left:3px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
-						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/#vebinar">ОБУЧЕНИЕ НАЙМУ </a><div class="nav-line"></div></span><span style="margin-left:3px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
+						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/main-programm">ОБУЧЕНИЕ НАЙМУ </a><div class="nav-line"></div></span><span style="margin-left:3px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
 						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/comment">ОТЗЫВЫ </a><div class="nav-line"></div></span><span style="margin-left:3px"> <img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
 						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/videoAndPosts">СТАТЬИ И ВИДЕО </a><div class="nav-line"></div></span><span style="margin-left:3px"> <img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>
 						<span style="margin-left:3px"><a href="http://993684.krovcent.web.hosting-test.net/events">МЕРОПРИЯТИЯ </a><div class="nav-line"></div></span><span style="margin-left:3px"><img src="http://denialsizov.hol.es/performia/wp-content/uploads/2017/02/dot.png" ></span>

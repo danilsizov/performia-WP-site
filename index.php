@@ -169,16 +169,16 @@ get_header(); // подключаем header.php ?>
 						персонала. Наша технология направлена на успешное решение всех<br>
 						трудностей, возникающих в области подбора и  управления персоналом.
 					</div>
-					<div class="about" style="margin-top: 60px; margin-left: -12px; line-height:1.69;">
+					<a href="http://woxed.hol.es/main-programm/"><div class="about" style="margin-top: 60px; margin-left: -12px; line-height:1.69;">
 						Подробнее о технологии >
-					</div>
+					</div></a>
 				</div>
 			</div>
 		</div>
 		<div class="container content" id="vebinar">
 			<div class="row">
 				<div class="col-lg-4">
-					<div class="block-tittle" style="margin-top: -2px; margin-right: -22px; line-height: 1.25;">Семинары<br> и вебинары</div>
+					<div class="block-tittle" style="margin-top: -2px; margin-right: -22px; line-height: 1.25;"><strong>Семинары<br> и вебинары</strong></div>
 				</div>
 				<div class="col-lg-1"></div>
 				<div class="col-lg-7">
@@ -187,11 +187,12 @@ get_header(); // подключаем header.php ?>
 				    $loop = new WP_Query( $mypost );
 				    ?>
 				    <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+				    	<a href="<?php echo get_permalink(); ?>">
 				        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 							<div class="seminar" style="margin-top: 10px; margin-left: -15px;">
 								<div class="nav-line"></div>
 								<div class="seminar-card">
-									<div class="seminar-tittle"><a href="<?php echo get_permalink(); ?>">Вебинар. <?php the_title(); ?></a></div>
+									<div class="seminar-tittle">Вебинар. <?php the_title(); ?></div>
 									<div class="seminar-photo" style="margin-top: 30px; margin-left: 0px;"><?php echo get_the_post_thumbnail($id, array(40,40)) ?></div>
 									<div class="seminar-person">
 										<div class="seminar-person-name" style="margin-top: 5px; margin-left: 10px;"><strong><?php echo esc_html( get_post_meta( get_the_ID(), 'author_name', true ) ); ?></strong></div>
@@ -204,17 +205,19 @@ get_header(); // подключаем header.php ?>
 								</div>
 							</div>
 						</article>
+						</a>
 					<?php endwhile; ?>
 					<?php
 				    $mypost = array( 'post_type' => 'seminar', );
 				    $loop = new WP_Query( $mypost );
 				    ?>
 				    <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+				    	<a href="<?php echo get_permalink(); ?>">
 				        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 							<div class="seminar seminar-mar" style="margin-top: 28px; margin-left: -15px;">
 								<div class="nav-line"></div>
 								<div class="seminar-card">
-									<div class="seminar-tittle"><a href="<?php echo get_permalink(); ?>">Семинар. <?php the_title(); ?></a></div>
+									<div class="seminar-tittle">Семинар. <?php the_title(); ?></div>
 									<div class="seminar-photo" style="margin-top: 30px; margin-left: 0px;"><?php echo get_the_post_thumbnail($id, array(40,40)) ?></div>
 									<div class="seminar-person">
 										<div class="seminar-person-name" style="margin-top: 5px; margin-left: 10px;"><strong><?php echo esc_html( get_post_meta( get_the_ID(), 'seminar_author_name', true ) ); ?></strong></div>
@@ -227,6 +230,7 @@ get_header(); // подключаем header.php ?>
 									<div class="seminar-price"  style="margin-top: 25px; margin-left: 45px;"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong> <?php echo esc_html( get_post_meta( get_the_ID(), 'seminar_price', true ) ); ?> грн. </strong></div>
 								</div>
 							</div>
+							</a>
 						</article>
 					<?php endwhile; ?>
 			</div>
@@ -237,8 +241,8 @@ get_header(); // подключаем header.php ?>
 					<div class="block-tittle" style="margin-top: -15px; margin-right: -8px; line-height: 1.25;">Главная<br>программа</div>
 				</div>
 				<div class="col-lg-1"></div>
-				<div class="col-lg-7">
 				<a href="http://993684.krovcent.web.hosting-test.net/main-programm">
+				<div class="col-lg-7">
 					<div class="main-programm" style="margin-left: -27px; height:675px">
 						<div class="content-main-programm">
 							<div class="main-programm-tittle">
@@ -251,9 +255,9 @@ get_header(); // подключаем header.php ?>
 								процесс с помощью инструментов Перформии, поможем<br>
 								внедрить технологию в бизнес
 							</div>
-							<a href="http://woxed.hol.es/main-programm/"><div class="main-programm-about">
+							<div class="main-programm-about">
 								Подробнее о технологии >
-							</div></a>
+							</div>
 							<div class="main-programm-card">
 								<div class="main-programm-line"></div>
 								<div class="seminar-photo"><img src="<?php echo get_template_directory_uri();?>/img/seminar-photo1.png"></div>
@@ -269,8 +273,8 @@ get_header(); // подключаем header.php ?>
 							</div>
 						</div>
 					</div>
-					</a>
 				</div>
+				</a>
 			</div>
 		</div>
 
@@ -461,9 +465,11 @@ get_header(); // подключаем header.php ?>
 							<div class="card-likes card-mar-l"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
 						</div>
 					</div>
+					<a href="http://993684.krovcent.web.hosting-test.net/videoAndPosts">
 					<div class="card-about">
 						Другие статьи и видео >
 					</div>
+					</a>
 				</div>
 			</div>
 		</div>
