@@ -33,7 +33,7 @@ get_header(); // подключаем header.php ?>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 hiden-block ">
 				<div class="telephone-black">099 547-89-45</div>
 				<div class="invite">Проконсультируйтесь об участии</div>
 				<input type="text" class="input mar-top-input" placeholder="Введите имя">
@@ -58,7 +58,7 @@ get_header(); // подключаем header.php ?>
 		</div>
 		<div class="container content">
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-lg-4" style="text-align:right;">
 				<?php echo get_the_post_thumbnail($id, array(300,300)) ?>
 			</div>
 			<div class="col-lg-1"></div>
@@ -127,18 +127,18 @@ get_header(); // подключаем header.php ?>
 						<div class="row">
 							<div class="col-lg-6">
 								<ul class="about-list">
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_1', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_2', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_3', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_4', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_1', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_2', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_3', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_4', true ) ); ?></li>
 								</ul>
 							</div>
 							<div class="col-lg-6">
 								<ul class="about-list">
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_5', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_6', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_7', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_8', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_5', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_6', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_7', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_1_8', true ) ); ?></li>
 								</ul>
 							</div>
 						</div>
@@ -157,18 +157,18 @@ get_header(); // подключаем header.php ?>
 						<div class="row">
 							<div class="col-lg-6">
 								<ul class="about-list">
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_1', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_2', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_3', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_4', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_1', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_2', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_3', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_4', true ) ); ?></li>
 								</ul>
 							</div>
 							<div class="col-lg-6">
 								<ul class="about-list">
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_5', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_6', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_7', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_8', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_5', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_6', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_7', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_8', true ) ); ?></li>
 								</ul>
 							</div>
 						</div>
@@ -187,18 +187,18 @@ get_header(); // подключаем header.php ?>
 						<div class="row">
 							<div class="col-lg-6">
 								<ul class="about-list">
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_1', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_2', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_3', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_4', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_1', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_2', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_3', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_4', true ) ); ?></li>
 								</ul>
 							</div>
 							<div class="col-lg-6">
 								<ul class="about-list">
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_5', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_6', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_7', true ) ); ?></li>
-									<li><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_8', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_5', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_6', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_7', true ) ); ?></li>
+									<li style="margin-top:15px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'main_programm_li_2_8', true ) ); ?></li>
 								</ul>
 							</div>
 						</div>

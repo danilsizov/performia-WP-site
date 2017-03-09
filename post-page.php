@@ -11,6 +11,12 @@ Template Name: post-page
  * @subpackage your-clean-template-3
  */
 get_header(); // подключаем header.php ?>
+<?php
+    $mypost = array( 'post_type' => 'post', );
+    $loop = new WP_Query( $mypost );
+    ?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="banner">
 		<div class="banner-wrapper">
 			<div class="hr"></div>
@@ -194,4 +200,6 @@ get_header(); // подключаем header.php ?>
 	</div>
 
 	<div style="margin-bottom:150px;"></div>
+	</article>
+	<?php endwhile; ?>
 <?php get_footer(); // подключаем footer.php ?>

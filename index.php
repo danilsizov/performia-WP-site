@@ -198,10 +198,9 @@ get_header(); // подключаем header.php ?>
 										<div class="seminar-person-position" style="margin-top: 5px; margin-left: 10px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'author_position', true ) ); ?></div>
 									</div>
 									<div class="seminar-place">
-										<div class="seminar-geo" style="margin-top: 5px; margin-left: -45px;"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong>-</strong></div>
-										<div class="seminar-time" style="margin-top: 5px; margin-left: -35px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'vebinar_time', true ) ); ?></div>
+										<div class="seminar-price"  style="margin-top: 5px; margin-left: -45px;"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong> <?php echo esc_html( get_post_meta( get_the_ID(), 'vebinar_price', true ) ); ?> грн.</strong></div>
+										<div class="seminar-time" style="margin-top: 5px; margin-left: -38px;"><?php echo esc_html( get_post_meta( get_the_ID(), 'vebinar_time', true ) ); ?></div>
 									</div>
-									<div class="seminar-price"  style="margin-top: 25px; margin-left: 45px;"><img src="<?php echo get_template_directory_uri();?>/img/green-circle.png"><strong> <?php echo esc_html( get_post_meta( get_the_ID(), 'vebinar_price', true ) ); ?> грн.</strong></div>
 								</div>
 							</div>
 						</article>
@@ -239,6 +238,7 @@ get_header(); // подключаем header.php ?>
 				</div>
 				<div class="col-lg-1"></div>
 				<div class="col-lg-7">
+				<a href="http://993684.krovcent.web.hosting-test.net/main-programm">
 					<div class="main-programm" style="margin-left: -27px; height:675px">
 						<div class="content-main-programm">
 							<div class="main-programm-tittle">
@@ -269,6 +269,7 @@ get_header(); // подключаем header.php ?>
 							</div>
 						</div>
 					</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -354,9 +355,11 @@ get_header(); // подключаем header.php ?>
 									</div>
 								</div>
 							</div>
+							<a href="http://993684.krovcent.web.hosting-test.net/comment">
 							<div class="review-about">
 								Смотреть все отзывы >
 							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -393,9 +396,11 @@ get_header(); // подключаем header.php ?>
 						обратно. Для этого обратитесь в центральный офис в Москве<br> 
 						и получите деньги в течении трех дней.
 					</div>
+					<a href="http://993684.krovcent.web.hosting-test.net/answer">
 					<div class="review-about" style="margin-left:-28px; margin-top:46px;">
 						Другие вопросы >
 					</div>
+					</a>
 				</div>
 			</div>
 		</div>

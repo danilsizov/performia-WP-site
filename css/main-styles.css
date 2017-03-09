@@ -386,7 +386,7 @@ box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
 
 .pas-win h6{
 	font-size:16px;
-	font-family:'Century Gothic Bold';
+	font-family:'Century Gothic';
 }
 
 .pas-win p{
@@ -397,7 +397,7 @@ box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
 
 .doers-win h6{
 	font-size:16px;
-	font-family:'Century Gothic Bold';
+	font-family:'Century Gothic';
 }
 
 .doers-win p{
@@ -409,7 +409,7 @@ box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
 
 .perf-win h6{
 	font-size:16px;
-	font-family:'Century Gothic Bold';
+	font-family:'Century Gothic';
 }
 
 .perf-win p{
@@ -465,7 +465,7 @@ box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
 }
 
 .seminar-person-name{
-	font-family:'Century Gothic Bold';
+	font-family:'Century Gothic';
 	font-size: 16px;
 }
 
@@ -483,7 +483,7 @@ box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
 }
 
 .seminar-geo{
-	font-family:'Century Gothic Bold';
+	font-family:'Century Gothic';
 	font-size: 16px;
 }
 
@@ -494,7 +494,7 @@ box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
 }
 
 .seminar-price{
-	font-family:'Century Gothic Bold';
+	font-family:'Century Gothic';
 	font-size: 16px;
 	margin-top:20px;
 	margin-left:80px;
@@ -571,7 +571,7 @@ box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
 }
 
 .main-programm-seminar-price{
-	font-family:'Century Gothic Bold';
+	font-family:'Century Gothic';
 	font-size: 16px;
 	margin-top:20px;
 	margin-left:20px;
@@ -720,7 +720,7 @@ box-shadow:         0px 0px 27px 0px rgba(55, 50, 50, 0.61);
 }
 
 .card-tittle{
-	font-family:'Century Gothic Bold';
+	font-family:'Century Gothic';
 	font-size:16px;
 	margin-top:10px;
 	margin-left:10px;	
@@ -848,4 +848,8 @@ footer p{
 }
 .video-slider-item > div {
     margin-top: 15px;
+}
+
+img.wp-post-image{
+	float:right;
 }

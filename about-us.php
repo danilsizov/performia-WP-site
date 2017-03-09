@@ -13,6 +13,7 @@ Template Name: about-us
  */
 get_header(); // подключаем header.php ?>
 <section>
+<div class="circle-back">
 	<div class="blue-background"></div>
 	<div class="gold-background"></div>
 	<div class="container">

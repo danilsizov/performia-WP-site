@@ -79,78 +79,6 @@ get_header(); // подключаем header.php ?>
 						<div class="card-likes" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
 					</div>
 				</div>
-				<div class="small-card card-mar-top">
-					<img src="<?php echo get_template_directory_uri();?>/img/card-small-photo.png" class="max-photo-size">
-					<div class="card-tag">Вовлеченность персонала</div>
-					<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
-					<div class="card-info">
-						<div class="row">
-							<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-							<div class="card-comment" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-							<div class="card-likes" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
-						</div>
-					</div>
-				</div>
-				<div class="small-card small-card-mar card-mar-top">
-					<img src="<?php echo get_template_directory_uri();?>/img/card-small-photo.png" class="max-photo-size">
-					<div class="card-tag">Вовлеченность персонала</div>
-					<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
-					<div class="card-info">
-						<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-						<div class="card-comment" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-						<div class="card-likes" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
-					</div>
-				</div>
-				<div class="big-card card-mar-top">
-					<img src="<?php echo get_template_directory_uri();?>/img/card-photo.png" class="max-photo-size">
-					<div class="card-tag">Вовлеченность персонала</div>
-					<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
-					<div class="card-info">
-						<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-						<div class="card-comment" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-						<div class="card-likes" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
-					</div>
-				</div>
-				<div class="small-card card-mar-top"> 
-					<img src="<?php echo get_template_directory_uri();?>/img/card-small-photo.png" class="max-photo-size">
-					<div class="card-tag">Вовлеченность персонала</div>
-					<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
-					<div class="card-info">
-						<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-						<div class="card-comment" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-						<div class="card-likes" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
-					</div>
-				</div>
-				<div class="small-card small-card-mar card-mar-top">
-					<img src="<?php echo get_template_directory_uri();?>/img/card-small-photo.png" class="max-photo-size">
-					<div class="card-tag">Вовлеченность персонала</div>
-					<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
-					<div class="card-info">
-						<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-						<div class="card-comment" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-						<div class="card-likes" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
-					</div>
-				</div>
-				<div class="small-card card-mar-top">
-					<img src="<?php echo get_template_directory_uri();?>/img/card-small-photo.png" class="max-photo-size">
-					<div class="card-tag">Вовлеченность персонала</div>
-					<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
-					<div class="card-info">
-						<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-						<div class="card-comment " style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-						<div class="card-likes " style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
-					</div>
-				</div>
-				<div class="small-card small-card-mar card-mar-top">
-					<img src="<?php echo get_template_directory_uri();?>/img/card-small-photo.png" class="max-photo-size">
-					<div class="card-tag">Вовлеченность персонала</div>
-					<div class="card-tittle"><strong>Продуктивность — главный фактор успешного найма</strong></div>
-					<div class="card-info">
-						<div class="card-views"><img src="<?php echo get_template_directory_uri();?>/img/view.png"> 385 </div>
-						<div class="card-comment" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/coment.png"> 12 </div>
-						<div class="card-likes" style="margin-left:10px;"><img src="<?php echo get_template_directory_uri();?>/img/like.png"> 26 </div>
-					</div>
-				</div>
 				<div class="more">
 					<div class="more-button" style="float:none; margin-left:auto; margin-right:auto">Загрузить ещё</div>
 				</div>
@@ -159,4 +87,5 @@ get_header(); // подключаем header.php ?>
 	</div>
 </div>
 </section>
+<div style="margin-top:100px"></div>
 <?php get_footer(); // подключаем footer.php ?>

@@ -150,7 +150,7 @@ get_header(); // подключаем header.php ?>
 				</div>
 			</div>
 		</div>
-			</article>
+	</article>
 	<?php endwhile; ?>
 	</div>
 	</div>

@@ -15,6 +15,7 @@ get_header(); // подключаем header.php ?>
 <section>
 	<div class="blue-background"></div>
 	<div class="gold-background"></div>
+	<div class="circle-back">
 	<div class="container">
 	<?php
     $mypost = array( 'post_type' => 'events', );
@@ -35,7 +36,7 @@ get_header(); // подключаем header.php ?>
 				<input type="text" class="input mar-top-input" placeholder="Введите имя">
 				<input type="text" class="input" placeholder="Телефон">
 				<input type="text" class="input" placeholder="E-mail">
-				<div class="invite-buton">Подписаться</div>
+				<div class="invite-buton">Жду звонка</div>
 			</div>
 		</div>
 		<div class="container content">
@@ -89,6 +90,7 @@ get_header(); // подключаем header.php ?>
 				</div>
 				<div class="col-lg-1"></div>
 				<div class="col-lg-7">
+				<a href="#http://993684.krovcent.web.hosting-test.net/congress/">
 					<div class="main-programm">
 						<div class="content-main-programm">
 							<div class="main-programm-tittle">
@@ -113,6 +115,7 @@ get_header(); // подключаем header.php ?>
 							</div>
 						</div>
 					</div>
+					</a>
 				</div>
 			</div>
 	<div class="container content">
@@ -206,6 +209,5 @@ get_header(); // подключаем header.php ?>
 		</article>
 	<?php endwhile; ?>
 	</div>
-	
 </section>
 <?php get_footer(); // подключаем footer.php ?>

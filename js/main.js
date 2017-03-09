@@ -13,11 +13,11 @@ function addLoadEvent(func) {
   }
 }
 var photoArray = [
-"http://woxed.hol.es/wp-content/uploads/2017/02/Jobs.png",
-"http://woxed.hol.es/wp-content/uploads/2017/02/Morita.png", 
-"http://woxed.hol.es/wp-content/uploads/2017/02/Mariot.png", 
-"http://woxed.hol.es/wp-content/uploads/2017/02/Devid.png",
-"http://woxed.hol.es/wp-content/uploads/2017/02/Yacocca.png",
+"http://993684.krovcent.web.hosting-test.net/wp-content/uploads/2017/03/Jobs.png",
+"http://993684.krovcent.web.hosting-test.net/wp-content/uploads/2017/03/Morita.png", 
+"http://993684.krovcent.web.hosting-test.net/wp-content/uploads/2017/03/Mariot.png", 
+"http://993684.krovcent.web.hosting-test.net/wp-content/uploads/2017/03/Devid.png",
+"http://993684.krovcent.web.hosting-test.net/wp-content/uploads/2017/03/Yacocca.png",
 ];
 
 var quoteArray = [

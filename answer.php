@@ -13,6 +13,7 @@ Template Name: answer
  */
 get_header(); // подключаем header.php ?>
 <section>
+<div class="circle-back">
 	<div class="container content">
 		<div class="row">
 			<div class="col-lg-6">
@@ -92,6 +93,8 @@ get_header(); // подключаем header.php ?>
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
+	<div style="margin-top:150px;"></div>	
+	</div>
 </section>
 <?php get_footer(); // подключаем footer.php ?>

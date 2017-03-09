@@ -32,7 +32,7 @@ get_header(); // подключаем header.php ?>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 hiden-block">
 				<div class="telephone-black">099 547-89-45</div>
 				<div class="invite">Заявка на участие</div>
 				<input type="text" class="input mar-top-input" placeholder="Введите имя">
