@@ -1,9 +1,50 @@
 html { overflow-x: hidden; }
 body { overflow-x: hidden; }
 
-a{
-	
+.preloader-wrapper{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 10000;
+	background-color: #6793cc;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
+.preloader-wrapper .preloader-content{
+	width: 100%;
+	text-align: center;
+}
+.preloader-wrapper .logo{
+	height: 25px;
+	display: block;
+	margin: 0 auto;
+}
+.preloader-wrapper .text-container{
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+}
+.preloader-wrapper .text{
+	color: rgba(153, 153, 204, 1);
+	font-family: "Century Gothic";
+	font-size: 24px;
+	position: absolute;
+	top: 0;
+	z-index: 100001;
+}
+.preloader-wrapper .text#text-bright{
+	z-index: 100002;
+	color: white;
+	overflow: hidden;
+	max-width: 0px;
+	white-space: nowrap;
+
+}
+
+
 
 body{
 	background: #fbfbfb;

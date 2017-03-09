@@ -64,6 +64,40 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript">
+;(function(){
+	var text = document.getElementById('text-bright');
+	var currentWidth = 0;
+	var width = document.getElementById('text-dark').offsetWidth;
+	console.log(width);
+	var stepSize =  width / 100;
+	var pauseWidth = stepSize * 25;
+	var secondStepTime = 10;
+	var needStop = true;
+	function step(){
+		currentWidth += stepSize;
+		// console.log(currentWidth);
+		text.style.maxWidth = currentWidth + "px";
+		if (width > currentWidth) {
+			if (currentWidth < pauseWidth) {
+				setTimeout(step, 50);
+			}else{
+				if(needStop){
+					needStop = false;
+					setTimeout(step, 500);
+				}else{
+					setTimeout(step, 10);
+				}
+			}
+		}else{
+			document.getElementById('preloader').style.display = "none";
+			console.log("preloader finished")
+		}
+	}
+	step();
+
+})();
+</script>
 <?php wp_footer(); // необходимо для работы плагинов и функционала  ?>
 </body>
 </html>

@@ -28,6 +28,15 @@
 	<?php wp_head(); // необходимо для работы плагинов и функционала ?>
 </head>
 <body <?php body_class(); // все классы для body ?>>
+<div class='preloader-wrapper' id='preloader'>
+	<div class='preloader-content'>
+		<img src="<?php echo get_template_directory_uri();?>/img/logo-white.png" class='logo'/>
+		<div class='text-container'>
+			<div class='text' id='text-dark'>Технология найма продуктинвых сотрудников</div>
+			<div class='text' id='text-bright'>Технология найма продуктинвых сотрудников</div>
+		</div>
+	</div>
+</div>
 <div class="overlow" id="black-back" onclick="openBurger(false)"></div>
 	<header>
 		<div class="container">

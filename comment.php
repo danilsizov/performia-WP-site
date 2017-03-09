@@ -27,38 +27,48 @@ get_header(); // подключаем header.php ?>
 					<div class="quetion-buton">Напишите отзыв</div>
 				</div>
 			</div>
+
+<?php 
+$query = new WP_Query(array(
+    'post_type' => 'comment',
+    'post_status' => 'publish'
+));
+
+
+while ($query->have_posts()) {
+    $query->the_post();
+    $post_id = get_the_ID();
+
+?>
+
 			<div class="container content feedbacks">
 				<div class='row comment'>
 					<div class='col-lg-offset-2 col-lg-2 text-right left-side'>
-						<h3>Юлия Подгорна</h3>
-						<p class='text-right'>Мережа магазинів<br/>«ГОСПОДАР»</p>
-						<img src="<?php echo get_template_directory_uri();?>/img/FBB.png">
-						<img src="<?php echo get_template_directory_uri();?>/img/VKB.png">
+						<h3><?php echo get_post_meta($post_id, 'comment_author_name', true); ?></h3>
+						<p class='text-right'><?php echo get_post_meta($post_id, 'comment_author_position', true); ?></p>
+						<?php if ($link = get_post_meta($post_id, 'comment_author_vk', true)) { ?>
+							<a href="<?php echo $link; ?>">
+								<img src="<?php echo get_template_directory_uri();?>/img/VKB.png">
+							</a>
+						<?php } ?>
+						<?php if ($link = get_post_meta($post_id, 'comment_author_fb', true)) { ?>
+							<a href="<?php echo $link; ?>">
+								<img src="<?php echo get_template_directory_uri();?>/img/FBB.png">
+							</a>
+						<?php } ?>
 					</div>
 					<div class='col-lg-offset-1 col-lg-7 text-left right-side'>
 						<div class="nav-line"></div>
 						<p>
-							Ми хочемо відзначити співпраця з компанією Перформія, як плідне. Дякуємо консультантові Світлані Мураховській, яка дуже професійно дає консультації 
-							і правильно направляє нашого керівника по персоналу. Вона робить це дуже уміло і спрямовано. Акценти робить на важливому. Ми шкодуємо лише про одне, що не користувалися консультаціями компанії Перфрмія в належному об'ємі. Тепер розуміємо, що багатьох помилок ми могли б уникнути. Бажаємо компанії Перформія процвітання, а Світлані подальшого зростання з компанією.
+							<?php echo get_post_meta($post_id, 'comment_text', true); ?>
 						</p>
 					</div>
 				</div>
+<?php
+}
 
-				<div class='row comment'>
-					<div class='col-lg-offset-2 col-lg-2 text-right left-side'>
-						<h3>Юлия Подгорна</h3>
-						<p class='text-right'>Мережа магазинів<br/>«ГОСПОДАР»</p>
-						<img src="<?php echo get_template_directory_uri();?>/img/FBB.png">
-						<img src="<?php echo get_template_directory_uri();?>/img/VKB.png">
-					</div>
-					<div class='col-lg-offset-1 col-lg-7 text-left right-side'>
-						<div class="nav-line"></div>
-						<p>
-							Ми хочемо відзначити співпраця з компанією Перформія, як плідне. Дякуємо консультантові Світлані Мураховській, яка дуже професійно дає консультації 
-							і правильно направляє нашого керівника по персоналу. Вона робить це дуже уміло і спрямовано. Акценти робить на важливому. Ми шкодуємо лише про одне, що не користувалися консультаціями компанії Перфрмія в належному об'ємі. Тепер розуміємо, що багатьох помилок ми могли б уникнути. Бажаємо компанії Перформія процвітання, а Світлані подальшого зростання з компанією.
-						</p>
-					</div>
-				</div>
+wp_reset_query();
+?>
 			</div>
 		</div>
 	</div>	

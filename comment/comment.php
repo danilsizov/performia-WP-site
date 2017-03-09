@@ -71,11 +71,11 @@ function display_comment_meta_box( $comment ) {
         </tr>
         <tr>
             <td style="width: 100%">Должность</td>
-            <td><input type="text" size="180" name="movie_review_director_name" value="<?php echo $comment_author_position; ?>" /></td>
+            <td><input type="text" size="180" name="comment_author_position_d" value="<?php echo $comment_author_position; ?>" /></td>
         </tr>
         <tr>
             <td style="width: 100%">Текст</td>
-            <td><textarea type="text" cols="181" rows="5" name="movie_review_director_name" style="margin-left:1px" value="<?php echo $comment_text; ?>"></textarea>
+            <td><textarea type="text" cols="181" rows="5" name="comment_text_d" style="margin-left:1px" value="<?php echo $comment_text; ?>"></textarea>
         </tr>
         <tr>
             <td style="width: 100%">Тип медиaфайла</td>
@@ -88,7 +88,7 @@ function display_comment_meta_box( $comment ) {
         </tr>
         <tr>
             <td style="width: 100%">Файл</td>
-            <td><input type="file" size="180" name="movie_review_director_name" value="<?php echo $comment_file; ?>" /></td>
+            <td><input type="file" size="180" name="comment_file_d" value="<?php echo $comment_file; ?>" /></td>
         </tr>
     </table>
     <?php
